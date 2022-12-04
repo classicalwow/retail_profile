@@ -1,0 +1,46 @@
+
+WQTrackerDB = {
+	["profileKeys"] = {
+		["查理三世 - 暗影之月"] = "Default",
+		["特變電工 - 寒冰皇冠"] = "Default",
+		["查理三世 - 寒冰皇冠"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["low_level_tutorial"] = true,
+			["is_BFA_version"] = true,
+			["quests_tracked"] = {
+				["Player-963-06DF4B09"] = {
+				},
+				["Player-963-06DF687A"] = {
+				},
+				["Player-963-06D524DA"] = {
+				},
+				["Player-963-06DF5F31"] = {
+				},
+			},
+			["player_names"] = {
+				["Player-963-06DF4B09"] = {
+					["class"] = "WARRIOR",
+					["name"] = "查理三世",
+					["realm"] = "寒冰皇冠",
+				},
+				["Player-963-06DF687A"] = {
+					["class"] = "DEATHKNIGHT",
+					["name"] = "查理三世",
+					["realm"] = "暗影之月",
+				},
+				["Player-963-06D524DA"] = {
+					["class"] = "WARRIOR",
+					["name"] = "特變電工",
+					["realm"] = "寒冰皇冠",
+				},
+				["Player-963-06DF5F31"] = {
+					["class"] = "MONK",
+					["name"] = "查理三世",
+					["realm"] = "寒冰皇冠",
+				},
+			},
+		},
+	},
+}

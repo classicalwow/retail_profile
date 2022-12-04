@@ -1,0 +1,10 @@
+VER 3 0000000000000003 "DD" "INV_MISC_QUESTIONMARK"
+END
+VER 3 0000000000000001 "HAMHealthPot" "538745"
+#showtooltip 
+/castsequence reset=combat 
+END
+VER 3 0000000000000002 "HearthRoulette" "413582"
+#showtooltip
+/cast 爐石
+END

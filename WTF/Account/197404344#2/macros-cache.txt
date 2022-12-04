@@ -1,0 +1,29 @@
+VER 3 0000000000000005 "/饰品" "INV_ENCHANT_SHARDGLIMMERINGLARGE"
+/cast 复仇之怒
+/cast 远古列王守卫
+/cast 灰鳞的优雅
+END
+VER 3 0000000000000001 "BF_Mount" "ability_mount_charger"
+/bfmount
+END
+VER 3 0000000000000002 "BF_Pet" "achievement_worldevent_brewmaster"
+/BFPET
+END
+VER 3 0000000000000004 "Decursive" "INV_MISC_QUESTIONMARK"
+/script DecursiveRootTable.Dcr:Println('没有相关技能')
+END
+VER 3 0000000000000007 "target" "132100"
+/target 罪恶领主
+/target 无情者
+END
+VER 3 0000000000000006 "全开" "SPELL_NATURE_SWIFTNESS"
+/cast 狂热
+/cast 异端裁决
+/cast 远古列王守卫
+/cast 冷酷角斗士的胜利徽章
+/cast 圣殿骑士的裁决
+/cast 复仇之怒
+END
+VER 3 0000000000000003 "坐骑" "Ability_Mount_Charger"
+/RandomMount
+END

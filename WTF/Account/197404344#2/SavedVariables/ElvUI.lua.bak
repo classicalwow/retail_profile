@@ -1,0 +1,182 @@
+
+ElvDB = {
+	["global"] = {
+		["nameplates"] = {
+			["filters"] = {
+				["ElvUI_NonTarget"] = {
+				},
+				["ElvUI_Explosives"] = {
+				},
+				["ElvUI_Target"] = {
+				},
+				["ElvUI_Boss"] = {
+				},
+			},
+		},
+	},
+	["SLE_DB_Ver"] = "4.45",
+	["namespaces"] = {
+		["LibDualSpec-1.0"] = {
+		},
+	},
+	["class"] = {
+		["万色星辰"] = {
+			["特变电工"] = "DEMONHUNTER",
+		},
+	},
+	["profiles"] = {
+		["Default"] = {
+			["dbConverted"] = 13.02,
+			["convertPages"] = true,
+			["unitframe"] = {
+				["units"] = {
+					["tank"] = {
+						["SL_DeathIndicator"] = {
+						},
+						["SL_OfflineIndicator"] = {
+						},
+					},
+					["party"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+						["targetsGroup"] = {
+							["disableFocusGlow"] = false,
+							["disableTargetGlow"] = false,
+							["disableMouseoverGlow"] = false,
+						},
+						["petsGroup"] = {
+							["disableFocusGlow"] = false,
+							["disableTargetGlow"] = false,
+							["disableMouseoverGlow"] = false,
+						},
+					},
+					["focus"] = {
+						["SL_DeathIndicator"] = {
+						},
+						["SL_OfflineIndicator"] = {
+						},
+					},
+					["assist"] = {
+						["SL_DeathIndicator"] = {
+						},
+						["SL_OfflineIndicator"] = {
+						},
+					},
+					["raid2"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["pet"] = {
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["targettarget"] = {
+						["SL_DeathIndicator"] = {
+						},
+						["SL_OfflineIndicator"] = {
+						},
+					},
+					["player"] = {
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["raid1"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["arena"] = {
+						["SL_DeathIndicator"] = {
+						},
+						["SL_OfflineIndicator"] = {
+						},
+					},
+					["raid3"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["target"] = {
+						["SL_DeathIndicator"] = {
+						},
+						["SL_OfflineIndicator"] = {
+						},
+					},
+				},
+			},
+			["actionbar"] = {
+				["microbar"] = {
+					["buttons"] = 11,
+				},
+				["bar5"] = {
+					["enabled"] = false,
+					["buttonsPerRow"] = 12,
+					["buttons"] = 12,
+				},
+				["bar6"] = {
+					["enabled"] = true,
+					["buttonsPerRow"] = 6,
+					["buttons"] = 6,
+				},
+			},
+			["chat"] = {
+				["panelSnapLeftID"] = 1,
+			},
+			["sle"] = {
+				["actionbar"] = {
+					["vehicle"] = {
+						["buttons"] = 7,
+					},
+				},
+			},
+		},
+	},
+	["ShadowLightAlpha"] = false,
+	["serverID"] = {
+		[706] = {
+			["万色星辰"] = true,
+		},
+	},
+	["faction"] = {
+		["万色星辰"] = {
+			["特变电工"] = "Horde",
+		},
+	},
+	["gold"] = {
+		["万色星辰"] = {
+			["特变电工"] = 1470,
+		},
+	},
+	["SLErrorDisabledAddOns"] = {
+	},
+	["DisabledAddOns"] = {
+	},
+	["profileKeys"] = {
+		["特变电工 - 万色星辰"] = "Default",
+	},
+	["SLEMinimize"] = {
+	},
+}
+ElvPrivateDB = {
+	["profileKeys"] = {
+		["特变电工 - 万色星辰"] = "特变电工 - 万色星辰",
+	},
+	["profiles"] = {
+		["特变电工 - 万色星辰"] = {
+			["sle"] = {
+				["characterGoldsSorting"] = {
+					["万色星辰"] = {
+					},
+				},
+				["pvpreadydialogreset"] = true,
+			},
+			["install_complete"] = 13.02,
+		},
+	},
+}
