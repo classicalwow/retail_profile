@@ -7,6 +7,37 @@ WQTrackerDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["talking_heads_heard"] = {
+				[97372] = true,
+				[98180] = true,
+				[105963] = true,
+				[104229] = true,
+				[98188] = true,
+				[104208] = true,
+				[106411] = true,
+				[98167] = true,
+				[97373] = true,
+				[97375] = true,
+				[107008] = true,
+				[104220] = true,
+				[108717] = true,
+				[98179] = true,
+				[98181] = true,
+				[105964] = true,
+				[104219] = true,
+				[98187] = true,
+				[106413] = true,
+				[97377] = true,
+				[97376] = true,
+				[104209] = true,
+				[106412] = true,
+				[97374] = true,
+				[105962] = true,
+				[104228] = true,
+				[107009] = true,
+				[108716] = true,
+				[108718] = true,
+			},
 			["low_level_tutorial"] = true,
 			["is_BFA_version"] = true,
 			["quests_tracked"] = {
@@ -39,6 +70,15 @@ WQTrackerDB = {
 					["class"] = "MONK",
 					["name"] = "查理三世",
 					["realm"] = "寒冰皇冠",
+				},
+			},
+			["rarescan"] = {
+				["recently_killed"] = {
+					["Player-963-06DF687A"] = {
+					},
+				},
+				["name_cache"] = {
+					[""] = 122999,
 				},
 			},
 		},
