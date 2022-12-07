@@ -328,6 +328,21 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "6566b2",
 		},
+		["\"MrRobot\":DEMONHUNTER2"] = {
+			["IconTexturePath"] = 1247265,
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "a330c9",
+			["ClassID"] = 12,
+			["LocalizedName"] = "恶魔猎手: 复仇",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "TANK",
+			["DoNotShow2HUpgrades"] = true,
+			["UpgradesFollowSpecialization"] = true,
+			["Provider"] = "MrRobot",
+			["SpecID"] = 2,
+			["UnenchantedColor"] = "7a2496",
+		},
 		["\"MrRobot\":MAGE1"] = {
 			["IconTexturePath"] = 135932,
 			["PerCharacterOptions"] = {
@@ -342,21 +357,6 @@ PawnCommon = {
 			["Provider"] = "MrRobot",
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "2f95b0",
-		},
-		["\"MrRobot\":SHAMAN3"] = {
-			["IconTexturePath"] = 136052,
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "0070dd",
-			["ClassID"] = 7,
-			["LocalizedName"] = "萨满祭司: 恢复",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = true,
-			["Provider"] = "MrRobot",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "0054a5",
 		},
 		["\"MrRobot\":DRUID2"] = {
 			["IconTexturePath"] = 132115,
@@ -514,20 +514,20 @@ PawnCommon = {
 			["SpecID"] = 2,
 			["UnenchantedColor"] = "b7698b",
 		},
-		["\"MrRobot\":DEMONHUNTER2"] = {
-			["IconTexturePath"] = 1247265,
+		["\"MrRobot\":SHAMAN3"] = {
+			["IconTexturePath"] = 136052,
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "a330c9",
-			["ClassID"] = 12,
-			["LocalizedName"] = "恶魔猎手: 复仇",
+			["Color"] = "0070dd",
+			["ClassID"] = 7,
+			["LocalizedName"] = "萨满祭司: 恢复",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = true,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = true,
 			["Provider"] = "MrRobot",
-			["SpecID"] = 2,
-			["UnenchantedColor"] = "7a2496",
+			["SpecID"] = 3,
+			["UnenchantedColor"] = "0054a5",
 		},
 		["\"MrRobot\":DRUID3"] = {
 			["IconTexturePath"] = 132276,

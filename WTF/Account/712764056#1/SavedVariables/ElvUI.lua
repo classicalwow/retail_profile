@@ -209,6 +209,7 @@ ElvDB = {
 				["bankWidth"] = 474,
 			},
 			["chat"] = {
+				["panelSnapRightID"] = 4,
 				["panelWidth"] = 472,
 				["emotionIcons"] = false,
 				["panelHeight"] = 200,
@@ -976,9 +977,9 @@ ElvDB = {
 				["DurabilityFrameMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,-665,128",
 				["ElvUF_PetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-640,533",
 				["VehicleSeatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,434,262",
-				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,109,223",
-				["MER_MicroBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,410,4",
 				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-459,485",
+				["MER_MicroBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,410,4",
+				["ElvAB_6"] = "BOTTOM,UIParent,BOTTOM,0,29",
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,108,175",
 				["ProfessionsMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-172",
 				["BuiDashboardMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-5",
@@ -1002,7 +1003,7 @@ ElvDB = {
 				["ShiftAB"] = "BOTTOM,UIParent,BOTTOM,305,27",
 				["SpecializationBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,291,36",
 				["HonorBarMover"] = "BOTTOM,UIParent,BOTTOM,343,270",
-				["ElvAB_6"] = "BOTTOM,UIParent,BOTTOM,0,29",
+				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,109,223",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-20,353",
 				["ElvUF_TankMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,93,485",
 				["BossHeaderMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-4,-368",
@@ -1311,7 +1312,7 @@ ElvDB = {
 			["查理三世"] = 8916,
 		},
 		["暗影之月"] = {
-			["查理三世"] = 69190100,
+			["查理三世"] = 83150581,
 		},
 	},
 	["faction"] = {
