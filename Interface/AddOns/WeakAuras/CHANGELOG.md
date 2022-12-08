@@ -1,20 +1,15 @@
-# [4.1.2](https://github.com/WeakAuras/WeakAuras2/tree/4.1.2) (2022-08-29)
+# [5.3.1](https://github.com/WeakAuras/WeakAuras2/tree/5.3.1) (2022-12-04)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/4.1.1...4.1.2)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.3.0...5.3.1)
 
 ## Highlights
 
- - More Wrath fixes 
+ - bug fixes 
 
 ## Commits
 
-asakawa (1):
+mrbuds (2):
 
-- Add the LoC type NONE
-
-mrbuds (3):
-
-- Fix error in talent lazy migration, when use_talent is true but talent.single is nil
-- Talent load condition skip testing talents not existing for player class
-- Aura trigger: fix options not available for current version of the game handled as if they were
+- AuraBar gradient: fix bug on classic
+- Disable item cooldown triggers on wotlk PTR
 

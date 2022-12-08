@@ -1,8 +1,8 @@
 
 MaxCamDB = {
-	["distance"] = 2.6,
 	["nearIncrement"] = 1,
+	["speed"] = 20,
 	["increment"] = 4,
 	["nearDistance"] = 5,
-	["speed"] = 20,
+	["distance"] = 2.6,
 }

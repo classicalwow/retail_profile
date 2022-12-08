@@ -606,6 +606,7 @@ typeControlAdders = {
     }
     args[prefix .. "length"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = name(option, "length", L["Length"]),
       desc = desc(option, "length"),
@@ -676,12 +677,23 @@ typeControlAdders = {
     bigStep = option.bigStep
     min = option.min
     max = option.max
-    if max and min then
-      max = math.max(min, max)
+    local effectiveMin = softMin or min or 0
+    local effectiveMax = softMax or max or 100
+    if (effectiveMin > effectiveMax) then
+      -- This will cause a error inside the slider
+      -- Fix up either softMax or max, depending on which one is the effective one
+      if softMax then
+        softMax = effectiveMin
+      elseif max then
+        max = effectiveMin
+      else
+        softMax = effectiveMin
+      end
     end
     step = option.step
     args[prefix .. "default"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = name(option, "default", L["Default"]),
       desc = desc(option, "default"),
@@ -948,6 +960,7 @@ typeControlAdders = {
 
     args[prefix .. "height"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       order = order(),
       name = name(option, "height", L["Height"]),
@@ -1210,6 +1223,7 @@ typeControlAdders = {
       }
       args[prefix .. "size"] = {
         type = "range",
+        control = "WeakAurasSpinBox",
         name = name(option, "limitType", option.limitType == "max" and L["Entry limit"] or L["Number of Entries"]),
         desc = desc(option, "limitType"),
         order = order(),
@@ -1854,6 +1868,7 @@ function addAuthorModeOption(options, args, data, order, prefix, i)
 
   args[prefix .. "width"] = {
     type = "range",
+    control = "WeakAurasSpinBox",
     width = WeakAuras.normalWidth,
     name = name(option, "width", L["Width"]),
     desc = desc(option, "width"),
@@ -2228,8 +2243,18 @@ local function addUserModeOption(options, args, data, order, prefix, i)
       userOption.bigStep = option.bigStep
       userOption.min = option.min
       userOption.max = option.max
-      if userOption.max and userOption.min then
-        userOption.max = max(userOption.min, userOption.max)
+      local effectiveMin = userOption.softMin or userOption.min or 0
+      local effectiveMax = userOption.softMax or userOption.max or 100
+      if (effectiveMin > effectiveMax) then
+        -- This will cause a error inside the slider
+        -- Fix up either softMax or max, depending on which one is the effective one
+        if userOption.softMax then
+          userOption.softMax = effectiveMin
+        elseif userOption.max then
+          userOption.max = effectiveMin
+        else
+          userOption.softMax = effectiveMin
+        end
       end
       userOption.step = option.step
     elseif optionType == "color" then

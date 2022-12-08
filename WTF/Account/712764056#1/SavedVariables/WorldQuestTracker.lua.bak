@@ -2,8 +2,8 @@
 WQTrackerDB = {
 	["profileKeys"] = {
 		["查理三世 - 暗影之月"] = "Default",
-		["查理三世 - 寒冰皇冠"] = "Default",
 		["特變電工 - 寒冰皇冠"] = "Default",
+		["查理三世 - 寒冰皇冠"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -35,15 +35,15 @@ WQTrackerDB = {
 				[107009] = true,
 				[97374] = true,
 				[108718] = true,
-				[98180] = true,
-				[105962] = true,
-				[104229] = true,
-				[106411] = true,
-				[98188] = true,
-				[104208] = true,
-				[108717] = true,
-				[97376] = true,
 				[108709] = true,
+				[105962] = true,
+				[97376] = true,
+				[106411] = true,
+				[108717] = true,
+				[104208] = true,
+				[98188] = true,
+				[104229] = true,
+				[98180] = true,
 			},
 			["low_level_tutorial"] = true,
 			["is_BFA_version"] = true,
@@ -85,6 +85,8 @@ WQTrackerDB = {
 					},
 				},
 				["name_cache"] = {
+					["潮涌巨怪"] = 141618,
+					["戈拉坎"] = 124185,
 					[""] = 122999,
 				},
 			},

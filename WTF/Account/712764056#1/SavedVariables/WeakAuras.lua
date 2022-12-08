@@ -2,16 +2,16 @@
 WeakAurasSaved = {
 	["dynamicIconCache"] = {
 	},
-	["login_squelch_time"] = 10,
+	["displays"] = {
+	},
 	["lastArchiveClear"] = 1669823317,
 	["minimap"] = {
 		["minimapPos"] = 176.6011656957116,
 		["hide"] = false,
 	},
-	["lastUpgrade"] = 1669823332,
-	["dbVersion"] = 53,
+	["lastUpgrade"] = 1670420384,
+	["dbVersion"] = 61,
 	["registered"] = {
 	},
-	["displays"] = {
-	},
+	["login_squelch_time"] = 10,
 }

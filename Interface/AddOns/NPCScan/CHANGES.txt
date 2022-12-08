@@ -1,0 +1,82 @@
+tag 5aa1605f151302f0fcbe6ef3f770546d3192d597 7.3.5.18
+Author:	James D. Callahan III <jcallahan@curse.com>
+Date:	Sat Jul 14 10:36:40 2018 -0500
+
+commit aaa8df1f4ab2eb8f5b9dd8cbac497fabe9b46613
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 10:35:48 2018 -0500
+
+    Revamp DataBroker tooltip to alternate line colors and display icons for mounts, pets, and toys, with each icon providing its own tooltip showing what the NPC drops for the given category.
+
+commit b5d5997444ad3d878fafee2afa68d098f6c3dc4f
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 10:13:24 2018 -0500
+
+    Add a proper label to the DataBroker object, and display "None" instead of 0 when there are no viable NPCs in the zone.
+
+commit dac1e02f7f8749b85d23afbb04207e4e39055960
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 10:10:18 2018 -0500
+
+    Flag Roarden the Sky Terror, Khargax the Devourer, and Charl Doomwing as tameable.
+
+commit f479724ba66ffd2feb3f5a90d777f77251bf9be0
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 10:09:25 2018 -0500
+
+    Add mount, pet, and toy data to applicable NPCs in Argus, Broken Isles, Draenor, and Pandaria.
+
+commit 1401fa2f1441bfa972487d8a81634efff28fb580
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 09:54:58 2018 -0500
+
+    Remove unused NPC IDs for Aogexon, Dekorhan, and Bergruu.
+
+commit 4235ab964ea6e9a79d9364fc027da73cf0be5413
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 09:54:14 2018 -0500
+
+    Modify GetNPCOptionsName to prefix the NPC name with any applicable quest status icon, and to only colorize names as red or green depending on achievement criteria status - non-achievement NPCs now show as yellow.
+
+commit 163188a0c63167ae2859aac28288047ec71dfce6
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 09:50:39 2018 -0500
+
+    Move FormatAtlasTexture to Utilities.
+
+commit 7e958f7b75d7ffee8085353832222d2729129e96
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 09:49:22 2018 -0500
+
+    Add the Ancient No More achievement to Nultra and Valstil.
+
+commit 7c47b2b063b510f189b3bd5569c965e8e0babd48
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Sat Jul 14 09:44:29 2018 -0500
+
+    Add support for the Predator achievement.
+
+commit 9cc7f57db9171d2c3af263e769259de92668c6f3
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Wed Jul 11 12:53:38 2018 -0500
+
+    Add limited support for the Zul'Again achievement.
+
+commit 2248ded258da6986b84602358719f7cc85179f0d
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Wed Jul 11 12:50:42 2018 -0500
+
+    Add World Quest IDs as tracking quests for any Broken Isles NPCs that were missing one.
+
+commit 5321e8ea6d91fb0cb117a8cbaf1d04348542e388
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Wed Jul 11 09:32:36 2018 -0500
+
+    Add Captain Hring, Reaver Jdorn, and Soultrapper Mevra to the Unleashed Monstrosities achievement, keyed on The Soultakers quest.
+
+commit 2a85f27c2800f3b205ec48ea46bcec18323e3405
+Author: James D. Callahan III <jcallahan@curse.com>
+Date:   Wed Jul 11 09:30:56 2018 -0500
+
+    Add limited support for the "I'm In Your Base, Killing Your Dudes" achievement - limited because the achievement data doesn't discern the actual NPC IDs so tracking is non-existent.
+
