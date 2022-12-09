@@ -4,6 +4,8 @@ RaiderIO_Config = {
 RaiderIO_LastCharacter = "tw-查理三世-shadowmoon"
 RaiderIO_MissingCharacters = {
 	["tw-查理三世-shadowmoon"] = true,
+	["tw-竹科掃地阿姨-arthas"] = true,
+	["tw-黑白兩相忘-zealot-blade"] = true,
 }
 RaiderIO_MissingServers = {
 }

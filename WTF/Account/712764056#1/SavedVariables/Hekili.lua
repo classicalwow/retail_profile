@@ -48,9 +48,9 @@ HekiliDB = {
 				["forceReloadClassDefaultOptions_20220306_71"] = true,
 				["forceReloadClassDefaultOptions_20220306_250"] = true,
 				["forceSpellFlashBrightness_20221030"] = true,
-				["forceReloadClassDefaultOptions_20220306_251"] = true,
-				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
 				["forceReloadClassDefaultOptions_20220306_72"] = true,
+				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
+				["forceReloadClassDefaultOptions_20220306_251"] = true,
 				["forceReloadClassDefaultOptions_20220306_73"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
 			},
@@ -1596,57 +1596,6 @@ HekiliDB = {
 								["action"] = "arcane_torrent",
 							}, -- [6]
 						},
-						["covenants"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! death_and_decay.ticking & ( variable.rw_buffs & cooldown.remorseless_winter.remains || ! variable.rw_buffs ) & ( ! talent.obliteration.enabled || talent.obliteration.enabled & active_enemies >= 2 & cooldown.pillar_of_frost.remains || active_enemies = 1 ) & ( variable.st_planning || variable.adds_remain )",
-								["action"] = "deaths_due",
-								["description"] = "Covenant Abilities",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "runic_power.deficit > 13 & cooldown.pillar_of_frost.remains < 3 & ! talent.breath_of_sindragosa.enabled & variable.st_planning",
-								["action"] = "swarming_mist",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.breath_of_sindragosa.enabled & variable.adds_remain",
-								["action"] = "swarming_mist",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.breath_of_sindragosa.enabled & ( buff.breath_of_sindragosa.up & ( variable.st_planning & runic_power.deficit > 40 || variable.adds_remain & runic_power.deficit > 60 || variable.adds_remain & raid_event.adds.remains < 9 & raid_event.adds.exists ) || ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains )",
-								["action"] = "swarming_mist",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.pillar_of_frost.remains < gcd.max * 2 & variable.st_planning & ( talent.breath_of_sindragosa.enabled & runic_power > 65 & cooldown.breath_of_sindragosa.remains < 2 || ! talent.breath_of_sindragosa.enabled )",
-								["action"] = "abomination_limb",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.adds_remain",
-								["action"] = "abomination_limb",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.st_planning & ( cooldown.pillar_of_frost.remains < 3 || talent.icecap.enabled )",
-								["action"] = "shackle_the_unworthy",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.adds_remain",
-								["action"] = "shackle_the_unworthy",
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.pillar_of_frost.up & ( soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled & ! buff.volatile_solvent_humanoid.up )",
-								["interrupt_if"] = "soulbind.volatile_solvent",
-								["interrupt_immediate"] = "1",
-								["action"] = "fleshcraft",
-								["interrupt_global"] = "1",
-							}, -- [9]
-						},
 						["default"] = {
 							{
 								["enabled"] = true,
@@ -1704,10 +1653,10 @@ HekiliDB = {
 								["op"] = "setif",
 								["description"] = "Formulaic approach to determine the time before these abilities come off cooldown that the simulation should star to pool resources. Capped at 15s in the run_action_list call.",
 								["criteria"] = "runic_power < 35 & rune < 2 & cooldown.pillar_of_frost.remains_expected < 10",
-								["value"] = "( ( cooldown.pillar_of_frost.remains_expected + 1 ) / gcd.max ) / ( ( rune + 3 ) * ( runic_power + 5 ) ) * 100",
+								["var_name"] = "oblit_pooling_time",
 								["action"] = "variable",
 								["value_else"] = "gcd.max * 2",
-								["var_name"] = "oblit_pooling_time",
+								["value"] = "( ( cooldown.pillar_of_frost.remains_expected + 1 ) / gcd.max ) / ( ( rune + 3 ) * ( runic_power + 5 ) ) * 100",
 							}, -- [9]
 							{
 								["enabled"] = true,
@@ -1837,6 +1786,57 @@ HekiliDB = {
 								["action"] = "call_action_list",
 								["list_name"] = "single_target",
 							}, -- [31]
+						},
+						["covenants"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! death_and_decay.ticking & ( variable.rw_buffs & cooldown.remorseless_winter.remains || ! variable.rw_buffs ) & ( ! talent.obliteration.enabled || talent.obliteration.enabled & active_enemies >= 2 & cooldown.pillar_of_frost.remains || active_enemies = 1 ) & ( variable.st_planning || variable.adds_remain )",
+								["action"] = "deaths_due",
+								["description"] = "Covenant Abilities",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "runic_power.deficit > 13 & cooldown.pillar_of_frost.remains < 3 & ! talent.breath_of_sindragosa.enabled & variable.st_planning",
+								["action"] = "swarming_mist",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.breath_of_sindragosa.enabled & variable.adds_remain",
+								["action"] = "swarming_mist",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.breath_of_sindragosa.enabled & ( buff.breath_of_sindragosa.up & ( variable.st_planning & runic_power.deficit > 40 || variable.adds_remain & runic_power.deficit > 60 || variable.adds_remain & raid_event.adds.remains < 9 & raid_event.adds.exists ) || ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains )",
+								["action"] = "swarming_mist",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.pillar_of_frost.remains < gcd.max * 2 & variable.st_planning & ( talent.breath_of_sindragosa.enabled & runic_power > 65 & cooldown.breath_of_sindragosa.remains < 2 || ! talent.breath_of_sindragosa.enabled )",
+								["action"] = "abomination_limb",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.adds_remain",
+								["action"] = "abomination_limb",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.st_planning & ( cooldown.pillar_of_frost.remains < 3 || talent.icecap.enabled )",
+								["action"] = "shackle_the_unworthy",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.adds_remain",
+								["action"] = "shackle_the_unworthy",
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.pillar_of_frost.up & ( soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled & ! buff.volatile_solvent_humanoid.up )",
+								["interrupt_if"] = "soulbind.volatile_solvent",
+								["interrupt_immediate"] = "1",
+								["action"] = "fleshcraft",
+								["interrupt_global"] = "1",
+							}, -- [9]
 						},
 						["precombat"] = {
 							{
@@ -2041,14 +2041,14 @@ HekiliDB = {
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["action"] = "empower_rune_weapon",
 								["criteria"] = "buff.breath_of_sindragosa.up & talent.breath_of_sindragosa.enabled & ! buff.empower_rune_weapon.up & ( runic_power < 70 & rune < 3 || time < 10 )",
+								["action"] = "empower_rune_weapon",
 								["use_off_gcd"] = 1,
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["action"] = "empower_rune_weapon",
 								["criteria"] = "! talent.breath_of_sindragosa.enabled & ! talent.obliteration.enabled & ! buff.empower_rune_weapon.up & rune < 5 & ( cooldown.pillar_of_frost.remains_expected < 7 || buff.pillar_of_frost.up || ! talent.pillar_of_frost.enabled )",
+								["action"] = "empower_rune_weapon",
 								["use_off_gcd"] = 1,
 							}, -- [4]
 							{
@@ -3023,8 +3023,8 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "ignore_pain",
 								["criteria"] = "incoming_damage_3s > 0.1 * health.max & ( target.health.pct >= 20 & ( target.health.pct >= 80 & ! action.condemn.known ) & ( rage >= 85 & cooldown.shield_slam.ready & buff.shield_block.up || rage >= 60 & cooldown.demoralizing_shout.ready & talent.booming_voice.enabled || rage >= 70 & cooldown.avatar.ready || rage >= 40 & cooldown.demoralizing_shout.ready & talent.booming_voice.enabled & buff.last_stand.up || rage >= 55 & cooldown.avatar.ready & buff.last_stand.up || rage >= 80 || rage >= 55 & cooldown.shield_slam.ready & buff.violent_outburst.up & buff.shield_block.up || rage >= 30 & cooldown.shield_slam.ready & buff.violent_outburst.up & buff.last_stand.up & buff.shield_block.up ) )",
+								["action"] = "ignore_pain",
 								["use_off_gcd"] = 1,
 							}, -- [12]
 							{

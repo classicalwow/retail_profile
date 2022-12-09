@@ -48,10 +48,10 @@ HekiliDB = {
 				["forceReloadClassDefaultOptions_20220306_71"] = true,
 				["forceEnableAllClassesOnceDueToBug_20220225"] = true,
 				["resetAberrantPackageDates_20190728_1"] = true,
-				["forceReloadClassDefaultOptions_20220306_251"] = true,
+				["forceReloadClassDefaultOptions_20220306_72"] = true,
 				["forceEnableEnhancedRecheckBoomkin_20210712"] = true,
 				["forceReloadClassDefaultOptions_20220306_73"] = true,
-				["forceReloadClassDefaultOptions_20220306_72"] = true,
+				["forceReloadClassDefaultOptions_20220306_251"] = true,
 				["forceSpellFlashBrightness_20221030"] = true,
 			},
 			["iconStore"] = {
@@ -1620,14 +1620,14 @@ HekiliDB = {
 							{
 								["enabled"] = true,
 								["use_off_gcd"] = 1,
-								["criteria"] = "buff.breath_of_sindragosa.up & talent.breath_of_sindragosa.enabled & ! buff.empower_rune_weapon.up & ( runic_power < 70 & rune < 3 || time < 10 )",
 								["action"] = "empower_rune_weapon",
+								["criteria"] = "buff.breath_of_sindragosa.up & talent.breath_of_sindragosa.enabled & ! buff.empower_rune_weapon.up & ( runic_power < 70 & rune < 3 || time < 10 )",
 							}, -- [3]
 							{
 								["enabled"] = true,
 								["use_off_gcd"] = 1,
-								["criteria"] = "! talent.breath_of_sindragosa.enabled & ! talent.obliteration.enabled & ! buff.empower_rune_weapon.up & rune < 5 & ( cooldown.pillar_of_frost.remains_expected < 7 || buff.pillar_of_frost.up || ! talent.pillar_of_frost.enabled )",
 								["action"] = "empower_rune_weapon",
+								["criteria"] = "! talent.breath_of_sindragosa.enabled & ! talent.obliteration.enabled & ! buff.empower_rune_weapon.up & rune < 5 & ( cooldown.pillar_of_frost.remains_expected < 7 || buff.pillar_of_frost.up || ! talent.pillar_of_frost.enabled )",
 							}, -- [4]
 							{
 								["enabled"] = true,
@@ -1704,196 +1704,56 @@ HekiliDB = {
 								["action"] = "any_dnd",
 							}, -- [19]
 						},
-						["default"] = {
+						["covenants"] = {
 							{
 								["enabled"] = true,
-								["description"] = "Interrupt",
-								["action"] = "mind_freeze",
+								["action"] = "deaths_due",
+								["description"] = "Covenant Abilities",
+								["criteria"] = "! death_and_decay.ticking & ( variable.rw_buffs & cooldown.remorseless_winter.remains || ! variable.rw_buffs ) & ( ! talent.obliteration.enabled || talent.obliteration.enabled & active_enemies >= 2 & cooldown.pillar_of_frost.remains || active_enemies = 1 ) & ( variable.st_planning || variable.adds_remain )",
 							}, -- [1]
 							{
-								["action"] = "strangulate",
 								["enabled"] = true,
+								["criteria"] = "runic_power.deficit > 13 & cooldown.pillar_of_frost.remains < 3 & ! talent.breath_of_sindragosa.enabled & variable.st_planning",
+								["action"] = "swarming_mist",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "active_enemies = 1 & ( raid_event.adds.in > 15 || ! raid_event.adds.exists )",
-								["var_name"] = "st_planning",
+								["criteria"] = "! talent.breath_of_sindragosa.enabled & variable.adds_remain",
+								["action"] = "swarming_mist",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "active_enemies >= 2 & ( ! raid_event.adds.exists || raid_event.adds.exists & raid_event.adds.remains > 5 )",
-								["var_name"] = "adds_remain",
+								["criteria"] = "talent.breath_of_sindragosa.enabled & ( buff.breath_of_sindragosa.up & ( variable.st_planning & runic_power.deficit > 40 || variable.adds_remain & runic_power.deficit > 60 || variable.adds_remain & raid_event.adds.remains < 9 & raid_event.adds.exists ) || ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains )",
+								["action"] = "swarming_mist",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "buff.rime.up & ( talent.rage_of_the_frozen_champion.enabled || talent.avalanche.enabled || talent.icebreaker.enabled )",
-								["var_name"] = "rime_buffs",
+								["criteria"] = "cooldown.pillar_of_frost.remains < gcd.max * 2 & variable.st_planning & ( talent.breath_of_sindragosa.enabled & runic_power > 65 & cooldown.breath_of_sindragosa.remains < 2 || ! talent.breath_of_sindragosa.enabled )",
+								["action"] = "abomination_limb",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "talent.unleashed_frenzy.enabled & ( buff.unleashed_frenzy.remains < gcd.max * 3 || buff.unleashed_frenzy.stack < 3 ) || talent.icy_talons.enabled & ( buff.icy_talons.remains < gcd.max * 3 || buff.icy_talons.stack < 3 )",
-								["var_name"] = "rp_buffs",
+								["criteria"] = "variable.adds_remain",
+								["action"] = "abomination_limb",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "talent.pillar_of_frost.enabled & buff.pillar_of_frost.up || ! talent.pillar_of_frost.enabled & buff.empower_rune_weapon.up || ! talent.pillar_of_frost.enabled & ! talent.empower_rune_weapon.enabled",
-								["var_name"] = "cooldown_check",
+								["criteria"] = "variable.st_planning & ( cooldown.pillar_of_frost.remains < 3 || talent.icecap.enabled )",
+								["action"] = "shackle_the_unworthy",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "talent.frostscythe.enabled & ( buff.killing_machine.up || active_enemies >= 3 ) & ( ! talent.improved_obliterate.enabled & ! talent.frigid_executioner.enabled & ! talent.frostreaper.enabled & ! talent.might_of_the_frozen_wastes.enabled || ! talent.cleaving_strikes.enabled || talent.cleaving_strikes.enabled & ( active_enemies > 6 || ! death_and_decay.ticking & active_enemies > 3 ) )",
-								["var_name"] = "frostscythe_priority",
+								["criteria"] = "variable.adds_remain",
+								["action"] = "shackle_the_unworthy",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["op"] = "setif",
-								["description"] = "Formulaic approach to determine the time before these abilities come off cooldown that the simulation should star to pool resources. Capped at 15s in the run_action_list call.",
-								["value"] = "( ( cooldown.pillar_of_frost.remains_expected + 1 ) / gcd.max ) / ( ( rune + 3 ) * ( runic_power + 5 ) ) * 100",
-								["var_name"] = "oblit_pooling_time",
-								["action"] = "variable",
-								["value_else"] = "gcd.max * 2",
-								["criteria"] = "runic_power < 35 & rune < 2 & cooldown.pillar_of_frost.remains_expected < 10",
+								["criteria"] = "! buff.pillar_of_frost.up & ( soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled & ! buff.volatile_solvent_humanoid.up )",
+								["interrupt_if"] = "soulbind.volatile_solvent",
+								["interrupt_immediate"] = "1",
+								["action"] = "fleshcraft",
+								["interrupt_global"] = "1",
 							}, -- [9]
-							{
-								["enabled"] = true,
-								["op"] = "setif",
-								["action"] = "variable",
-								["var_name"] = "breath_pooling_time",
-								["value"] = "( ( cooldown.breath_of_sindragosa.remains + 1 ) / gcd.max ) / ( ( rune + 1 ) * ( runic_power + 20 ) ) * 100",
-								["value_else"] = "gcd.max * 2",
-								["criteria"] = "runic_power.deficit > 10 & cooldown.breath_of_sindragosa.remains < 10",
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "talent.obliteration.enabled & cooldown.pillar_of_frost.remains_expected < variable.oblit_pooling_time",
-								["var_name"] = "pooling_runes",
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["op"] = "set",
-								["action"] = "variable",
-								["value"] = "talent.breath_of_sindragosa.enabled & cooldown.breath_of_sindragosa.remains < variable.breath_pooling_time || talent.obliteration.enabled & runic_power < 35 & cooldown.pillar_of_frost.remains_expected < variable.oblit_pooling_time",
-								["var_name"] = "pooling_runic_power",
-							}, -- [12]
-							{
-								["enabled"] = true,
-								["action"] = "howling_blast",
-								["description"] = "Maintain Frost Fever, Icy Talons and Unleashed Frenzy",
-								["criteria"] = "! dot.frost_fever.ticking & active_enemies >= 2 & ( ! talent.obliteration.enabled || talent.obliteration.enabled & ( ! buff.pillar_of_frost.up || buff.pillar_of_frost.up & ! buff.killing_machine.up ) )",
-							}, -- [13]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies >= 2 & variable.rp_buffs & talent.obliteration.enabled & talent.breath_of_sindragosa.enabled & ! buff.pillar_of_frost.up & ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains > variable.breath_pooling_time",
-								["action"] = "glacial_advance",
-							}, -- [14]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies >= 2 & variable.rp_buffs & talent.breath_of_sindragosa.enabled & ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains > variable.breath_pooling_time",
-								["action"] = "glacial_advance",
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies >= 2 & variable.rp_buffs & ! talent.breath_of_sindragosa.enabled & talent.obliteration.enabled & ! buff.pillar_of_frost.up",
-								["action"] = "glacial_advance",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies = 1 & variable.rp_buffs & talent.obliteration.enabled & talent.breath_of_sindragosa.enabled & ! buff.pillar_of_frost.up & ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains > variable.breath_pooling_time",
-								["action"] = "frost_strike",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies = 1 & variable.rp_buffs & talent.breath_of_sindragosa.enabled & ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains > variable.breath_pooling_time",
-								["action"] = "frost_strike",
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["criteria"] = "active_enemies = 1 & variable.rp_buffs & ! talent.breath_of_sindragosa.enabled & talent.obliteration.enabled & ! buff.pillar_of_frost.up",
-								["action"] = "frost_strike",
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["criteria"] = "! talent.breath_of_sindragosa.enabled & ! talent.obliteration.enabled & variable.rw_buffs",
-								["action"] = "remorseless_winter",
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.obliteration.enabled & active_enemies >= 3 & variable.adds_remain",
-								["action"] = "remorseless_winter",
-							}, -- [21]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["description"] = "Choose Action list to run",
-								["list_name"] = "trinkets",
-							}, -- [22]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "cooldowns",
-							}, -- [23]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["list_name"] = "racials",
-							}, -- [24]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["strict"] = 1,
-								["criteria"] = "! covenant.none",
-								["list_name"] = "covenants",
-							}, -- [25]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "talent.cold_heart.enabled & ( ! buff.killing_machine.up || talent.breath_of_sindragosa.enabled ) & ( ( debuff.razorice.stack = 5 || ! death_knight.runeforge.razorice & ! talent.glacial_advance.enabled & ! talent.avalanche.enabled ) || fight_remains <= gcd.max )",
-								["list_name"] = "cold_heart",
-							}, -- [26]
-							{
-								["enabled"] = true,
-								["action"] = "run_action_list",
-								["criteria"] = "buff.breath_of_sindragosa.up & talent.obliteration.enabled & buff.pillar_of_frost.up",
-								["list_name"] = "breath_oblit",
-							}, -- [27]
-							{
-								["enabled"] = true,
-								["action"] = "run_action_list",
-								["criteria"] = "buff.breath_of_sindragosa.up & ( ! talent.obliteration.enabled || talent.obliteration.enabled & ! buff.pillar_of_frost.up )",
-								["list_name"] = "breath",
-							}, -- [28]
-							{
-								["enabled"] = true,
-								["action"] = "run_action_list",
-								["criteria"] = "talent.obliteration.enabled & buff.pillar_of_frost.up & ! buff.breath_of_sindragosa.up",
-								["list_name"] = "obliteration",
-							}, -- [29]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "active_enemies >= 2",
-								["list_name"] = "aoe",
-							}, -- [30]
-							{
-								["enabled"] = true,
-								["action"] = "call_action_list",
-								["criteria"] = "active_enemies = 1",
-								["list_name"] = "single_target",
-							}, -- [31]
 						},
 						["precombat"] = {
 							{
@@ -2041,56 +1901,196 @@ HekiliDB = {
 								["slot"] = "trinket2",
 							}, -- [5]
 						},
-						["covenants"] = {
+						["default"] = {
 							{
 								["enabled"] = true,
-								["action"] = "deaths_due",
-								["description"] = "Covenant Abilities",
-								["criteria"] = "! death_and_decay.ticking & ( variable.rw_buffs & cooldown.remorseless_winter.remains || ! variable.rw_buffs ) & ( ! talent.obliteration.enabled || talent.obliteration.enabled & active_enemies >= 2 & cooldown.pillar_of_frost.remains || active_enemies = 1 ) & ( variable.st_planning || variable.adds_remain )",
+								["description"] = "Interrupt",
+								["action"] = "mind_freeze",
 							}, -- [1]
 							{
+								["action"] = "strangulate",
 								["enabled"] = true,
-								["criteria"] = "runic_power.deficit > 13 & cooldown.pillar_of_frost.remains < 3 & ! talent.breath_of_sindragosa.enabled & variable.st_planning",
-								["action"] = "swarming_mist",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "! talent.breath_of_sindragosa.enabled & variable.adds_remain",
-								["action"] = "swarming_mist",
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "active_enemies = 1 & ( raid_event.adds.in > 15 || ! raid_event.adds.exists )",
+								["var_name"] = "st_planning",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.breath_of_sindragosa.enabled & ( buff.breath_of_sindragosa.up & ( variable.st_planning & runic_power.deficit > 40 || variable.adds_remain & runic_power.deficit > 60 || variable.adds_remain & raid_event.adds.remains < 9 & raid_event.adds.exists ) || ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains )",
-								["action"] = "swarming_mist",
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "active_enemies >= 2 & ( ! raid_event.adds.exists || raid_event.adds.exists & raid_event.adds.remains > 5 )",
+								["var_name"] = "adds_remain",
 							}, -- [4]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.pillar_of_frost.remains < gcd.max * 2 & variable.st_planning & ( talent.breath_of_sindragosa.enabled & runic_power > 65 & cooldown.breath_of_sindragosa.remains < 2 || ! talent.breath_of_sindragosa.enabled )",
-								["action"] = "abomination_limb",
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "buff.rime.up & ( talent.rage_of_the_frozen_champion.enabled || talent.avalanche.enabled || talent.icebreaker.enabled )",
+								["var_name"] = "rime_buffs",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.adds_remain",
-								["action"] = "abomination_limb",
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "talent.unleashed_frenzy.enabled & ( buff.unleashed_frenzy.remains < gcd.max * 3 || buff.unleashed_frenzy.stack < 3 ) || talent.icy_talons.enabled & ( buff.icy_talons.remains < gcd.max * 3 || buff.icy_talons.stack < 3 )",
+								["var_name"] = "rp_buffs",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.st_planning & ( cooldown.pillar_of_frost.remains < 3 || talent.icecap.enabled )",
-								["action"] = "shackle_the_unworthy",
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "talent.pillar_of_frost.enabled & buff.pillar_of_frost.up || ! talent.pillar_of_frost.enabled & buff.empower_rune_weapon.up || ! talent.pillar_of_frost.enabled & ! talent.empower_rune_weapon.enabled",
+								["var_name"] = "cooldown_check",
 							}, -- [7]
 							{
 								["enabled"] = true,
-								["criteria"] = "variable.adds_remain",
-								["action"] = "shackle_the_unworthy",
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "talent.frostscythe.enabled & ( buff.killing_machine.up || active_enemies >= 3 ) & ( ! talent.improved_obliterate.enabled & ! talent.frigid_executioner.enabled & ! talent.frostreaper.enabled & ! talent.might_of_the_frozen_wastes.enabled || ! talent.cleaving_strikes.enabled || talent.cleaving_strikes.enabled & ( active_enemies > 6 || ! death_and_decay.ticking & active_enemies > 3 ) )",
+								["var_name"] = "frostscythe_priority",
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "! buff.pillar_of_frost.up & ( soulbind.pustule_eruption.enabled || soulbind.volatile_solvent.enabled & ! buff.volatile_solvent_humanoid.up )",
-								["interrupt_if"] = "soulbind.volatile_solvent",
-								["interrupt_immediate"] = "1",
-								["action"] = "fleshcraft",
-								["interrupt_global"] = "1",
+								["op"] = "setif",
+								["description"] = "Formulaic approach to determine the time before these abilities come off cooldown that the simulation should star to pool resources. Capped at 15s in the run_action_list call.",
+								["var_name"] = "oblit_pooling_time",
+								["value"] = "( ( cooldown.pillar_of_frost.remains_expected + 1 ) / gcd.max ) / ( ( rune + 3 ) * ( runic_power + 5 ) ) * 100",
+								["action"] = "variable",
+								["value_else"] = "gcd.max * 2",
+								["criteria"] = "runic_power < 35 & rune < 2 & cooldown.pillar_of_frost.remains_expected < 10",
 							}, -- [9]
+							{
+								["enabled"] = true,
+								["op"] = "setif",
+								["action"] = "variable",
+								["var_name"] = "breath_pooling_time",
+								["value"] = "( ( cooldown.breath_of_sindragosa.remains + 1 ) / gcd.max ) / ( ( rune + 1 ) * ( runic_power + 20 ) ) * 100",
+								["value_else"] = "gcd.max * 2",
+								["criteria"] = "runic_power.deficit > 10 & cooldown.breath_of_sindragosa.remains < 10",
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "talent.obliteration.enabled & cooldown.pillar_of_frost.remains_expected < variable.oblit_pooling_time",
+								["var_name"] = "pooling_runes",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["op"] = "set",
+								["action"] = "variable",
+								["value"] = "talent.breath_of_sindragosa.enabled & cooldown.breath_of_sindragosa.remains < variable.breath_pooling_time || talent.obliteration.enabled & runic_power < 35 & cooldown.pillar_of_frost.remains_expected < variable.oblit_pooling_time",
+								["var_name"] = "pooling_runic_power",
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["action"] = "howling_blast",
+								["description"] = "Maintain Frost Fever, Icy Talons and Unleashed Frenzy",
+								["criteria"] = "! dot.frost_fever.ticking & active_enemies >= 2 & ( ! talent.obliteration.enabled || talent.obliteration.enabled & ( ! buff.pillar_of_frost.up || buff.pillar_of_frost.up & ! buff.killing_machine.up ) )",
+							}, -- [13]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= 2 & variable.rp_buffs & talent.obliteration.enabled & talent.breath_of_sindragosa.enabled & ! buff.pillar_of_frost.up & ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains > variable.breath_pooling_time",
+								["action"] = "glacial_advance",
+							}, -- [14]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= 2 & variable.rp_buffs & talent.breath_of_sindragosa.enabled & ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains > variable.breath_pooling_time",
+								["action"] = "glacial_advance",
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies >= 2 & variable.rp_buffs & ! talent.breath_of_sindragosa.enabled & talent.obliteration.enabled & ! buff.pillar_of_frost.up",
+								["action"] = "glacial_advance",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies = 1 & variable.rp_buffs & talent.obliteration.enabled & talent.breath_of_sindragosa.enabled & ! buff.pillar_of_frost.up & ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains > variable.breath_pooling_time",
+								["action"] = "frost_strike",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies = 1 & variable.rp_buffs & talent.breath_of_sindragosa.enabled & ! buff.breath_of_sindragosa.up & cooldown.breath_of_sindragosa.remains > variable.breath_pooling_time",
+								["action"] = "frost_strike",
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["criteria"] = "active_enemies = 1 & variable.rp_buffs & ! talent.breath_of_sindragosa.enabled & talent.obliteration.enabled & ! buff.pillar_of_frost.up",
+								["action"] = "frost_strike",
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["criteria"] = "! talent.breath_of_sindragosa.enabled & ! talent.obliteration.enabled & variable.rw_buffs",
+								["action"] = "remorseless_winter",
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.obliteration.enabled & active_enemies >= 3 & variable.adds_remain",
+								["action"] = "remorseless_winter",
+							}, -- [21]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["description"] = "Choose Action list to run",
+								["list_name"] = "trinkets",
+							}, -- [22]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "cooldowns",
+							}, -- [23]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["list_name"] = "racials",
+							}, -- [24]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["strict"] = 1,
+								["criteria"] = "! covenant.none",
+								["list_name"] = "covenants",
+							}, -- [25]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "talent.cold_heart.enabled & ( ! buff.killing_machine.up || talent.breath_of_sindragosa.enabled ) & ( ( debuff.razorice.stack = 5 || ! death_knight.runeforge.razorice & ! talent.glacial_advance.enabled & ! talent.avalanche.enabled ) || fight_remains <= gcd.max )",
+								["list_name"] = "cold_heart",
+							}, -- [26]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["criteria"] = "buff.breath_of_sindragosa.up & talent.obliteration.enabled & buff.pillar_of_frost.up",
+								["list_name"] = "breath_oblit",
+							}, -- [27]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["criteria"] = "buff.breath_of_sindragosa.up & ( ! talent.obliteration.enabled || talent.obliteration.enabled & ! buff.pillar_of_frost.up )",
+								["list_name"] = "breath",
+							}, -- [28]
+							{
+								["enabled"] = true,
+								["action"] = "run_action_list",
+								["criteria"] = "talent.obliteration.enabled & buff.pillar_of_frost.up & ! buff.breath_of_sindragosa.up",
+								["list_name"] = "obliteration",
+							}, -- [29]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "active_enemies >= 2",
+								["list_name"] = "aoe",
+							}, -- [30]
+							{
+								["enabled"] = true,
+								["action"] = "call_action_list",
+								["criteria"] = "active_enemies = 1",
+								["list_name"] = "single_target",
+							}, -- [31]
 						},
 						["breath_oblit"] = {
 							{
@@ -3330,8 +3330,8 @@ HekiliDB = {
 							{
 								["enabled"] = true,
 								["use_off_gcd"] = 1,
-								["criteria"] = "incoming_damage_3s > 0.1 * health.max & ( target.health.pct >= 20 & ( target.health.pct >= 80 & ! action.condemn.known ) & ( rage >= 85 & cooldown.shield_slam.ready & buff.shield_block.up || rage >= 60 & cooldown.demoralizing_shout.ready & talent.booming_voice.enabled || rage >= 70 & cooldown.avatar.ready || rage >= 40 & cooldown.demoralizing_shout.ready & talent.booming_voice.enabled & buff.last_stand.up || rage >= 55 & cooldown.avatar.ready & buff.last_stand.up || rage >= 80 || rage >= 55 & cooldown.shield_slam.ready & buff.violent_outburst.up & buff.shield_block.up || rage >= 30 & cooldown.shield_slam.ready & buff.violent_outburst.up & buff.last_stand.up & buff.shield_block.up ) )",
 								["action"] = "ignore_pain",
+								["criteria"] = "incoming_damage_3s > 0.1 * health.max & ( target.health.pct >= 20 & ( target.health.pct >= 80 & ! action.condemn.known ) & ( rage >= 85 & cooldown.shield_slam.ready & buff.shield_block.up || rage >= 60 & cooldown.demoralizing_shout.ready & talent.booming_voice.enabled || rage >= 70 & cooldown.avatar.ready || rage >= 40 & cooldown.demoralizing_shout.ready & talent.booming_voice.enabled & buff.last_stand.up || rage >= 55 & cooldown.avatar.ready & buff.last_stand.up || rage >= 80 || rage >= 55 & cooldown.shield_slam.ready & buff.violent_outburst.up & buff.shield_block.up || rage >= 30 & cooldown.shield_slam.ready & buff.violent_outburst.up & buff.last_stand.up & buff.shield_block.up ) )",
 							}, -- [12]
 							{
 								["enabled"] = true,

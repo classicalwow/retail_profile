@@ -43,6 +43,114 @@ ElvDB = {
 		},
 	},
 	["profiles"] = {
+		["暗影之月"] = {
+			["dbConverted"] = 13.07,
+			["sle"] = {
+				["actionbar"] = {
+					["vehicle"] = {
+						["buttons"] = 7,
+					},
+				},
+			},
+			["actionbar"] = {
+				["bar6"] = {
+					["enabled"] = true,
+					["buttonsPerRow"] = 6,
+					["buttons"] = 6,
+				},
+				["microbar"] = {
+					["buttons"] = 11,
+				},
+				["bar5"] = {
+					["enabled"] = false,
+					["buttonsPerRow"] = 12,
+					["buttons"] = 12,
+				},
+			},
+			["convertPages"] = true,
+			["unitframe"] = {
+				["units"] = {
+					["tank"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["pet"] = {
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["targettarget"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["party"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["targetsGroup"] = {
+							["disableFocusGlow"] = false,
+							["disableTargetGlow"] = false,
+							["disableMouseoverGlow"] = false,
+						},
+						["petsGroup"] = {
+							["disableFocusGlow"] = false,
+							["disableTargetGlow"] = false,
+							["disableMouseoverGlow"] = false,
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["assist"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["player"] = {
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["raid1"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["focus"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["target"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["arena"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["raid2"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["raid3"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+				},
+			},
+		},
 		["my profile"] = {
 			["databars"] = {
 				["reputation"] = {
@@ -219,14 +327,14 @@ ElvDB = {
 						["SL_DeathIndicator"] = {
 						},
 					},
+					["targettarget"] = {
+						["enable"] = false,
+					},
 					["pet"] = {
 						["enable"] = false,
 						["castbar"] = {
 							["enable"] = false,
 						},
-					},
-					["targettarget"] = {
-						["enable"] = false,
 					},
 					["raid3"] = {
 						["height"] = 10,
@@ -242,31 +350,52 @@ ElvDB = {
 						["SL_DeathIndicator"] = {
 						},
 					},
-					["party"] = {
+					["player"] = {
 						["debuffs"] = {
 							["enable"] = false,
+							["attachTo"] = "BUFFS",
+							["maxDuration"] = 300,
+							["anchorPoint"] = "TOPRIGHT",
 						},
+						["portrait"] = {
+							["enable"] = true,
+							["width"] = 0,
+						},
+						["castbar"] = {
+							["width"] = 210,
+						},
+						["power"] = {
+							["xOffset"] = 2,
+						},
+						["width"] = 210,
 						["SL_DeathIndicator"] = {
 						},
-						["rdebuffs"] = {
+						["fader"] = {
+							["hover"] = false,
+							["vehicle"] = false,
+							["playertarget"] = false,
+							["power"] = false,
+							["enable"] = true,
+							["casting"] = false,
+							["health"] = false,
+							["combat"] = false,
+						},
+						["name"] = {
+							["text_format"] = "[namecolor][name:medium] [difficultycolor][smartlevel] [shortclassification]",
+						},
+						["health"] = {
+							["xOffset"] = -2,
+						},
+						["height"] = 45,
+						["buffs"] = {
+							["anchorPoint"] = "TOPRIGHT",
+							["attachTo"] = "FRAME",
+						},
+						["classbar"] = {
 							["enable"] = false,
 						},
-						["raidRoleIcons"] = {
+						["aurabar"] = {
 							["enable"] = false,
-						},
-						["petsGroup"] = {
-							["disableFocusGlow"] = false,
-							["disableTargetGlow"] = false,
-							["disableMouseoverGlow"] = false,
-						},
-						["height"] = 18,
-						["verticalSpacing"] = 11,
-						["SL_OfflineIndicator"] = {
-						},
-						["targetsGroup"] = {
-							["disableFocusGlow"] = false,
-							["disableMouseoverGlow"] = false,
-							["disableTargetGlow"] = false,
 						},
 					},
 					["raid1"] = {
@@ -321,52 +450,31 @@ ElvDB = {
 						["SL_DeathIndicator"] = {
 						},
 					},
-					["player"] = {
+					["party"] = {
 						["debuffs"] = {
 							["enable"] = false,
-							["attachTo"] = "BUFFS",
-							["maxDuration"] = 300,
-							["anchorPoint"] = "TOPRIGHT",
 						},
-						["portrait"] = {
-							["enable"] = true,
-							["width"] = 0,
-						},
-						["castbar"] = {
-							["width"] = 210,
-						},
-						["power"] = {
-							["xOffset"] = 2,
-						},
-						["width"] = 210,
 						["SL_DeathIndicator"] = {
 						},
-						["fader"] = {
-							["hover"] = false,
-							["casting"] = false,
-							["combat"] = false,
-							["power"] = false,
-							["enable"] = true,
-							["vehicle"] = false,
-							["health"] = false,
-							["playertarget"] = false,
-						},
-						["name"] = {
-							["text_format"] = "[namecolor][name:medium] [difficultycolor][smartlevel] [shortclassification]",
-						},
-						["health"] = {
-							["xOffset"] = -2,
-						},
-						["height"] = 45,
-						["buffs"] = {
-							["anchorPoint"] = "TOPRIGHT",
-							["attachTo"] = "FRAME",
-						},
-						["classbar"] = {
+						["rdebuffs"] = {
 							["enable"] = false,
 						},
-						["aurabar"] = {
+						["raidRoleIcons"] = {
 							["enable"] = false,
+						},
+						["SL_OfflineIndicator"] = {
+						},
+						["height"] = 18,
+						["verticalSpacing"] = 11,
+						["petsGroup"] = {
+							["disableFocusGlow"] = false,
+							["disableTargetGlow"] = false,
+							["disableMouseoverGlow"] = false,
+						},
+						["targetsGroup"] = {
+							["disableFocusGlow"] = false,
+							["disableMouseoverGlow"] = false,
+							["disableTargetGlow"] = false,
 						},
 					},
 				},
@@ -404,11 +512,11 @@ ElvDB = {
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,108,175",
 				["HonorBarMover"] = "BOTTOM,UIParent,BOTTOM,343,270",
 				["BuiDashboardMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-5",
-				["ElvUF_Raid1Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,258",
-				["ShiftAB"] = "BOTTOM,UIParent,BOTTOM,305,27",
 				["SpecializationBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,291,36",
+				["ShiftAB"] = "BOTTOM,UIParent,BOTTOM,305,27",
+				["ElvUF_Raid1Mover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,0,258",
 				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,63",
-				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,88,64",
+				["EquipmentSetsBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,226,36",
 				["BelowMinimapContainerMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-192,-625",
 				["AzeriteBarMover"] = "BOTTOM,UIParent,BOTTOM,224,310",
 				["ElvAB_4"] = "BOTTOM,ElvUIParent,BOTTOM,-89,64",
@@ -422,7 +530,7 @@ ElvDB = {
 				["ObjectiveFrameMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,95,-63",
 				["BNETMover"] = "TOPLEFT,UIParent,TOPLEFT,154,-4",
 				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,428,-117",
-				["EquipmentSetsBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,226,36",
+				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,88,64",
 				["ProfessionsMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-172",
 				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,109,223",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-20,353",
@@ -436,7 +544,7 @@ ElvDB = {
 				["ElvUF_AssistMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,215,485",
 			},
 		},
-		["暗影之月"] = {
+		["Default"] = {
 			["dbConverted"] = 13.07,
 			["sle"] = {
 				["actionbar"] = {
@@ -469,29 +577,29 @@ ElvDB = {
 						["SL_DeathIndicator"] = {
 						},
 					},
-					["targettarget"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["pet"] = {
-						["SL_DeathIndicator"] = {
-						},
-					},
 					["party"] = {
 						["SL_OfflineIndicator"] = {
 						},
 						["targetsGroup"] = {
 							["disableFocusGlow"] = false,
-							["disableTargetGlow"] = false,
 							["disableMouseoverGlow"] = false,
+							["disableTargetGlow"] = false,
 						},
 						["petsGroup"] = {
 							["disableFocusGlow"] = false,
 							["disableTargetGlow"] = false,
 							["disableMouseoverGlow"] = false,
 						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["targettarget"] = {
+						["SL_OfflineIndicator"] = {
+						},
+						["SL_DeathIndicator"] = {
+						},
+					},
+					["player"] = {
 						["SL_DeathIndicator"] = {
 						},
 					},
@@ -537,11 +645,14 @@ ElvDB = {
 						["SL_DeathIndicator"] = {
 						},
 					},
-					["player"] = {
+					["pet"] = {
 						["SL_DeathIndicator"] = {
 						},
 					},
 				},
+			},
+			["chat"] = {
+				["panelSnapLeftID"] = 1,
 			},
 		},
 		["邁克爾假死 - 伊弗斯"] = {
@@ -690,8 +801,8 @@ ElvDB = {
 				["ElvAB_10"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,276",
 				["ElvAB_6"] = "BOTTOM,ElvUIParent,BOTTOM,0,77",
 				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-357,304",
-				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-150",
 				["ElvNP_PlayerMover"] = "TOP,UIParent,CENTER,0,-150",
+				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-150",
 				["ElvAB_2"] = "TOP,ElvUIParent,TOP,-346,-309",
 				["HonorBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-255",
 				["ElvUF_PlayerAuraMover"] = "BOTTOM,ElvUIParent,BOTTOM,-202,331",
@@ -775,10 +886,37 @@ ElvDB = {
 							["enable"] = true,
 						},
 					},
-					["targettarget"] = {
+					["pet"] = {
+						["debuffs"] = {
+							["enable"] = true,
+							["anchorPoint"] = "TOPRIGHT",
+						},
+						["disableTargetGlow"] = false,
+						["castbar"] = {
+							["enable"] = false,
+							["iconSize"] = 32,
+						},
 						["SL_DeathIndicator"] = {
 						},
-						["SL_OfflineIndicator"] = {
+						["customTexts"] = {
+							["[happiness:icon]"] = {
+								["attachTextTo"] = "Health",
+								["enable"] = true,
+								["text_format"] = "[happiness:icon]",
+								["yOffset"] = -5,
+								["font"] = "Homespun",
+								["justifyH"] = "CENTER",
+								["fontOutline"] = "MONOCHROMEOUTLINE",
+								["xOffset"] = 83,
+								["size"] = 23,
+							},
+						},
+						["width"] = 132,
+						["infoPanel"] = {
+							["height"] = 14,
+						},
+						["buffs"] = {
+							["enable"] = true,
 						},
 					},
 					["player"] = {
@@ -810,13 +948,6 @@ ElvDB = {
 						},
 						["growthDirection"] = "DOWN_RIGHT",
 						["SL_DeathIndicator"] = {
-						},
-					},
-					["assist"] = {
-						["threatStyle"] = "NONE",
-						["SL_DeathIndicator"] = {
-						},
-						["SL_OfflineIndicator"] = {
 						},
 					},
 					["party"] = {
@@ -874,43 +1005,23 @@ ElvDB = {
 							["disableFocusGlow"] = false,
 						},
 					},
+					["assist"] = {
+						["threatStyle"] = "NONE",
+						["SL_DeathIndicator"] = {
+						},
+						["SL_OfflineIndicator"] = {
+						},
+					},
 					["arena"] = {
 						["enable"] = false,
 						["infoPanel"] = {
 							["enable"] = true,
 						},
 					},
-					["pet"] = {
-						["debuffs"] = {
-							["enable"] = true,
-							["anchorPoint"] = "TOPRIGHT",
-						},
-						["disableTargetGlow"] = false,
-						["castbar"] = {
-							["enable"] = false,
-							["iconSize"] = 32,
-						},
+					["targettarget"] = {
 						["SL_DeathIndicator"] = {
 						},
-						["customTexts"] = {
-							["[happiness:icon]"] = {
-								["attachTextTo"] = "Health",
-								["enable"] = true,
-								["text_format"] = "[happiness:icon]",
-								["yOffset"] = -5,
-								["font"] = "Homespun",
-								["justifyH"] = "CENTER",
-								["fontOutline"] = "MONOCHROMEOUTLINE",
-								["xOffset"] = 83,
-								["size"] = 23,
-							},
-						},
-						["width"] = 132,
-						["infoPanel"] = {
-							["height"] = 14,
-						},
-						["buffs"] = {
-							["enable"] = true,
+						["SL_OfflineIndicator"] = {
 						},
 					},
 					["focus"] = {
@@ -1185,117 +1296,6 @@ ElvDB = {
 				["panelSnapLeftID"] = 1,
 			},
 		},
-		["Default"] = {
-			["dbConverted"] = 13.07,
-			["sle"] = {
-				["actionbar"] = {
-					["vehicle"] = {
-						["buttons"] = 7,
-					},
-				},
-			},
-			["actionbar"] = {
-				["bar6"] = {
-					["enabled"] = true,
-					["buttonsPerRow"] = 6,
-					["buttons"] = 6,
-				},
-				["microbar"] = {
-					["buttons"] = 11,
-				},
-				["bar5"] = {
-					["enabled"] = false,
-					["buttonsPerRow"] = 12,
-					["buttons"] = 12,
-				},
-			},
-			["convertPages"] = true,
-			["unitframe"] = {
-				["units"] = {
-					["tank"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["player"] = {
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["pet"] = {
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["party"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["targetsGroup"] = {
-							["disableFocusGlow"] = false,
-							["disableMouseoverGlow"] = false,
-							["disableTargetGlow"] = false,
-						},
-						["petsGroup"] = {
-							["disableFocusGlow"] = false,
-							["disableTargetGlow"] = false,
-							["disableMouseoverGlow"] = false,
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["assist"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["raid3"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["raid1"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["focus"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["target"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["arena"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["raid2"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-					["targettarget"] = {
-						["SL_OfflineIndicator"] = {
-						},
-						["SL_DeathIndicator"] = {
-						},
-					},
-				},
-			},
-			["chat"] = {
-				["panelSnapLeftID"] = 1,
-			},
-		},
 	},
 	["SLErrorDisabledAddOns"] = {
 	},
@@ -1306,13 +1306,13 @@ ElvDB = {
 		["特變電工 - 寒冰皇冠"] = "Default",
 		["查理三世 - 寒冰皇冠"] = "my profile",
 	},
-	["faction"] = {
+	["gold"] = {
 		["寒冰皇冠"] = {
-			["特變電工"] = "Alliance",
-			["查理三世"] = "Alliance",
+			["特變電工"] = 28365290,
+			["查理三世"] = 8916,
 		},
 		["暗影之月"] = {
-			["查理三世"] = "Alliance",
+			["查理三世"] = 150991033,
 		},
 	},
 	["serverID"] = {
@@ -1321,13 +1321,13 @@ ElvDB = {
 			["暗影之月"] = true,
 		},
 	},
-	["gold"] = {
+	["faction"] = {
 		["寒冰皇冠"] = {
-			["特變電工"] = 28365290,
-			["查理三世"] = 8916,
+			["特變電工"] = "Alliance",
+			["查理三世"] = "Alliance",
 		},
 		["暗影之月"] = {
-			["查理三世"] = 126975182,
+			["查理三世"] = "Alliance",
 		},
 	},
 	["SLE_DB_Ver"] = "4.55",
