@@ -50,6 +50,7 @@ WQTrackerDB = {
 				[204739] = true,
 				[204737] = true,
 			},
+			["TutorialTracker"] = 2,
 			["low_level_tutorial"] = true,
 			["is_BFA_version"] = true,
 			["quests_tracked"] = {
@@ -60,6 +61,55 @@ WQTrackerDB = {
 				["Player-963-06D524DA"] = {
 				},
 				["Player-963-06DF5F31"] = {
+				},
+			},
+			["quests_all_characters"] = {
+				["Player-963-06DF687A"] = {
+					[70152] = {
+						["expireAt"] = 1670756447,
+						["rewardAmount"] = "296",
+						["rewardTexture"] = "Interface\\ICONS\\INV_Bracer_07",
+					},
+					[72030] = {
+						["expireAt"] = 1671058864,
+						["rewardAmount"] = "1",
+						["rewardTexture"] = 236515,
+					},
+					[69931] = {
+						["expireAt"] = 1670756464,
+						["rewardAmount"] = "1",
+						["rewardTexture"] = 236515,
+					},
+					[70172] = {
+						["expireAt"] = 1670756464,
+						["rewardAmount"] = "296",
+						["rewardTexture"] = "Interface\\ICONS\\INV_Shoulder_25",
+					},
+					[70549] = {
+						["expireAt"] = 1670756447,
+						["rewardAmount"] = "296",
+						["rewardTexture"] = "Interface\\ICONS\\INV_Jewelry_Talisman_07",
+					},
+					[70160] = {
+						["expireAt"] = 1670756447,
+						["rewardAmount"] = "1",
+						["rewardTexture"] = 236515,
+					},
+					[70146] = {
+						["expireAt"] = 1670756447,
+						["rewardAmount"] = "296",
+						["rewardTexture"] = "Interface\\ICONS\\INV_Sword_39",
+					},
+					[70720] = {
+						["expireAt"] = 1670756447,
+						["rewardAmount"] = "296",
+						["rewardTexture"] = "Interface\\ICONS\\INV_Sword_39",
+					},
+					[71140] = {
+						["expireAt"] = 1670626907,
+						["rewardAmount"] = "20",
+						["rewardTexture"] = 2004597,
+					},
 				},
 			},
 			["player_names"] = {

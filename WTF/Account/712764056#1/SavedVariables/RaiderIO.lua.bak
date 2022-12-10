@@ -3,9 +3,26 @@ RaiderIO_Config = {
 }
 RaiderIO_LastCharacter = "tw-查理三世-shadowmoon"
 RaiderIO_MissingCharacters = {
+	["tw-流線胖老爸-zealot-blade"] = true,
+	["tw-偶那根粉粗-icecrown"] = true,
+	["tw-Makaria-arthas"] = true,
+	["tw-暮刃希希卡-shadowmoon"] = true,
 	["tw-查理三世-shadowmoon"] = true,
-	["tw-竹科掃地阿姨-arthas"] = true,
-	["tw-黑白兩相忘-zealot-blade"] = true,
+	["tw-不要發呆-shadowmoon"] = true,
+	["tw-那女孩對我說-hellscream"] = true,
+	["tw-Ishutar-shadowmoon"] = true,
+	["tw-自然之助-icecrown"] = true,
+	["tw-Liun-icecrown"] = true,
+	["tw-康斯坦丁丿-shadowmoon"] = true,
+	["tw-削腎客-whisperwind"] = true,
+	["tw-舞樂妖妖-dragonmaw"] = true,
+	["tw-回首烟花-icecrown"] = true,
+	["tw-本丸-whisperwind"] = true,
+	["tw-信仰之跃-chillwind-point"] = true,
+	["tw-阿满呜-whisperwind"] = true,
+	["tw-Bigyuanduner-icecrown"] = true,
+	["tw-尋尋歡喜-arthas"] = true,
+	["tw-鳳九翎-shadowmoon"] = true,
 }
 RaiderIO_MissingServers = {
 }

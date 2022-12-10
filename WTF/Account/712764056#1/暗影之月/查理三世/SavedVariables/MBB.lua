@@ -1,5 +1,6 @@
 
 MBB_Exclude = {
+	"QueueStatusButton", -- [1]
 }
 MBB_Options = {
 	["CollapseTimeout"] = 1,

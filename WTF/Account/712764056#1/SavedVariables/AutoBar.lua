@@ -702,7 +702,7 @@ AutoBarDB2 = {
 		["查理三世 - 暗影之月"] = {
 			["buttonDataList"] = {
 				["AutoBarButtonShields"] = {
-					["arrangeOnUse"] = "反魔法护罩",
+					["arrangeOnUse"] = "冰封之韧",
 				},
 				["AutoBarButtonMount"] = {
 				},

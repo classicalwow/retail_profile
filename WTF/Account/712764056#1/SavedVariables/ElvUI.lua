@@ -5,12 +5,15 @@ ElvDB = {
 			["settings"] = {
 				["Currencies"] = {
 					["tooltipData"] = {
-						[3] = {
+						nil, -- [1]
+						nil, -- [2]
+						nil, -- [3]
+						{
 							nil, -- [1]
 							nil, -- [2]
 							nil, -- [3]
 							true, -- [4]
-						},
+						}, -- [4]
 					},
 				},
 			},
@@ -506,9 +509,9 @@ ElvDB = {
 				["DurabilityFrameMover"] = "BOTTOMRIGHT,UIParent,BOTTOMRIGHT,-665,128",
 				["ElvUF_PetCastbarMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-640,533",
 				["VehicleSeatMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,434,262",
-				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-459,485",
+				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,109,223",
 				["MER_MicroBarMover"] = "BOTTOM,ElvUIParent,BOTTOM,410,4",
-				["ElvAB_6"] = "BOTTOM,UIParent,BOTTOM,0,29",
+				["ArenaHeaderMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-459,485",
 				["ElvUF_TargetMover"] = "BOTTOM,ElvUIParent,BOTTOM,108,175",
 				["HonorBarMover"] = "BOTTOM,UIParent,BOTTOM,343,270",
 				["BuiDashboardMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-5",
@@ -532,7 +535,7 @@ ElvDB = {
 				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,428,-117",
 				["ElvAB_2"] = "BOTTOM,ElvUIParent,BOTTOM,88,64",
 				["ProfessionsMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-172",
-				["ElvUF_TargetCastbarMover"] = "BOTTOM,ElvUIParent,BOTTOM,109,223",
+				["ElvAB_6"] = "BOTTOM,UIParent,BOTTOM,0,29",
 				["TooltipMover"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-20,353",
 				["ElvUF_TankMover"] = "BOTTOMLEFT,UIParent,BOTTOMLEFT,93,485",
 				["tokenHolderMover"] = "TOPLEFT,ElvUIParent,TOPLEFT,0,-121",
@@ -1312,7 +1315,7 @@ ElvDB = {
 			["查理三世"] = 8916,
 		},
 		["暗影之月"] = {
-			["查理三世"] = 150991033,
+			["查理三世"] = 195722158,
 		},
 	},
 	["serverID"] = {
