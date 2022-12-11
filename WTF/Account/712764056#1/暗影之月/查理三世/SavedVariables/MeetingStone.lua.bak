@@ -1,0 +1,12 @@
+
+MEETINGSTONE_CHARACTER_DB = {
+	["profileKeys"] = {
+		["查理三世 - 暗影之月"] = "查理三世 - 暗影之月",
+	},
+	["profiles"] = {
+		["查理三世 - 暗影之月"] = {
+			["version"] = "90205.05",
+			["advShine"] = "90205.05",
+		},
+	},
+}

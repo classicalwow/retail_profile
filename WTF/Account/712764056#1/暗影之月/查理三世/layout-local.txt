@@ -1,4 +1,11 @@
 Version: 1
+Frame: Recount_MainWindow
+FrameLevel: 40
+Anchor: BOTTOM
+X: -409
+Y: 0
+W: 331
+H: 206
 Frame: PlayerPowerBarAlt
 FrameLevel: 2
 Anchor: TOP

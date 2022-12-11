@@ -1,0 +1,361 @@
+
+RecountPerCharDB = {
+	["version"] = "1.3",
+	["combatants"] = {
+		["查理三世"] = {
+			["GUID"] = "Player-963-06DF687A",
+			["LastEventHealth"] = {
+				214880, -- [1]
+			},
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+			},
+			["TimeWindows"] = {
+				["ActiveTime"] = {
+					1.5, -- [1]
+				},
+				["TimeDamage"] = {
+					1.5, -- [1]
+				},
+				["Damage"] = {
+					4583, -- [1]
+				},
+			},
+			["enClass"] = "DEATHKNIGHT",
+			["unit"] = "查理三世",
+			["level"] = 70,
+			["LastFightIn"] = 0,
+			["type"] = "Self",
+			["FightsSaved"] = 1,
+			["LastAbility"] = 43013.955,
+			["UnitLockout"] = 42554.691,
+			["Owner"] = false,
+			["TimeLast"] = {
+				["ActiveTime"] = 42554.691,
+				["OVERALL"] = 42554.691,
+				["TimeDamage"] = 42554.691,
+				["Damage"] = 42554.691,
+			},
+			["NextEventNum"] = 2,
+			["LastDamageTime"] = 42555.637,
+			["LastEvents"] = {
+				"查理三世 乘龍者的先手 紫翼公甲蟲 Hit -4583 (Physical)", -- [1]
+			},
+			["LastEventIncoming"] = {
+				false, -- [1]
+			},
+			["Fights"] = {
+				["OverallData"] = {
+					["TimeSpent"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["ElementDone"] = {
+						["Physical"] = 4583,
+					},
+					["DamagedWho"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 4583,
+								},
+							},
+							["amount"] = 4583,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["TimeDamage"] = 1.5,
+					["TimeDamaging"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["ActiveTime"] = 1.5,
+					["Attacks"] = {
+						["乘龍者的先手"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 4583,
+									["min"] = 4583,
+									["count"] = 1,
+									["amount"] = 4583,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 4583,
+						},
+					},
+					["Damage"] = 4583,
+				},
+				["LastFightData"] = {
+					["TimeSpent"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["ElementDone"] = {
+						["Physical"] = 4583,
+					},
+					["DamagedWho"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 4583,
+								},
+							},
+							["amount"] = 4583,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["TimeDamage"] = 1.5,
+					["TimeDamaging"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["ActiveTime"] = 1.5,
+					["Attacks"] = {
+						["乘龍者的先手"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 4583,
+									["min"] = 4583,
+									["count"] = 1,
+									["amount"] = 4583,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 4583,
+						},
+					},
+					["Damage"] = 4583,
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["DOT_Time"] = 0,
+					["ManaGain"] = 0,
+					["ElementTaken"] = {
+					},
+					["HOTs"] = {
+					},
+					["ElementTakenBlock"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["PartialBlock"] = {
+					},
+					["FDamagedWho"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RageGain"] = 0,
+					["ElementDone"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["OverHeals"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["RageGained"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["Dispelled"] = 0,
+					["WhoHealed"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBreak"] = 0,
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ActiveTime"] = 0,
+					["Overhealing"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["InterruptData"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["TimeSpent"] = {
+					},
+					["Heals"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["Healing"] = 0,
+					["CCBroken"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Damage"] = 0,
+					["DispelledWho"] = {
+					},
+				},
+				["Fight1"] = {
+					["TimeSpent"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["ElementDone"] = {
+						["Physical"] = 4583,
+					},
+					["DamagedWho"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 4583,
+								},
+							},
+							["amount"] = 4583,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["TimeDamage"] = 1.5,
+					["TimeDamaging"] = {
+						["紫翼公甲蟲"] = {
+							["Details"] = {
+								["乘龍者的先手"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["ActiveTime"] = 1.5,
+					["Attacks"] = {
+						["乘龍者的先手"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 4583,
+									["min"] = 4583,
+									["count"] = 1,
+									["amount"] = 4583,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 4583,
+						},
+					},
+					["Damage"] = 4583,
+				},
+			},
+			["LastEventTimes"] = {
+				42555.637, -- [1]
+			},
+			["Name"] = "查理三世",
+			["LastEventHealthMax"] = {
+				214880, -- [1]
+			},
+			["LastActive"] = 42554.691,
+		},
+	},
+	["FightNum"] = 1,
+	["CombatTimes"] = {
+		{
+			42554.691, -- [1]
+			42557.701, -- [2]
+			"01:34:23", -- [3]
+			"01:34:25", -- [4]
+			"紫翼公甲蟲", -- [5]
+		}, -- [1]
+	},
+	["FoughtWho"] = {
+		"紫翼公甲蟲 01:34:23-01:34:25", -- [1]
+	},
+}

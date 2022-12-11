@@ -35,7 +35,7 @@ AutoBar: enabled
 BlizzMove: enabled
 BlizzMove_Debug: enabled
 BugSack: enabled
-Details: enabled
+Details: disabled
 Details_Compare2: enabled
 Details_EncounterDetails: enabled
 Details_RaidCheck: enabled
