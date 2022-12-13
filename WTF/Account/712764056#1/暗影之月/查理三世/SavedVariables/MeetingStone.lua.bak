@@ -5,9 +5,6 @@ MEETINGSTONE_CHARACTER_DB = {
 	},
 	["profiles"] = {
 		["查理三世 - 暗影之月"] = {
-			["lastSearchCode"] = "4-0-7-0",
-			["version"] = "100000.02",
-			["advShine"] = "90205.05",
 			["searchHistoryList"] = {
 				"4-0-7-0", -- [1]
 				"1-284-1058-0", -- [2]
@@ -16,6 +13,9 @@ MEETINGSTONE_CHARACTER_DB = {
 				"2-12-1193-0", -- [5]
 				"2-302-1160-0", -- [6]
 			},
+			["version"] = "100000.02",
+			["advShine"] = "90205.05",
+			["lastSearchCode"] = "4-0-7-0",
 		},
 	},
 }
