@@ -13,7 +13,6 @@ RecountDB = {
 					["h"] = 206,
 				},
 			},
-			["MainWindowHeight"] = 205.5555267333984,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -25,8 +24,9 @@ RecountDB = {
 				},
 			},
 			["LastInstanceName"] = "艾杰斯亚学院",
-			["CurDataSet"] = "LastFightData",
+			["CurDataSet"] = "CurrentFightData",
 			["MainWindowWidth"] = 330.5556945800781,
+			["MainWindowHeight"] = 205.5555267333984,
 		},
 	},
 }
