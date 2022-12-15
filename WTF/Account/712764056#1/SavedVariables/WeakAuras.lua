@@ -105,9 +105,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -159,11 +159,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Rune of Hysteria",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "FVm83uojM(X",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -183,43 +220,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Rune of Hysteria",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "FVm83uojM(X",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Breath_of_Syndragosa"] = {
@@ -301,12 +301,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 152279,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -318,9 +318,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 152279,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -432,9 +432,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -499,23 +499,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 152279,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -550,11 +550,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Breath_of_Syndragosa",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -623,7 +623,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Dark_Transformation"] = {
 			["iconSource"] = -1,
@@ -675,11 +675,11 @@ WeakAurasSaved = {
 						},
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
+						["name"] = "Апокалипсис",
+						["use_spellId"] = true,
 						["spellIds"] = {
 							207289, -- [1]
 						},
-						["use_spellId"] = true,
-						["name"] = "Апокалипсис",
 						["use_sourceUnit"] = true,
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["useName"] = true,
@@ -706,12 +706,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 63560,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -723,9 +723,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 63560,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -860,9 +860,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -930,23 +930,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 63560,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -981,11 +981,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Dark_Transformation",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -1093,7 +1093,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Death_Grip"] = {
 			["iconSource"] = -1,
@@ -1220,13 +1220,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_anchorYOffset"] = 3,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "TOPRIGHT",
 					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["text_fontSize"] = 16,
 					["text_text_format_p_time_dynamic_threshold"] = 1,
 					["text_text_format_p_format"] = "timed",
@@ -1253,9 +1253,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -1319,15 +1319,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 49576,
 				["role"] = {
 					["multi"] = {
@@ -1335,9 +1335,10 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
+			["parent"] = "Death Knight [Utility]",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -1352,13 +1353,12 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["parent"] = "Death Knight [Utility]",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["cooldownEdge"] = false,
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1384,15 +1384,15 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["cooldownTextDisabled"] = true,
+			["frameStrata"] = 2,
+			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Death_Grip",
 			["auto"] = true,
 			["alpha"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "3O7tDa)T9TN",
 			["inverse"] = true,
 			["xOffset"] = 0,
@@ -1452,7 +1452,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["stickyDuration"] = false,
+			["cooldownEdge"] = false,
 		},
 		["Plaguebringer"] = {
 			["iconSource"] = -1,
@@ -1555,9 +1555,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -1590,8 +1590,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -1605,11 +1605,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Plaguebringer",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "NdfWpEYAp(X",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -1630,43 +1667,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Plaguebringer",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "NdfWpEYAp(X",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 		},
 		["10.0稀有击杀监控"] = {
 			["arcLength"] = 360,
@@ -1682,10 +1682,13 @@ WeakAurasSaved = {
 			},
 			["preferToUpdate"] = false,
 			["groupIcon"] = 1380676,
-			["gridType"] = "RD",
-			["borderSize"] = 2,
-			["selfPoint"] = "TOP",
-			["fullCircle"] = true,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["useAnchorPerUnit"] = false,
 			["url"] = "https://wago.io/9o2DUdr9t/16",
 			["actions"] = {
@@ -1716,39 +1719,24 @@ WeakAurasSaved = {
 			},
 			["columnSpace"] = 1,
 			["internalVersion"] = 61,
-			["radius"] = 200,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["align"] = "CENTER",
-			["anchorPoint"] = "CENTER",
+			["grow"] = "DOWN",
 			["useLimit"] = false,
+			["align"] = "CENTER",
+			["xOffset"] = -879.1668395996094,
+			["yOffset"] = 142.9722290039063,
 			["desc"] = "",
 			["rotation"] = 0,
-			["space"] = 2,
+			["sortHybridTable"] = {
+				["社区盛宴"] = false,
+				["SR稀有"] = false,
+				["围攻灭龙要塞"] = false,
+				["蕨皮F4"] = false,
+			},
 			["version"] = 15,
 			["subRegions"] = {
 			},
-			["config"] = {
-			},
-			["uid"] = "919Q6Tk)2fc",
+			["source"] = "import",
+			["gridType"] = "RD",
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -1774,22 +1762,38 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["rowSpace"] = 1,
-			["source"] = "import",
+			["fullCircle"] = true,
 			["animate"] = false,
+			["space"] = 2,
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["hybridPosition"] = "hybridFirst",
-			["limit"] = 5,
-			["frameStrata"] = 1,
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
+			["sort"] = "none",
+			["radius"] = 200,
+			["config"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 			["hybridSortMode"] = "descending",
 			["constantFactor"] = "RADIUS",
@@ -1798,24 +1802,20 @@ WeakAurasSaved = {
 			["semver"] = "1.0.14",
 			["tocversion"] = 100002,
 			["id"] = "10.0稀有击杀监控",
-			["sort"] = "none",
-			["gridWidth"] = 5,
+			["rowSpace"] = 1,
+			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["sortHybridTable"] = {
-				["社区盛宴"] = false,
-				["SR稀有"] = false,
-				["围攻灭龙要塞"] = false,
-				["蕨皮F4"] = false,
-			},
+			["gridWidth"] = 5,
 			["borderInset"] = 1,
-			["yOffset"] = 142.9722290039063,
-			["grow"] = "DOWN",
+			["limit"] = 5,
+			["uid"] = "919Q6Tk)2fc",
+			["borderSize"] = 2,
 			["conditions"] = {
 			},
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["xOffset"] = -879.1668395996094,
+			["selfPoint"] = "TOP",
 		},
 		["Sudden Doom"] = {
 			["iconSource"] = -1,
@@ -1918,9 +1918,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -1944,7 +1944,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -1955,7 +1955,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -1991,8 +1991,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -2006,30 +2006,16 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["authorOptions"] = {
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -2048,14 +2034,14 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["width"] = 33,
 			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Sudden Doom",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["uid"] = "nkd36azvVg)",
 			["inverse"] = false,
 			["parent"] = "Death Knight [Dynamic]",
@@ -2076,11 +2062,25 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 		},
 		["Mark of Blood"] = {
@@ -2229,9 +2229,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -2264,8 +2264,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -2281,30 +2281,16 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["authorOptions"] = {
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -2323,14 +2309,14 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["width"] = 40,
 			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Mark of Blood",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["uid"] = "mqUGyO1aQ1i",
 			["inverse"] = true,
 			["parent"] = "Death Knight [Core]",
@@ -2391,11 +2377,25 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 		},
 		["DK_CastBar"] = {
@@ -2488,16 +2488,16 @@ WeakAurasSaved = {
 						["PALADIN"] = true,
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_petbattle"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_vehicleUi"] = false,
 				["role"] = {
 					["single"] = "DAMAGER",
 					["multi"] = {
@@ -2560,10 +2560,10 @@ WeakAurasSaved = {
 						["unevent"] = "auto",
 						["names"] = {
 						},
-						["realSpellName"] = 0,
+						["castType"] = "cast",
 						["event"] = "Spell Known",
 						["use_exact_spellName"] = true,
-						["castType"] = "cast",
+						["realSpellName"] = 0,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -2589,10 +2589,10 @@ WeakAurasSaved = {
 						["unevent"] = "auto",
 						["names"] = {
 						},
-						["realSpellName"] = 0,
+						["castType"] = "cast",
 						["event"] = "Spell Known",
 						["use_exact_spellName"] = true,
-						["castType"] = "cast",
+						["realSpellName"] = 0,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -2618,10 +2618,10 @@ WeakAurasSaved = {
 						["unevent"] = "auto",
 						["names"] = {
 						},
-						["realSpellName"] = 0,
+						["castType"] = "cast",
 						["event"] = "Spell Known",
 						["use_exact_spellName"] = true,
-						["castType"] = "cast",
+						["realSpellName"] = 0,
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
@@ -2706,9 +2706,9 @@ WeakAurasSaved = {
 				}, -- [4]
 				{
 					["text_shadowXOffset"] = 0,
-					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_text_format_t_time_legacy_floor"] = true,
 					["anchorXOffset"] = 0,
+					["text_text_format_t_time_legacy_floor"] = true,
+					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_format"] = 0,
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_text"] = "%p",
@@ -2716,14 +2716,14 @@ WeakAurasSaved = {
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["text_text_format_t_time_format"] = 0,
-					["anchorYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = true,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["text_text_format_t_format"] = "timed",
 					["text_text_format_t_time_precision"] = 1,
-					["text_text_format_t_time_mod_rate"] = true,
+					["text_fontType"] = "OUTLINE",
 					["type"] = "subtext",
-					["text_visible"] = true,
+					["text_text_format_t_time_mod_rate"] = true,
 					["text_color"] = {
 						1, -- [1]
 						0.90588235294118, -- [2]
@@ -2735,7 +2735,7 @@ WeakAurasSaved = {
 					["text_anchorYOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
 					["text_wordWrap"] = "WordWrap",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_shadowColor"] = {
 						0, -- [1]
@@ -2743,7 +2743,7 @@ WeakAurasSaved = {
 						0, -- [3]
 						1, -- [4]
 					},
-					["text_text_format_p_time_legacy_floor"] = true,
+					["anchorYOffset"] = 0,
 					["text_fontSize"] = 12,
 					["text_text_format_t_time_dynamic_threshold"] = 60,
 					["text_text_format_p_time_precision"] = 1,
@@ -2945,11 +2945,11 @@ WeakAurasSaved = {
 						["use_showgcd"] = false,
 						["remaining"] = "3",
 						["subeventPrefix"] = "SPELL",
-						["spellName"] = 327574,
+						["debuffType"] = "HELPFUL",
 						["use_genericShowOn"] = true,
 						["use_remaining"] = false,
 						["use_unit"] = true,
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["unit"] = "player",
 						["event"] = "Cooldown Progress (Spell)",
@@ -2960,9 +2960,9 @@ WeakAurasSaved = {
 						},
 						["duration"] = "1",
 						["type"] = "spell",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_track"] = true,
-						["debuffType"] = "HELPFUL",
+						["spellName"] = 327574,
 					},
 					["untrigger"] = {
 						["showOn"] = "showOnCooldown",
@@ -3037,9 +3037,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -3105,15 +3105,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 324312,
 				["role"] = {
 					["multi"] = {
@@ -3123,7 +3123,53 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 33,
+			["desaturate"] = true,
 			["parent"] = "Death Knight [Utility]",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 136133,
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["glow_action"] = "hide",
+					["do_custom"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\WaterDrop.ogg",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
+					["do_sound"] = false,
+				},
+			},
+			["alpha"] = 1,
+			["config"] = {
+			},
+			["useTooltip"] = false,
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["semver"] = "5.3.2",
+			["cooldownTextDisabled"] = true,
+			["auto"] = false,
+			["tocversion"] = 100002,
+			["id"] = "Sacrificial Pact",
+			["zoom"] = 0.3,
+			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
+			["uid"] = "KqnXfwh(N51",
+			["inverse"] = true,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -3159,59 +3205,14 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 136133,
-			["regionType"] = "icon",
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["glow_action"] = "hide",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\WaterDrop.ogg",
-					["do_custom"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
-					["do_sound"] = false,
-				},
-			},
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["useTooltip"] = false,
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["semver"] = "5.3.2",
-			["zoom"] = 0.3,
-			["auto"] = false,
-			["tocversion"] = 100002,
-			["id"] = "Sacrificial Pact",
-			["cooldownTextDisabled"] = true,
-			["frameStrata"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "KqnXfwh(N51",
-			["inverse"] = true,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["desaturate"] = true,
 		},
 		["Death Strike"] = {
 			["outline"] = "None",
 			["iconSource"] = 0,
 			["wagoID"] = "Hkn-hHozG",
-			["parent"] = "Death Knight [Core]",
-			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["authorOptions"] = {
+			},
+			["preferToUpdate"] = false,
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["actions"] = {
@@ -3227,7 +3228,7 @@ WeakAurasSaved = {
 			["cooldownSwipe"] = true,
 			["displayText_format_p_time_format"] = 0,
 			["customTextUpdate"] = "event",
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["automaticWidth"] = "Auto",
 			["icon"] = true,
 			["triggers"] = {
 				{
@@ -3237,14 +3238,14 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["unit"] = "player",
 						["custom_hide"] = "custom",
-						["spellIds"] = {
-						},
 						["custom"] = "function(event, timestamp, subevent, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)\n    \n    if aura_env.debugMode and sourceGUID == UnitGUID(\"player\") then\n        if subevent == 'SPELL_HEAL' then\n            local spellName = select(2, ...)\n            if spellName == 'Death Strike' then                \n                local amount = select(4, ...) or 0\n                local overhealing = select(5, ...) or 0\n                local absorbed = select(6, ...) or 0\n                print(string.format('\\nDeath Strike Tracker Debug:\\n- Expected Heal: %s\\n\\n- Actual Heal: %s\\n- Overhealing: %s\\n- Absorbed: %s\\n', aura_env.expectedHealRaw, amount, overhealing, absorbed))\n            end\n        end\n        \n    end\n    \n    if destGUID == UnitGUID(\"player\") then\n        if not subevent:find(\"ENVIRONMENTAL\") and (subevent:find(\"DAMAGE\") or subevent:find(\"MISSED\")) then            \n            local damageTime = GetTime()\n            local damageTaken = nil\n            if subevent:find(\"DAMAGE\") and not subevent:find(\"DURABILITY\") then                \n                if not subevent:find(\"SWING\") then \n                    local spellId = select(1, ...)\n                    if not tContains(aura_env.excludedSpellIds, spellId) then\n                        damageTaken = select(4, ...)\n                        if select(9, ...) ~= nil then\n                            damageTaken = damageTaken + select(9, ...)\n                        end\n                    end\n                else\n                    damageTaken = select(1, ...)\n                    if select(6, ...) ~= nil then\n                        damageTaken = damageTaken + select(6, ...) \n                    end\n                end\n            elseif subevent:find(\"MISSED\") then\n                if not subevent:find(\"SWING\") and select(4, ...) == 'ABSORB' then\n                    local spellId = select(1, ...)\n                    if not tContains(aura_env.excludedSpellIds, spellId) then\n                        damageTaken = select(6, ...)\n                    end\n                elseif select(1, ...) == 'ABSORB' then\n                    damageTaken = select(3, ...) \n                end\n            end\n            if damageTaken ~= nil then            \n                tinsert(aura_env.damageEvents, {['time'] = damageTime, ['damage'] = damageTaken})\n                WeakAuras.ScanEvents(\"DEATH_STRIKE_TRACKER_DAMAGE_ENTERED\")\n                C_Timer.After(aura_env.trackingTime, function() WeakAuras.ScanEvents(\"DEATH_STRIKE_TRACKER_DAMAGE_EXPIRED\") end)\n            end\n        end        \n    end\n    \nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["subeventPrefix"] = "SPELL",
 						["names"] = {
 						},
 						["custom_type"] = "event",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["spellIds"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -3315,10 +3316,10 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["subeventPrefix"] = "",
 						["event"] = "Cooldown Progress (Spell)",
-						["events"] = "PLAYER_SPECIALIZATION_CHANGED",
+						["custom"] = "function(event, ...)\n    aura_env.baseHealPercentage = GetSpecialization() == 1 and 0.25 or 0.4\n    aura_env.minimumHealPercentage = GetSpecialization() == 1 and 0.07 or 0.105 \nend",
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
-						["custom"] = "function(event, ...)\n    aura_env.baseHealPercentage = GetSpecialization() == 1 and 0.25 or 0.4\n    aura_env.minimumHealPercentage = GetSpecialization() == 1 and 0.07 or 0.105 \nend",
+						["events"] = "PLAYER_SPECIALIZATION_CHANGED",
 						["unevent"] = "auto",
 						["check"] = "event",
 						["custom_type"] = "status",
@@ -3349,16 +3350,16 @@ WeakAurasSaved = {
 			["internalVersion"] = 61,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
+			["xOffset"] = 0,
+			["displayText"] = "%n",
+			["shadowYOffset"] = -1,
+			["desc"] = "Code by Coins",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["displayText"] = "%n",
-			["shadowYOffset"] = -1,
-			["desc"] = "Code by Coins",
-			["xOffset"] = 0,
 			["font"] = "Friz Quadrata TT",
 			["version"] = 116,
 			["subRegions"] = {
@@ -3427,13 +3428,13 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Expressway",
-					["text_shadowYOffset"] = 0,
 					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_text_format_n_format"] = "none",
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
-					["text_anchorPoint"] = "TOPRIGHT",
 					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "TOPRIGHT",
+					["text_visible"] = false,
 					["text_text_format_p_time_format"] = 0,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
@@ -3488,7 +3489,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["height"] = 40,
-			["automaticWidth"] = "Auto",
+			["cooldownEdge"] = true,
 			["load"] = {
 				["use_petbattle"] = false,
 				["class_and_spec"] = {
@@ -3511,12 +3512,12 @@ WeakAurasSaved = {
 					},
 				},
 				["use_class_and_spec"] = true,
-				["use_dragonriding"] = false,
-				["use_class"] = true,
 				["use_spellknown"] = true,
+				["use_class"] = true,
+				["use_dragonriding"] = false,
 				["use_never"] = true,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -3526,7 +3527,26 @@ WeakAurasSaved = {
 				["spellknown"] = 49998,
 				["zoneIds"] = "",
 			},
-			["wordWrap"] = "WordWrap",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+			},
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -3628,45 +3648,26 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["regionType"] = "icon",
-			["cooldownEdge"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["uid"] = "e5OzewoiXIa",
-			["justify"] = "CENTER",
+			["semver"] = "5.3.2",
 			["anchorFrameType"] = "SCREEN",
 			["useCooldownModRate"] = true,
 			["displayText_format_p_time_precision"] = 1,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-			},
-			["preferToUpdate"] = false,
-			["zoom"] = 0.3,
-			["semver"] = "5.3.2",
+			["wordWrap"] = "WordWrap",
+			["displayText_format_p_time_dynamic_threshold"] = 60,
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Death Strike",
-			["auto"] = true,
-			["frameStrata"] = 1,
+			["justify"] = "CENTER",
+			["alpha"] = 1,
 			["width"] = 40,
-			["cooldownTextDisabled"] = false,
+			["zoom"] = 0.3,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["shadowColor"] = {
 				0, -- [1]
 				0, -- [2]
@@ -3675,8 +3676,7 @@ WeakAurasSaved = {
 			},
 			["fixedWidth"] = 200,
 			["cooldown"] = true,
-			["authorOptions"] = {
-			},
+			["parent"] = "Death Knight [Core]",
 		},
 		["Death and Decay (Unholy)"] = {
 			["iconSource"] = 0,
@@ -3831,9 +3831,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_shadowYOffset"] = 0,
 					["text_anchorYOffset"] = 3,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "TOPRIGHT",
 					["text_text_format_2.s_format"] = "none",
 					["text_text_format_p_time_format"] = 0,
@@ -3863,9 +3863,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -3901,7 +3901,7 @@ WeakAurasSaved = {
 				["use_class"] = true,
 				["use_dragonriding"] = false,
 				["use_class_and_spec"] = true,
-				["use_vehicleUi"] = false,
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -3909,7 +3909,7 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
-				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spellknown"] = 43265,
 				["size"] = {
 					["multi"] = {
@@ -3917,30 +3917,16 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["authorOptions"] = {
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -3959,14 +3945,14 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["width"] = 39,
 			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Death and Decay (Unholy)",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["uid"] = "7NXTYDkaeNf",
 			["inverse"] = true,
 			["parent"] = "Death Knight [Core]",
@@ -4068,11 +4054,25 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 		},
 		["Abomination_Limb"] = {
@@ -4110,46 +4110,46 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["track"] = "auto",
-						["use_unit"] = true,
-						["use_genericShowOn"] = true,
 						["names"] = {
 							"Божественное перышко", -- [1]
 							"Божественное перышко", -- [2]
 							"Божественное перышко", -- [3]
 						},
-						["ownOnly"] = true,
-						["genericShowOn"] = "showAlways",
+						["use_genericShowOn"] = true,
 						["unit"] = "player",
+						["duration"] = "1",
+						["genericShowOn"] = "showAlways",
+						["subeventPrefix"] = "SPELL",
 						["use_showgcd"] = true,
 						["useCount"] = true,
-						["custom_hide"] = "timed",
 						["debuffType"] = "HELPFUL",
+						["spellName"] = 315443,
 						["spellIds"] = {
 							121536, -- [1]
 							158624, -- [2]
 							121557, -- [3]
 						},
 						["use_remaining"] = false,
-						["auraspellids"] = {
-							"383269", -- [1]
-						},
-						["spellName"] = 315443,
+						["useExactSpellId"] = true,
+						["custom_hide"] = "timed",
 						["charges_operator"] = "~=",
-						["charges"] = "3",
-						["subeventSuffix"] = "_CAST_START",
+						["type"] = "aura2",
 						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
-						["useExactSpellId"] = true,
+						["auraspellids"] = {
+							"383269", -- [1]
+						},
 						["realSpellName"] = "Рука поганища",
 						["use_spellName"] = true,
 						["count"] = "2",
-						["type"] = "aura2",
+						["charges"] = "3",
 						["use_charges"] = false,
-						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
 						["use_track"] = true,
-						["duration"] = "1",
+						["ownOnly"] = true,
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -4159,25 +4159,21 @@ WeakAurasSaved = {
 				{
 					["trigger"] = {
 						["track"] = "auto",
-						["names"] = {
-							"Божественное перышко", -- [1]
-							"Божественное перышко", -- [2]
-							"Божественное перышко", -- [3]
-						},
+						["use_unit"] = true,
 						["use_matchedRune"] = true,
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showAlways",
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_showgcd"] = true,
 						["useCount"] = true,
 						["use_charges"] = false,
 						["duration"] = "1",
-						["spellName"] = 383269,
-						["charges"] = "3",
-						["count"] = "2",
 						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["type"] = "spell",
+						["count"] = "2",
+						["custom_hide"] = "timed",
+						["charges_operator"] = "~=",
+						["use_remaining"] = false,
 						["subeventSuffix"] = "_CAST_START",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
@@ -4191,11 +4187,15 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["use_remaining"] = false,
-						["custom_hide"] = "timed",
+						["charges"] = "3",
+						["spellName"] = 383269,
 						["unit"] = "player",
 						["use_track"] = true,
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+							"Божественное перышко", -- [1]
+							"Божественное перышко", -- [2]
+							"Божественное перышко", -- [3]
+						},
 					},
 					["untrigger"] = {
 						["showOn"] = "showAlways",
@@ -4289,9 +4289,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -4358,15 +4358,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 315443,
 				["role"] = {
 					["multi"] = {
@@ -4376,8 +4376,8 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -4412,11 +4412,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Abomination_Limb",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -4508,7 +4508,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Festering_Wound_5"] = {
 			["sparkWidth"] = 5,
@@ -4610,15 +4610,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 85948,
 				["use_dragonriding"] = false,
 			},
@@ -4680,10 +4680,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_powertype"] = true,
 						["debuffType"] = "HARMFUL",
-						["unevent"] = "auto",
+						["power"] = "5",
 						["useName"] = true,
 						["stacksOperator"] = ">=",
-						["power"] = "5",
+						["subeventSuffix"] = "_CAST_START",
 						["power_operator"] = ">=",
 						["use_power"] = true,
 						["event"] = "Power",
@@ -4694,7 +4694,7 @@ WeakAurasSaved = {
 						},
 						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["matchesShowOn"] = "showOnActive",
 						["stacks"] = "5",
 					},
@@ -4920,15 +4920,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 85948,
 				["use_dragonriding"] = false,
 			},
@@ -4990,10 +4990,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_powertype"] = true,
 						["debuffType"] = "HARMFUL",
-						["unevent"] = "auto",
+						["power"] = "3",
 						["useName"] = true,
 						["stacksOperator"] = ">=",
-						["power"] = "3",
+						["subeventSuffix"] = "_CAST_START",
 						["power_operator"] = ">=",
 						["use_power"] = true,
 						["event"] = "Power",
@@ -5004,7 +5004,7 @@ WeakAurasSaved = {
 						},
 						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["matchesShowOn"] = "showOnActive",
 						["stacks"] = "2",
 					},
@@ -5205,13 +5205,13 @@ WeakAurasSaved = {
 						},
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
-						["debuffType"] = "HELPFUL",
-						["charges"] = "3",
 						["custom_hide"] = "timed",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 48265,
+						["charges_operator"] = "~=",
+						["type"] = "spell",
 						["count"] = "2",
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -5223,9 +5223,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "spell",
-						["spellName"] = 48265,
+						["unevent"] = "auto",
+						["charges"] = "3",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -5328,13 +5328,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_anchorYOffset"] = 3,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "TOPRIGHT",
 					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["text_fontSize"] = 16,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_format"] = "timed",
@@ -5361,9 +5361,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -5430,15 +5430,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 48265,
 				["role"] = {
 					["multi"] = {
@@ -5448,8 +5448,8 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 33,
+			["icon"] = true,
 			["parent"] = "Death Knight [Utility]",
-			["alpha"] = 0.3,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -5484,11 +5484,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Death's_Advance",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -5576,7 +5576,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 0.3,
 		},
 		["Soul Reaper (Frost)"] = {
 			["iconSource"] = -1,
@@ -5731,9 +5731,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -5766,8 +5766,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -5782,14 +5782,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0.3,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
+			["cooldown"] = true,
+			["xOffset"] = 0,
+			["uid"] = "EVpRPiuRQqA",
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Soul Reaper (Frost)",
+			["width"] = 39,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["config"] = {
+			},
+			["inverse"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -5810,23 +5827,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-			["uid"] = "EVpRPiuRQqA",
-			["useCooldownModRate"] = true,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "5.3.2",
-			["tocversion"] = 100002,
-			["id"] = "Soul Reaper (Frost)",
-			["width"] = 39,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = true,
-			["icon"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -5923,7 +5923,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["Icy Talons"] = {
 			["iconSource"] = -1,
@@ -6026,9 +6026,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -6052,7 +6052,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -6063,7 +6063,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -6103,8 +6103,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -6118,11 +6118,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Icy Talons",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "T9N09emfWFs",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -6142,43 +6179,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Icy Talons",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "T9N09emfWFs",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Apocalypse"] = {
@@ -6229,12 +6229,12 @@ WeakAurasSaved = {
 						["subeventPrefix"] = "SPELL",
 						["unit"] = "player",
 						["use_spellId"] = true,
-						["name"] = "Апокалипсис",
-						["use_sourceUnit"] = true,
-						["unevent"] = "timed",
 						["spellIds"] = {
 							207289, -- [1]
 						},
+						["use_sourceUnit"] = true,
+						["unevent"] = "timed",
+						["name"] = "Апокалипсис",
 						["sourceUnit"] = "player",
 						["ownOnly"] = true,
 					},
@@ -6258,12 +6258,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 275699,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -6275,9 +6275,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 275699,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -6317,7 +6317,7 @@ WeakAurasSaved = {
 						["sourceUnit"] = "player",
 						["type"] = "aura2",
 						["use_debuffClass"] = false,
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["ownOnly"] = true,
 						["spellName"] = 0,
 						["event"] = "Cooldown Progress (Spell)",
@@ -6329,7 +6329,7 @@ WeakAurasSaved = {
 						["useName"] = true,
 						["duration"] = "0.6",
 						["use_track"] = true,
-						["subeventSuffix"] = "_CAST_SUCCESS",
+						["unevent"] = "auto",
 					},
 					["untrigger"] = {
 					},
@@ -6421,9 +6421,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -6488,23 +6488,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 275699,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -6539,11 +6539,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 100002,
 			["id"] = "Apocalypse",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -6672,7 +6672,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["SR稀有"] = {
 			["user_y"] = 0,
@@ -7444,13 +7444,13 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = -1,
 					["text_shadowXOffset"] = 1,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "INNER_RIGHT",
 					["anchorXOffset"] = 0,
 					["text_text_format_disp_format"] = "none",
 					["text_fontSize"] = 14,
 					["text_text_format_locx_format"] = "none",
-					["text_fontType"] = "OUTLINE",
+					["text_visible"] = true,
 				}, -- [4]
 				{
 					["text_text_format_n_format"] = "none",
@@ -7480,9 +7480,9 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "AvantGarde",
 					["text_shadowYOffset"] = -1,
-					["text_visible"] = false,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = false,
 					["text_anchorPoint"] = "LEFT",
 					["anchorXOffset"] = 0,
 					["text_text_format_disp_format"] = "none",
@@ -7898,9 +7898,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -7958,16 +7958,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
 				["use_spellknown"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["single"] = 14,
 					["multi"] = {
@@ -7986,15 +7986,56 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["zoom"] = 0.3,
-			["desaturate"] = false,
+			["cooldownTextDisabled"] = true,
 			["parent"] = "Death Knight [Utility]",
+			["desaturate"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["anchorFrameFrame"] = "ElvUF_Player",
 			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["icon"] = true,
+			["frameStrata"] = 2,
+			["config"] = {
+			},
+			["anchorFrameParent"] = false,
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "DK_PvPT3",
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["alpha"] = 0.3,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "wz11j3wRKTu",
+			["inverse"] = true,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = 1,
+							["property"] = "alpha",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -8017,49 +8058,8 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["icon"] = true,
-			["useCooldownModRate"] = true,
-			["config"] = {
-			},
-			["anchorFrameParent"] = false,
-			["width"] = 33,
-			["alpha"] = 0.3,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "DK_PvPT3",
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["frameStrata"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "wz11j3wRKTu",
-			["inverse"] = true,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = 1,
-							["property"] = "alpha",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 		},
-		["Remorseless_Winter"] = {
+		["Brain_Freeze"] = {
 			["iconSource"] = -1,
 			["wagoID"] = "Hkn-hHozG",
 			["color"] = {
@@ -8069,110 +8069,65 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
-			["customText"] = "",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
-					["do_sound"] = false,
-				},
-			},
+			["icon"] = true,
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["auranames"] = {
-							"196770", -- [1]
-						},
-						["duration"] = "1",
-						["use_specific_unit"] = false,
-						["use_tooltip"] = false,
-						["debuffType"] = "HELPFUL",
-						["type"] = "aura2",
-						["use_debuffClass"] = false,
-						["unevent"] = "timed",
-						["buffShowOn"] = "showOnActive",
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Health",
-						["unit"] = "player",
-						["names"] = {
-							"Беспощадность зимы", -- [1]
-						},
-						["useGroup_count"] = false,
-						["spellIds"] = {
-							196770, -- [1]
-						},
-						["useName"] = true,
-						["ownOnly"] = true,
-						["combineMatches"] = "showLowest",
-						["matchesShowOn"] = "showOnActive",
-						["subeventSuffix"] = "_CAST_START",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["track"] = "auto",
 						["use_matchedRune"] = true,
 						["use_charges"] = false,
 						["genericShowOn"] = "showAlways",
-						["subeventPrefix"] = "SPELL",
-						["use_showgcd"] = true,
-						["useCount"] = true,
 						["unit"] = "player",
+						["use_showgcd"] = false,
+						["useCount"] = true,
 						["names"] = {
 							"Божественное перышко", -- [1]
 							"Божественное перышко", -- [2]
 							"Божественное перышко", -- [3]
 						},
 						["use_genericShowOn"] = true,
+						["use_unit"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 47528,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
 						["custom_hide"] = "timed",
-						["realSpellName"] = "冷酷严冬",
+						["realSpellName"] = "心灵冰冻",
 						["use_spellName"] = true,
 						["spellIds"] = {
 							121536, -- [1]
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 196770,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
-						["showOn"] = "showAlways",
-						["spellName"] = 196770,
+						["showOn"] = "showOnCooldown",
+						["genericShowOn"] = "showAlways",
+						["spellName"] = 47528,
 					},
-				}, -- [2]
+				}, -- [1]
 				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
+				["activeTriggerMode"] = 1,
 			},
 			["internalVersion"] = 61,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
+			["desaturate"] = false,
 			["version"] = 116,
 			["subRegions"] = {
 				{
@@ -8192,45 +8147,25 @@ WeakAurasSaved = {
 					["type"] = "subborder",
 				}, -- [2]
 				{
-					["glowFrequency"] = 0,
+					["glowFrequency"] = 0.25,
 					["type"] = "subglow",
-					["glowXOffset"] = 1,
+					["glowXOffset"] = 0,
 					["glowType"] = "buttonOverlay",
-					["glowLength"] = 20,
-					["glowYOffset"] = 1,
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
 					["glowColor"] = {
 						1, -- [1]
-						0.64705882352941, -- [2]
-						0.31764705882353, -- [3]
+						1, -- [2]
+						1, -- [3]
 						1, -- [4]
 					},
 					["useGlowColor"] = false,
 					["glowScale"] = 1,
 					["glow"] = false,
-					["glowThickness"] = 1,
-					["glowLines"] = 30,
+					["glowThickness"] = 4,
+					["glowLines"] = 8,
 					["glowBorder"] = false,
 				}, -- [3]
-				{
-					["glowFrequency"] = 0.1,
-					["type"] = "subglow",
-					["glowXOffset"] = 0,
-					["glowType"] = "Pixel",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						0.88627457618713, -- [2]
-						0.76862752437592, -- [3]
-						1, -- [4]
-					},
-					["useGlowColor"] = true,
-					["glowScale"] = 1,
-					["glow"] = false,
-					["glowThickness"] = 1,
-					["glowLines"] = 8,
-					["glowBorder"] = true,
-				}, -- [4]
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text"] = "%p",
@@ -8253,9 +8188,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -8267,9 +8202,9 @@ WeakAurasSaved = {
 					["text_fontSize"] = 14,
 					["text_text_format_p_time_dynamic_threshold"] = 1,
 					["text_text_format_p_format"] = "timed",
-				}, -- [5]
+				}, -- [4]
 			},
-			["height"] = 39,
+			["height"] = 33,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -8279,23 +8214,27 @@ WeakAurasSaved = {
 				["class"] = {
 					["single"] = "DEATHKNIGHT",
 					["multi"] = {
-						["DEATHKNIGHT"] = true,
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["use_class"] = true,
+				["use_dragonriding"] = false,
 				["zoneIds"] = "",
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
 				["class_and_spec"] = {
-					["single"] = 251,
+					["single"] = 252,
+					["multi"] = {
+						[252] = true,
+						[251] = true,
+						[250] = true,
+					},
 				},
 				["talent"] = {
+					["single"] = 13,
 					["multi"] = {
+						[13] = true,
 					},
 				},
 				["size"] = {
@@ -8303,13 +8242,12 @@ WeakAurasSaved = {
 					},
 				},
 				["spec"] = {
-					["single"] = 2,
 					["multi"] = {
 						[2] = true,
 						[3] = true,
 					},
 				},
-				["use_class_and_spec"] = true,
+				["use_class_and_spec"] = false,
 				["race"] = {
 					["multi"] = {
 					},
@@ -8320,29 +8258,33 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
+				["spellknown"] = 47528,
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["spellknown"] = 196770,
-				["use_dragonriding"] = false,
 			},
-			["useCooldownModRate"] = true,
 			["source"] = "import",
-			["width"] = 39,
-			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
+			["config"] = {
+			},
+			["parent"] = "Death Knight [Utility]",
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["displayIcon"] = 135994,
-			["regionType"] = "icon",
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -8365,74 +8307,37 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["desaturate"] = false,
-			["config"] = {
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["useTooltip"] = false,
-			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Remorseless_Winter",
-			["zoom"] = 0.3,
-			["frameStrata"] = 3,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "l6b1GuI0OFf",
-			["inverse"] = true,
 			["authorOptions"] = {
 			},
+			["width"] = 33,
+			["alpha"] = 0.3,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Brain_Freeze",
+			["auto"] = true,
+			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
+			["uid"] = "E2MPsvktVj1",
+			["inverse"] = true,
+			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
 						["trigger"] = -2,
-						["variable"] = "OR",
+						["variable"] = "AND",
 						["checks"] = {
 							{
-								["trigger"] = 2,
-								["variable"] = "insufficientResources",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 2,
+								["trigger"] = 1,
 								["variable"] = "onCooldown",
 								["value"] = 1,
-							}, -- [2]
-						},
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = -2,
-						["variable"] = "OR",
-						["checks"] = {
-							{
-								["value"] = 1,
-								["variable"] = "show",
 							}, -- [1]
 							{
-								["trigger"] = -2,
-								["variable"] = "AND",
-								["checks"] = {
-									{
-										["trigger"] = 2,
-										["op"] = "<",
-										["variable"] = "expirationTime",
-										["value"] = "1",
-									}, -- [1]
-									{
-										["trigger"] = 2,
-										["variable"] = "onCooldown",
-										["value"] = 1,
-									}, -- [2]
-								},
+								["trigger"] = 1,
+								["op"] = "<",
+								["variable"] = "expirationTime",
+								["value"] = "1",
 							}, -- [2]
 						},
 					},
@@ -8442,42 +8347,38 @@ WeakAurasSaved = {
 							["property"] = "sub.3.glow",
 						}, -- [1]
 					},
-				}, -- [2]
-				{
-					["check"] = {
-						["trigger"] = 2,
-						["op"] = "<",
-						["variable"] = "duration",
-						["value"] = "2",
-					},
-					["changes"] = {
-						{
-							["property"] = "sub.5.text_visible",
-						}, -- [1]
-					},
-				}, -- [3]
+				}, -- [1]
 				{
 					["check"] = {
 						["trigger"] = 1,
-						["variable"] = "show",
+						["variable"] = "onCooldown",
 						["value"] = 1,
 					},
 					["changes"] = {
 						{
-							["property"] = "inverse",
+							["value"] = 1,
+							["property"] = "alpha",
 						}, -- [1]
 						{
+							["value"] = true,
 							["property"] = "desaturate",
 						}, -- [2]
-						{
-							["value"] = true,
-							["property"] = "sub.4.glow",
-						}, -- [3]
 					},
-				}, -- [4]
+				}, -- [2]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+			},
 		},
 		["Asphyxiate"] = {
 			["iconSource"] = -1,
@@ -8550,25 +8451,21 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["trigger"] = {
-						["names"] = {
-							"Божественное перышко", -- [1]
-							"Божественное перышко", -- [2]
-							"Божественное перышко", -- [3]
-						},
+						["use_unit"] = true,
 						["use_matchedRune"] = true,
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showAlways",
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_showgcd"] = false,
 						["useCount"] = true,
 						["unit"] = "player",
 						["use_charges"] = false,
-						["debuffType"] = "HELPFUL",
-						["type"] = "spell",
-						["count"] = "2",
 						["custom_hide"] = "timed",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["count"] = "2",
+						["spellName"] = 108194,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["subeventSuffix"] = "_CAST_START",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
@@ -8582,11 +8479,15 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["charges"] = "3",
-						["spellName"] = 108194,
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["duration"] = "1",
 						["use_track"] = true,
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+							"Божественное перышко", -- [1]
+							"Божественное перышко", -- [2]
+							"Божественное перышко", -- [3]
+						},
 					},
 					["untrigger"] = {
 						["showOn"] = "showOnCooldown",
@@ -8681,9 +8582,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -8751,15 +8652,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 108194,
 				["role"] = {
 					["multi"] = {
@@ -8767,30 +8668,17 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["alpha"] = 0.3,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Afenar_DK/116",
 			["parent"] = "Death Knight [Utility]",
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-			},
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -8816,15 +8704,15 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
+			["alpha"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Asphyxiate",
 			["auto"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["uid"] = "Gvl2(xJUKlo",
 			["inverse"] = true,
 			["xOffset"] = 0,
@@ -8938,7 +8826,20 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+			},
 		},
 		["Dancing_Rune_Weapon"] = {
 			["iconSource"] = -1,
@@ -9021,12 +8922,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 49028,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -9038,9 +8939,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 49028,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -9136,9 +9037,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -9204,23 +9105,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 49028,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -9255,11 +9156,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Dancing_Rune_Weapon",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -9364,7 +9265,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Everfrost"] = {
 			["iconSource"] = -1,
@@ -9467,9 +9368,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -9493,7 +9394,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -9504,7 +9405,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -9545,8 +9446,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -9560,30 +9461,16 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["authorOptions"] = {
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -9602,337 +9489,26 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["width"] = 33,
 			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Everfrost",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["uid"] = "sRGgThrhChi",
 			["inverse"] = false,
 			["parent"] = "Death Knight [Dynamic]",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-		},
-		["Bonestorm"] = {
-			["iconSource"] = -1,
-			["wagoID"] = "Hkn-hHozG",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
-					["do_sound"] = false,
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["auranames"] = {
-							"194844", -- [1]
-						},
-						["duration"] = "1",
-						["use_specific_unit"] = false,
-						["use_tooltip"] = false,
-						["debuffType"] = "HELPFUL",
-						["type"] = "aura2",
-						["use_debuffClass"] = false,
-						["unevent"] = "timed",
-						["buffShowOn"] = "showOnActive",
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Health",
-						["unit"] = "player",
-						["names"] = {
-							"Буря костей", -- [1]
-						},
-						["useGroup_count"] = false,
-						["spellIds"] = {
-							194844, -- [1]
-						},
-						["useName"] = true,
-						["ownOnly"] = true,
-						["combineMatches"] = "showLowest",
-						["matchesShowOn"] = "showOnActive",
-						["subeventSuffix"] = "_CAST_START",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["track"] = "auto",
-						["use_matchedRune"] = true,
-						["use_charges"] = false,
-						["genericShowOn"] = "showAlways",
-						["subeventPrefix"] = "SPELL",
-						["use_showgcd"] = true,
-						["useCount"] = true,
-						["unit"] = "player",
-						["names"] = {
-							"Божественное перышко", -- [1]
-							"Божественное перышко", -- [2]
-							"Божественное перышко", -- [3]
-						},
-						["use_genericShowOn"] = true,
-						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
-						["use_remaining"] = false,
-						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
-						["use_showOn"] = true,
-						["event"] = "Cooldown Progress (Spell)",
-						["countOperator"] = "<=",
-						["custom_hide"] = "timed",
-						["realSpellName"] = "白骨风暴",
-						["use_spellName"] = true,
-						["spellIds"] = {
-							121536, -- [1]
-							158624, -- [2]
-							121557, -- [3]
-						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 194844,
-						["use_track"] = true,
-						["use_unit"] = true,
-					},
-					["untrigger"] = {
-						["showOn"] = "showAlways",
-						["spellName"] = 194844,
-					},
-				}, -- [2]
-				{
-					["trigger"] = {
-						["type"] = "combatlog",
-						["spellId"] = "194844",
-						["unevent"] = "timed",
-						["duration"] = "0.6",
-						["event"] = "Combat Log",
-						["subeventPrefix"] = "SPELL",
-						["use_spellId"] = true,
-						["use_sourceUnit"] = true,
-						["sourceUnit"] = "player",
-						["subeventSuffix"] = "_CAST_SUCCESS",
-					},
-					["untrigger"] = {
-					},
-				}, -- [3]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 61,
-			["keepAspectRatio"] = true,
-			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["version"] = 116,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["border_size"] = 1,
-					["border_offset"] = 1,
-					["border_color"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["border_visible"] = true,
-					["border_edge"] = "Square Full White",
-					["type"] = "subborder",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0.1,
-					["type"] = "subglow",
-					["glowXOffset"] = 0,
-					["glowType"] = "Pixel",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						0.88627457618713, -- [2]
-						0.76862752437592, -- [3]
-						1, -- [4]
-					},
-					["useGlowColor"] = true,
-					["glowScale"] = 1,
-					["glow"] = false,
-					["glowThickness"] = 1,
-					["glowLines"] = 8,
-					["glowBorder"] = true,
-				}, -- [3]
-				{
-					["glowFrequency"] = 0,
-					["type"] = "subglow",
-					["glowXOffset"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 20,
-					["glowYOffset"] = 1,
-					["glowColor"] = {
-						1, -- [1]
-						0.64705882352941, -- [2]
-						0.31764705882353, -- [3]
-						1, -- [4]
-					},
-					["useGlowColor"] = false,
-					["glowScale"] = 1,
-					["glow"] = false,
-					["glowThickness"] = 1,
-					["glowLines"] = 30,
-					["glowBorder"] = false,
-				}, -- [4]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%p",
-					["text_text_format_p_time_mod_rate"] = true,
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["text_text_format_p_time_legacy_floor"] = true,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_text_format_p_time_format"] = 0,
-					["type"] = "subtext",
-					["anchorXOffset"] = 0,
-					["text_color"] = {
-						1, -- [1]
-						0.87843137254902, -- [2]
-						0.71764705882353, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Expressway",
-					["text_text_format_p_time_precision"] = 1,
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "CENTER",
-					["anchorYOffset"] = 0,
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_fontSize"] = 14,
-					["text_text_format_p_time_dynamic_threshold"] = 1,
-					["text_text_format_p_format"] = "timed",
-				}, -- [5]
-			},
-			["height"] = 39,
-			["load"] = {
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["use_never"] = true,
-				["class"] = {
-					["single"] = "DEATHKNIGHT",
-					["multi"] = {
-						["DEATHKNIGHT"] = true,
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["class_and_spec"] = {
-					["single"] = 250,
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 1,
-					["multi"] = {
-						true, -- [1]
-						true, -- [2]
-						true, -- [3]
-					},
-				},
-				["use_class_and_spec"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_spellknown"] = true,
-				["use_petbattle"] = false,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["spellknown"] = 194844,
-				["use_dragonriding"] = false,
-			},
-			["useCooldownModRate"] = true,
-			["source"] = "import",
-			["width"] = 39,
-			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 135994,
-			["regionType"] = "icon",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
-					["easeType"] = "none",
 					["easeStrength"] = 3,
-					["preset"] = "fade",
 					["duration_type"] = "seconds",
+					["easeType"] = "none",
 				},
 				["main"] = {
 					["type"] = "none",
@@ -9942,619 +9518,11 @@ WeakAurasSaved = {
 				},
 				["finish"] = {
 					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
-			["desaturate"] = false,
-			["config"] = {
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["useTooltip"] = false,
-			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Bonestorm",
-			["zoom"] = 0.3,
-			["frameStrata"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "lRoW)Iu7NnM",
-			["inverse"] = true,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 2,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = -2,
-						["variable"] = "OR",
-						["checks"] = {
-							{
-								["trigger"] = 3,
-								["op"] = "<",
-								["variable"] = "show",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = -2,
-								["variable"] = "AND",
-								["checks"] = {
-									{
-										["trigger"] = 2,
-										["op"] = "<",
-										["variable"] = "expirationTime",
-										["value"] = "1",
-									}, -- [1]
-									{
-										["trigger"] = 2,
-										["variable"] = "onCooldown",
-										["value"] = 1,
-									}, -- [2]
-								},
-							}, -- [2]
-						},
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "sub.4.glow",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["check"] = {
-						["trigger"] = 2,
-						["op"] = "<",
-						["variable"] = "duration",
-						["value"] = "2",
-					},
-					["changes"] = {
-						{
-							["property"] = "sub.5.text_visible",
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "show",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["property"] = "inverse",
-						}, -- [1]
-						{
-							["property"] = "desaturate",
-						}, -- [2]
-						{
-							["value"] = true,
-							["property"] = "sub.3.glow",
-						}, -- [3]
-					},
-				}, -- [4]
-			},
-			["cooldown"] = true,
-			["icon"] = true,
-		},
-		["Unholy_Blight"] = {
-			["iconSource"] = -1,
-			["wagoID"] = "Hkn-hHozG",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["preferToUpdate"] = false,
-			["customText"] = "",
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["customTextUpdate"] = "update",
-			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
-					["do_sound"] = false,
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["auranames"] = {
-							"115989", -- [1]
-						},
-						["duration"] = "1",
-						["use_specific_unit"] = false,
-						["use_tooltip"] = false,
-						["debuffType"] = "HELPFUL",
-						["type"] = "aura2",
-						["use_debuffClass"] = false,
-						["unevent"] = "timed",
-						["buffShowOn"] = "showOnActive",
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Health",
-						["unit"] = "player",
-						["names"] = {
-							"Жнец душ", -- [1]
-						},
-						["useGroup_count"] = false,
-						["spellIds"] = {
-							130736, -- [1]
-						},
-						["useName"] = true,
-						["ownOnly"] = true,
-						["combineMatches"] = "showLowest",
-						["matchesShowOn"] = "showOnActive",
-						["subeventSuffix"] = "_CAST_START",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				{
-					["trigger"] = {
-						["auranames"] = {
-							"115994", -- [1]
-						},
-						["duration"] = "1",
-						["use_specific_unit"] = false,
-						["use_tooltip"] = false,
-						["debuffType"] = "HARMFUL",
-						["type"] = "aura2",
-						["use_debuffClass"] = false,
-						["unevent"] = "timed",
-						["buffShowOn"] = "showOnActive",
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Health",
-						["unit"] = "target",
-						["names"] = {
-							"Жнец душ", -- [1]
-						},
-						["useGroup_count"] = false,
-						["spellIds"] = {
-							130736, -- [1]
-						},
-						["useName"] = true,
-						["ownOnly"] = true,
-						["combineMatches"] = "showLowest",
-						["matchesShowOn"] = "showOnActive",
-						["subeventSuffix"] = "_CAST_START",
-					},
-					["untrigger"] = {
-					},
-				}, -- [2]
-				{
-					["trigger"] = {
-						["track"] = "auto",
-						["use_matchedRune"] = true,
-						["use_charges"] = false,
-						["genericShowOn"] = "showAlways",
-						["subeventPrefix"] = "SPELL",
-						["use_showgcd"] = true,
-						["useCount"] = true,
-						["unit"] = "player",
-						["names"] = {
-							"Божественное перышко", -- [1]
-							"Божественное перышко", -- [2]
-							"Божественное перышко", -- [3]
-						},
-						["use_genericShowOn"] = true,
-						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
-						["use_remaining"] = false,
-						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
-						["use_showOn"] = true,
-						["event"] = "Cooldown Progress (Spell)",
-						["countOperator"] = "<=",
-						["custom_hide"] = "timed",
-						["realSpellName"] = "邪恶虫群",
-						["use_spellName"] = true,
-						["spellIds"] = {
-							121536, -- [1]
-							158624, -- [2]
-							121557, -- [3]
-						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 115989,
-						["use_track"] = true,
-						["use_unit"] = true,
-					},
-					["untrigger"] = {
-						["showOn"] = "showAlways",
-						["spellName"] = 130736,
-					},
-				}, -- [3]
-				["disjunctive"] = "any",
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 61,
-			["keepAspectRatio"] = true,
-			["selfPoint"] = "CENTER",
-			["stickyDuration"] = false,
-			["version"] = 116,
-			["subRegions"] = {
-				{
-					["type"] = "subbackground",
-				}, -- [1]
-				{
-					["border_size"] = 1,
-					["border_offset"] = 1,
-					["border_color"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["border_visible"] = true,
-					["border_edge"] = "Square Full White",
-					["type"] = "subborder",
-				}, -- [2]
-				{
-					["glowFrequency"] = 0,
-					["type"] = "subglow",
-					["glowXOffset"] = 1,
-					["glowType"] = "buttonOverlay",
-					["glowLength"] = 20,
-					["glowYOffset"] = 1,
-					["glowColor"] = {
-						1, -- [1]
-						0.64705882352941, -- [2]
-						0.31764705882353, -- [3]
-						1, -- [4]
-					},
-					["useGlowColor"] = false,
-					["glowScale"] = 1,
-					["glow"] = false,
-					["glowThickness"] = 1,
-					["glowLines"] = 30,
-					["glowBorder"] = false,
-				}, -- [3]
-				{
-					["glowFrequency"] = 0.1,
-					["type"] = "subglow",
-					["glowXOffset"] = 0,
-					["glowType"] = "Pixel",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
-					["glowColor"] = {
-						1, -- [1]
-						0.8705883026123, -- [2]
-						0.74117648601532, -- [3]
-						1, -- [4]
-					},
-					["useGlowColor"] = true,
-					["glowScale"] = 1,
-					["glow"] = false,
-					["glowThickness"] = 1,
-					["glowLines"] = 8,
-					["glowBorder"] = true,
-				}, -- [4]
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%p",
-					["text_text_format_p_time_mod_rate"] = true,
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["text_text_format_p_time_legacy_floor"] = true,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_text_format_p_time_format"] = 0,
-					["type"] = "subtext",
-					["anchorXOffset"] = 0,
-					["text_color"] = {
-						1, -- [1]
-						0.87843137254902, -- [2]
-						0.71764705882353, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Expressway",
-					["text_text_format_p_time_precision"] = 1,
-					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "CENTER",
-					["anchorYOffset"] = 0,
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_fontSize"] = 14,
-					["text_text_format_p_time_dynamic_threshold"] = 1,
-					["text_text_format_p_format"] = "timed",
-				}, -- [5]
-				{
-					["text_text_format_p_time_format"] = 0,
-					["text_text_format_s_format"] = "none",
-					["text_text"] = "%s",
-					["text_text_format_p_format"] = "timed",
-					["text_selfPoint"] = "TOPRIGHT",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
-					["type"] = "subtext",
-					["text_anchorXOffset"] = 3,
-					["text_color"] = {
-						1, -- [1]
-						0.87843137254902, -- [2]
-						0.71764705882353, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Expressway",
-					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "TOPRIGHT",
-					["text_fontType"] = "OUTLINE",
-					["text_text_format_p_time_precision"] = 1,
-					["text_fontSize"] = 18,
-					["anchorXOffset"] = 0,
-					["text_shadowXOffset"] = 0,
-				}, -- [6]
-			},
-			["height"] = 39,
-			["load"] = {
-				["ingroup"] = {
-					["multi"] = {
-					},
-				},
-				["use_never"] = true,
-				["class"] = {
-					["single"] = "DEATHKNIGHT",
-					["multi"] = {
-						["DEATHKNIGHT"] = true,
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["zoneIds"] = "",
-				["talent2"] = {
-					["multi"] = {
-					},
-				},
-				["class_and_spec"] = {
-					["single"] = 252,
-				},
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["single"] = 3,
-					["multi"] = {
-						[2] = true,
-						[3] = true,
-					},
-				},
-				["use_class_and_spec"] = true,
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["use_spellknown"] = true,
-				["use_petbattle"] = false,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["spellknown"] = 115989,
-				["use_dragonriding"] = false,
-			},
-			["useCooldownModRate"] = true,
-			["source"] = "import",
-			["width"] = 39,
-			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = 135994,
-			["regionType"] = "icon",
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
 					["easeStrength"] = 3,
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-				["finish"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
 			},
-			["desaturate"] = false,
-			["config"] = {
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["useTooltip"] = false,
-			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Unholy_Blight",
-			["zoom"] = 0.3,
-			["frameStrata"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["xOffset"] = 0,
-			["uid"] = "gQ0kLPthDfM",
-			["inverse"] = true,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = -2,
-						["variable"] = "OR",
-						["checks"] = {
-							{
-								["trigger"] = 3,
-								["variable"] = "spellUsable",
-								["value"] = 0,
-							}, -- [1]
-							{
-								["trigger"] = 3,
-								["variable"] = "onCooldown",
-								["value"] = 1,
-							}, -- [2]
-						},
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "desaturate",
-						}, -- [1]
-					},
-				}, -- [1]
-				{
-					["check"] = {
-						["trigger"] = -2,
-						["variable"] = "OR",
-						["checks"] = {
-							{
-								["value"] = 1,
-								["variable"] = "show",
-							}, -- [1]
-							{
-								["trigger"] = -2,
-								["variable"] = "AND",
-								["checks"] = {
-									{
-										["trigger"] = 3,
-										["op"] = "<",
-										["variable"] = "expirationTime",
-										["value"] = "1",
-									}, -- [1]
-									{
-										["trigger"] = 3,
-										["variable"] = "onCooldown",
-										["value"] = 1,
-									}, -- [2]
-								},
-							}, -- [2]
-						},
-					},
-					["changes"] = {
-						{
-							["value"] = true,
-							["property"] = "sub.3.glow",
-						}, -- [1]
-					},
-				}, -- [2]
-				{
-					["check"] = {
-						["trigger"] = 3,
-						["op"] = "<",
-						["variable"] = "duration",
-						["value"] = "2",
-					},
-					["changes"] = {
-						{
-							["property"] = "sub.5.text_visible",
-						}, -- [1]
-					},
-				}, -- [3]
-				{
-					["check"] = {
-						["trigger"] = -2,
-						["variable"] = "OR",
-						["checks"] = {
-							{
-								["trigger"] = 1,
-								["variable"] = "show",
-								["value"] = 1,
-							}, -- [1]
-							{
-								["trigger"] = 2,
-								["variable"] = "show",
-								["value"] = 1,
-							}, -- [2]
-						},
-					},
-					["changes"] = {
-						{
-							["property"] = "inverse",
-						}, -- [1]
-						{
-							["property"] = "desaturate",
-						}, -- [2]
-						{
-							["value"] = true,
-							["property"] = "sub.4.glow",
-						}, -- [3]
-					},
-				}, -- [4]
-			},
-			["cooldown"] = true,
-			["icon"] = true,
 		},
 		["Death Knight [Shield]"] = {
 			["overlays"] = {
@@ -10681,9 +9649,9 @@ WeakAurasSaved = {
 						["event"] = "Health",
 						["subeventSuffix"] = "_CAST_START",
 						["customDuration"] = "-- Duration Info\nfunction()\n    return (UnitGetTotalAbsorbs(\"player\") / UnitHealthMax(\"player\")) * 100, 100, true\nend",
+						["custom"] = "-- trigger\nfunction()\n    return true\nend",
 						["spellIds"] = {
 						},
-						["custom"] = "-- trigger\nfunction()\n    return true\nend",
 						["events"] = "UNIT_ABSORB_AMOUNT_CHANGED:player",
 						["check"] = "event",
 						["use_unit"] = true,
@@ -10799,8 +9767,8 @@ WeakAurasSaved = {
 			},
 			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
-			["id"] = "Death Knight [Shield]",
 			["sparkHidden"] = "BOTH",
+			["id"] = "Death Knight [Shield]",
 			["width"] = 249,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
@@ -10885,6 +9853,939 @@ WeakAurasSaved = {
 			},
 			["xOffset"] = -0.5,
 		},
+		["Unholy_Blight"] = {
+			["iconSource"] = -1,
+			["wagoID"] = "Hkn-hHozG",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["cooldownEdge"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
+					["do_sound"] = false,
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["auranames"] = {
+							"115989", -- [1]
+						},
+						["duration"] = "1",
+						["use_specific_unit"] = false,
+						["use_tooltip"] = false,
+						["debuffType"] = "HELPFUL",
+						["type"] = "aura2",
+						["use_debuffClass"] = false,
+						["unevent"] = "timed",
+						["buffShowOn"] = "showOnActive",
+						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
+						["unit"] = "player",
+						["names"] = {
+							"Жнец душ", -- [1]
+						},
+						["useGroup_count"] = false,
+						["spellIds"] = {
+							130736, -- [1]
+						},
+						["useName"] = true,
+						["ownOnly"] = true,
+						["combineMatches"] = "showLowest",
+						["matchesShowOn"] = "showOnActive",
+						["subeventSuffix"] = "_CAST_START",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["auranames"] = {
+							"115994", -- [1]
+						},
+						["duration"] = "1",
+						["use_specific_unit"] = false,
+						["use_tooltip"] = false,
+						["debuffType"] = "HARMFUL",
+						["type"] = "aura2",
+						["use_debuffClass"] = false,
+						["unevent"] = "timed",
+						["buffShowOn"] = "showOnActive",
+						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
+						["unit"] = "target",
+						["names"] = {
+							"Жнец душ", -- [1]
+						},
+						["useGroup_count"] = false,
+						["spellIds"] = {
+							130736, -- [1]
+						},
+						["useName"] = true,
+						["ownOnly"] = true,
+						["combineMatches"] = "showLowest",
+						["matchesShowOn"] = "showOnActive",
+						["subeventSuffix"] = "_CAST_START",
+					},
+					["untrigger"] = {
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["track"] = "auto",
+						["use_matchedRune"] = true,
+						["use_charges"] = false,
+						["genericShowOn"] = "showAlways",
+						["subeventPrefix"] = "SPELL",
+						["use_showgcd"] = true,
+						["useCount"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Божественное перышко", -- [1]
+							"Божественное перышко", -- [2]
+							"Божественное перышко", -- [3]
+						},
+						["use_genericShowOn"] = true,
+						["duration"] = "1",
+						["use_remaining"] = false,
+						["spellName"] = 115989,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
+						["count"] = "2",
+						["unevent"] = "auto",
+						["use_showOn"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["countOperator"] = "<=",
+						["custom_hide"] = "timed",
+						["realSpellName"] = "邪恶虫群",
+						["use_spellName"] = true,
+						["spellIds"] = {
+							121536, -- [1]
+							158624, -- [2]
+							121557, -- [3]
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
+						["use_track"] = true,
+						["use_unit"] = true,
+					},
+					["untrigger"] = {
+						["showOn"] = "showAlways",
+						["spellName"] = 130736,
+					},
+				}, -- [3]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 61,
+			["keepAspectRatio"] = true,
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["version"] = 116,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["border_size"] = 1,
+					["border_offset"] = 1,
+					["border_color"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["border_visible"] = true,
+					["border_edge"] = "Square Full White",
+					["type"] = "subborder",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0,
+					["type"] = "subglow",
+					["glowXOffset"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 20,
+					["glowYOffset"] = 1,
+					["glowColor"] = {
+						1, -- [1]
+						0.64705882352941, -- [2]
+						0.31764705882353, -- [3]
+						1, -- [4]
+					},
+					["useGlowColor"] = false,
+					["glowScale"] = 1,
+					["glow"] = false,
+					["glowThickness"] = 1,
+					["glowLines"] = 30,
+					["glowBorder"] = false,
+				}, -- [3]
+				{
+					["glowFrequency"] = 0.1,
+					["type"] = "subglow",
+					["glowXOffset"] = 0,
+					["glowType"] = "Pixel",
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						0.8705883026123, -- [2]
+						0.74117648601532, -- [3]
+						1, -- [4]
+					},
+					["useGlowColor"] = true,
+					["glowScale"] = 1,
+					["glow"] = false,
+					["glowThickness"] = 1,
+					["glowLines"] = 8,
+					["glowBorder"] = true,
+				}, -- [4]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "%p",
+					["text_text_format_p_time_mod_rate"] = true,
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["text_text_format_p_time_legacy_floor"] = true,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_text_format_p_time_format"] = 0,
+					["type"] = "subtext",
+					["anchorXOffset"] = 0,
+					["text_color"] = {
+						1, -- [1]
+						0.87843137254902, -- [2]
+						0.71764705882353, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Expressway",
+					["text_text_format_p_time_precision"] = 1,
+					["text_shadowYOffset"] = 0,
+					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "CENTER",
+					["anchorYOffset"] = 0,
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_fontSize"] = 14,
+					["text_text_format_p_time_dynamic_threshold"] = 1,
+					["text_text_format_p_format"] = "timed",
+				}, -- [5]
+				{
+					["text_text_format_p_time_format"] = 0,
+					["text_text_format_s_format"] = "none",
+					["text_text"] = "%s",
+					["text_text_format_p_format"] = "timed",
+					["text_selfPoint"] = "TOPRIGHT",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_anchorYOffset"] = 3,
+					["type"] = "subtext",
+					["text_anchorXOffset"] = 3,
+					["text_color"] = {
+						1, -- [1]
+						0.87843137254902, -- [2]
+						0.71764705882353, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Expressway",
+					["text_text_format_p_time_dynamic_threshold"] = 60,
+					["text_shadowYOffset"] = 0,
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "TOPRIGHT",
+					["text_fontType"] = "OUTLINE",
+					["text_text_format_p_time_precision"] = 1,
+					["text_fontSize"] = 18,
+					["anchorXOffset"] = 0,
+					["text_shadowXOffset"] = 0,
+				}, -- [6]
+			},
+			["height"] = 39,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["class"] = {
+					["single"] = "DEATHKNIGHT",
+					["multi"] = {
+						["DEATHKNIGHT"] = true,
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class_and_spec"] = {
+					["single"] = 252,
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 3,
+					["multi"] = {
+						[2] = true,
+						[3] = true,
+					},
+				},
+				["use_class_and_spec"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spellknown"] = true,
+				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_vehicleUi"] = false,
+				["spellknown"] = 115989,
+				["use_dragonriding"] = false,
+			},
+			["useCooldownModRate"] = true,
+			["source"] = "import",
+			["width"] = 39,
+			["icon"] = true,
+			["parent"] = "Death Knight [Core]",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 135994,
+			["regionType"] = "icon",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
+			["desaturate"] = false,
+			["config"] = {
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["useTooltip"] = false,
+			["semver"] = "5.3.2",
+			["zoom"] = 0.3,
+			["auto"] = true,
+			["tocversion"] = 100002,
+			["id"] = "Unholy_Blight",
+			["cooldownTextDisabled"] = true,
+			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
+			["uid"] = "gQ0kLPthDfM",
+			["inverse"] = true,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = -2,
+						["variable"] = "OR",
+						["checks"] = {
+							{
+								["trigger"] = 3,
+								["variable"] = "spellUsable",
+								["value"] = 0,
+							}, -- [1]
+							{
+								["trigger"] = 3,
+								["variable"] = "onCooldown",
+								["value"] = 1,
+							}, -- [2]
+						},
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = -2,
+						["variable"] = "OR",
+						["checks"] = {
+							{
+								["value"] = 1,
+								["variable"] = "show",
+							}, -- [1]
+							{
+								["trigger"] = -2,
+								["variable"] = "AND",
+								["checks"] = {
+									{
+										["trigger"] = 3,
+										["op"] = "<",
+										["variable"] = "expirationTime",
+										["value"] = "1",
+									}, -- [1]
+									{
+										["trigger"] = 3,
+										["variable"] = "onCooldown",
+										["value"] = 1,
+									}, -- [2]
+								},
+							}, -- [2]
+						},
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "sub.3.glow",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["check"] = {
+						["trigger"] = 3,
+						["op"] = "<",
+						["variable"] = "duration",
+						["value"] = "2",
+					},
+					["changes"] = {
+						{
+							["property"] = "sub.5.text_visible",
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["check"] = {
+						["trigger"] = -2,
+						["variable"] = "OR",
+						["checks"] = {
+							{
+								["trigger"] = 1,
+								["variable"] = "show",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = 2,
+								["variable"] = "show",
+								["value"] = 1,
+							}, -- [2]
+						},
+					},
+					["changes"] = {
+						{
+							["property"] = "inverse",
+						}, -- [1]
+						{
+							["property"] = "desaturate",
+						}, -- [2]
+						{
+							["value"] = true,
+							["property"] = "sub.4.glow",
+						}, -- [3]
+					},
+				}, -- [4]
+			},
+			["cooldown"] = true,
+			["alpha"] = 1,
+		},
+		["Bonestorm"] = {
+			["iconSource"] = -1,
+			["wagoID"] = "Hkn-hHozG",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["preferToUpdate"] = false,
+			["customText"] = "",
+			["yOffset"] = 0,
+			["anchorPoint"] = "CENTER",
+			["cooldownSwipe"] = true,
+			["customTextUpdate"] = "update",
+			["cooldownEdge"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
+					["do_sound"] = false,
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["auranames"] = {
+							"194844", -- [1]
+						},
+						["duration"] = "1",
+						["use_specific_unit"] = false,
+						["use_tooltip"] = false,
+						["debuffType"] = "HELPFUL",
+						["type"] = "aura2",
+						["use_debuffClass"] = false,
+						["unevent"] = "timed",
+						["buffShowOn"] = "showOnActive",
+						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
+						["unit"] = "player",
+						["names"] = {
+							"Буря костей", -- [1]
+						},
+						["useGroup_count"] = false,
+						["spellIds"] = {
+							194844, -- [1]
+						},
+						["useName"] = true,
+						["ownOnly"] = true,
+						["combineMatches"] = "showLowest",
+						["matchesShowOn"] = "showOnActive",
+						["subeventSuffix"] = "_CAST_START",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["track"] = "auto",
+						["use_matchedRune"] = true,
+						["use_charges"] = false,
+						["genericShowOn"] = "showAlways",
+						["subeventPrefix"] = "SPELL",
+						["use_showgcd"] = true,
+						["useCount"] = true,
+						["unit"] = "player",
+						["names"] = {
+							"Божественное перышко", -- [1]
+							"Божественное перышко", -- [2]
+							"Божественное перышко", -- [3]
+						},
+						["use_genericShowOn"] = true,
+						["duration"] = "1",
+						["use_remaining"] = false,
+						["spellName"] = 194844,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
+						["count"] = "2",
+						["unevent"] = "auto",
+						["use_showOn"] = true,
+						["event"] = "Cooldown Progress (Spell)",
+						["countOperator"] = "<=",
+						["custom_hide"] = "timed",
+						["realSpellName"] = "白骨风暴",
+						["use_spellName"] = true,
+						["spellIds"] = {
+							121536, -- [1]
+							158624, -- [2]
+							121557, -- [3]
+						},
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
+						["use_track"] = true,
+						["use_unit"] = true,
+					},
+					["untrigger"] = {
+						["showOn"] = "showAlways",
+						["spellName"] = 194844,
+					},
+				}, -- [2]
+				{
+					["trigger"] = {
+						["type"] = "combatlog",
+						["spellId"] = "194844",
+						["unevent"] = "timed",
+						["duration"] = "0.6",
+						["event"] = "Combat Log",
+						["subeventPrefix"] = "SPELL",
+						["use_spellId"] = true,
+						["use_sourceUnit"] = true,
+						["sourceUnit"] = "player",
+						["subeventSuffix"] = "_CAST_SUCCESS",
+					},
+					["untrigger"] = {
+					},
+				}, -- [3]
+				["disjunctive"] = "any",
+				["activeTriggerMode"] = -10,
+			},
+			["internalVersion"] = 61,
+			["keepAspectRatio"] = true,
+			["selfPoint"] = "CENTER",
+			["stickyDuration"] = false,
+			["version"] = 116,
+			["subRegions"] = {
+				{
+					["type"] = "subbackground",
+				}, -- [1]
+				{
+					["border_size"] = 1,
+					["border_offset"] = 1,
+					["border_color"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["border_visible"] = true,
+					["border_edge"] = "Square Full White",
+					["type"] = "subborder",
+				}, -- [2]
+				{
+					["glowFrequency"] = 0.1,
+					["type"] = "subglow",
+					["glowXOffset"] = 0,
+					["glowType"] = "Pixel",
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						0.88627457618713, -- [2]
+						0.76862752437592, -- [3]
+						1, -- [4]
+					},
+					["useGlowColor"] = true,
+					["glowScale"] = 1,
+					["glow"] = false,
+					["glowThickness"] = 1,
+					["glowLines"] = 8,
+					["glowBorder"] = true,
+				}, -- [3]
+				{
+					["glowFrequency"] = 0,
+					["type"] = "subglow",
+					["glowXOffset"] = 1,
+					["glowType"] = "buttonOverlay",
+					["glowLength"] = 20,
+					["glowYOffset"] = 1,
+					["glowColor"] = {
+						1, -- [1]
+						0.64705882352941, -- [2]
+						0.31764705882353, -- [3]
+						1, -- [4]
+					},
+					["useGlowColor"] = false,
+					["glowScale"] = 1,
+					["glow"] = false,
+					["glowThickness"] = 1,
+					["glowLines"] = 30,
+					["glowBorder"] = false,
+				}, -- [4]
+				{
+					["text_shadowXOffset"] = 0,
+					["text_text"] = "%p",
+					["text_text_format_p_time_mod_rate"] = true,
+					["text_selfPoint"] = "AUTO",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["text_text_format_p_time_legacy_floor"] = true,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_text_format_p_time_format"] = 0,
+					["type"] = "subtext",
+					["anchorXOffset"] = 0,
+					["text_color"] = {
+						1, -- [1]
+						0.87843137254902, -- [2]
+						0.71764705882353, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Expressway",
+					["text_text_format_p_time_precision"] = 1,
+					["text_shadowYOffset"] = 0,
+					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
+					["text_anchorPoint"] = "CENTER",
+					["anchorYOffset"] = 0,
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_fontSize"] = 14,
+					["text_text_format_p_time_dynamic_threshold"] = 1,
+					["text_text_format_p_format"] = "timed",
+				}, -- [5]
+			},
+			["height"] = 39,
+			["load"] = {
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["use_never"] = true,
+				["class"] = {
+					["single"] = "DEATHKNIGHT",
+					["multi"] = {
+						["DEATHKNIGHT"] = true,
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["zoneIds"] = "",
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["class_and_spec"] = {
+					["single"] = 250,
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["single"] = 1,
+					["multi"] = {
+						true, -- [1]
+						true, -- [2]
+						true, -- [3]
+					},
+				},
+				["use_class_and_spec"] = true,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spellknown"] = true,
+				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_vehicleUi"] = false,
+				["spellknown"] = 194844,
+				["use_dragonriding"] = false,
+			},
+			["useCooldownModRate"] = true,
+			["source"] = "import",
+			["width"] = 39,
+			["icon"] = true,
+			["parent"] = "Death Knight [Core]",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = 135994,
+			["regionType"] = "icon",
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
+			["desaturate"] = false,
+			["config"] = {
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["useTooltip"] = false,
+			["semver"] = "5.3.2",
+			["zoom"] = 0.3,
+			["auto"] = true,
+			["tocversion"] = 100002,
+			["id"] = "Bonestorm",
+			["cooldownTextDisabled"] = true,
+			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
+			["uid"] = "lRoW)Iu7NnM",
+			["inverse"] = true,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 2,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = -2,
+						["variable"] = "OR",
+						["checks"] = {
+							{
+								["trigger"] = 3,
+								["op"] = "<",
+								["variable"] = "show",
+								["value"] = 1,
+							}, -- [1]
+							{
+								["trigger"] = -2,
+								["variable"] = "AND",
+								["checks"] = {
+									{
+										["trigger"] = 2,
+										["op"] = "<",
+										["variable"] = "expirationTime",
+										["value"] = "1",
+									}, -- [1]
+									{
+										["trigger"] = 2,
+										["variable"] = "onCooldown",
+										["value"] = 1,
+									}, -- [2]
+								},
+							}, -- [2]
+						},
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "sub.4.glow",
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["check"] = {
+						["trigger"] = 2,
+						["op"] = "<",
+						["variable"] = "duration",
+						["value"] = "2",
+					},
+					["changes"] = {
+						{
+							["property"] = "sub.5.text_visible",
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "show",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["property"] = "inverse",
+						}, -- [1]
+						{
+							["property"] = "desaturate",
+						}, -- [2]
+						{
+							["value"] = true,
+							["property"] = "sub.3.glow",
+						}, -- [3]
+					},
+				}, -- [4]
+			},
+			["cooldown"] = true,
+			["alpha"] = 1,
+		},
 		["Pet_Alert"] = {
 			["iconSource"] = -1,
 			["wagoID"] = "Hkn-hHozG",
@@ -10930,13 +10831,13 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["use_unit"] = true,
-						["debuffType"] = "HELPFUL",
-						["use_HasPet"] = false,
 						["custom_hide"] = "timed",
+						["use_HasPet"] = false,
+						["spellName"] = 46584,
 						["use_absorbMode"] = true,
-						["use_remaining"] = false,
+						["type"] = "unit",
 						["use_absorbHealMode"] = true,
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["duration"] = "1",
 						["event"] = "Conditions",
@@ -10945,9 +10846,9 @@ WeakAurasSaved = {
 						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "unit",
-						["spellName"] = 46584,
+						["unevent"] = "auto",
+						["use_remaining"] = false,
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -11003,9 +10904,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -11071,16 +10972,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_petbattle"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_vehicleUi"] = false,
 				["role"] = {
 					["multi"] = {
 					},
@@ -11088,9 +10989,9 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 33,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -11123,16 +11024,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Pet_Alert",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "knJFVskyc3r",
 			["inverse"] = true,
 			["authorOptions"] = {
@@ -11140,7 +11041,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Bonegrinder"] = {
 			["iconSource"] = -1,
@@ -11159,11 +11060,10 @@ WeakAurasSaved = {
 						["useExactSpellId"] = true,
 						["auranames"] = {
 						},
-						["matchesShowOn"] = "showOnActive",
 						["ownOnly"] = true,
+						["matchesShowOn"] = "showOnActive",
 						["event"] = "Health",
-						["names"] = {
-						},
+						["unit"] = "player",
 						["unitExists"] = true,
 						["useName"] = false,
 						["spellIds"] = {
@@ -11173,7 +11073,8 @@ WeakAurasSaved = {
 						},
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
+						["names"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -11185,11 +11086,10 @@ WeakAurasSaved = {
 						["useExactSpellId"] = true,
 						["auranames"] = {
 						},
-						["matchesShowOn"] = "showOnActive",
 						["ownOnly"] = true,
+						["matchesShowOn"] = "showOnActive",
 						["event"] = "Health",
-						["names"] = {
-						},
+						["unit"] = "player",
 						["unitExists"] = true,
 						["useName"] = false,
 						["spellIds"] = {
@@ -11199,7 +11099,8 @@ WeakAurasSaved = {
 						},
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
+						["names"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -11272,9 +11173,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -11298,7 +11199,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -11309,7 +11210,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -11348,13 +11249,13 @@ WeakAurasSaved = {
 				["use_class"] = true,
 				["use_dragonriding"] = false,
 				["use_class_and_spec"] = true,
-				["use_vehicleUi"] = false,
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spellknown"] = 377098,
 				["size"] = {
 					["multi"] = {
@@ -11362,11 +11263,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Bonegrinder",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "hVzd06a2hJO",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -11386,43 +11324,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Bonegrinder",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "hVzd06a2hJO",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Festering_Wound_1"] = {
@@ -11525,15 +11426,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 85948,
 				["use_dragonriding"] = false,
 			},
@@ -11595,10 +11496,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_powertype"] = true,
 						["debuffType"] = "HARMFUL",
-						["unevent"] = "auto",
+						["power"] = "1",
 						["useName"] = true,
 						["stacksOperator"] = ">=",
-						["power"] = "1",
+						["subeventSuffix"] = "_CAST_START",
 						["power_operator"] = ">=",
 						["use_power"] = true,
 						["event"] = "Power",
@@ -11609,7 +11510,7 @@ WeakAurasSaved = {
 						},
 						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["matchesShowOn"] = "showOnActive",
 						["stacks"] = "1",
 					},
@@ -11810,16 +11711,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_petbattle"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_vehicleUi"] = false,
 				["role"] = {
 					["multi"] = {
 					},
@@ -11851,8 +11752,8 @@ WeakAurasSaved = {
 						["type"] = "custom",
 						["custom_type"] = "stateupdate",
 						["customVariables"] = "",
-						["event"] = "Health",
 						["genericShowOn"] = "showOnActive",
+						["event"] = "Health",
 						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
 						["custom"] = "function(allStates, event, runeNumber, ...)\n    if not allStates\n    then return true end\n    \n    local e = aura_env\n    local c = e.config\n    local math = math\n    \n    if event == \"PLAYER_SPECIALIZATION_CHANGED\"\n    or event == \"PLAYER_ENTERING_WORLD\" then \n        e.currentSpec = e.SpecUpdate(GetSpecialization())\n    end\n    if event == \"RUNE_POWER_UPDATE\" then\n        for i = 1,6 do\n            local start, duration, runeReady = GetRuneCooldown(i)\n            allStates[i] = {\n                changed = true,\n                show = true,\n                progressType = \"timed\",\n                expirationTime = start + duration,\n                duration = duration,\n                index = i,\n                full = runeReady\n            }\n        end\n        if c.sortRunes then \n            table.sort(allStates, function(a,b)\n                    if a.expirationTime and b.expirationTime then\n                        return a.expirationTime < b.expirationTime\n                    else\n                        return true\n                    end\n            end)\n        end\n    end\n    return true\nend",
@@ -11887,9 +11788,9 @@ WeakAurasSaved = {
 						["use_exact_spellName"] = true,
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
+						["events"] = "PLAYER_SPECIALIZATION_CHANGED,RUNE_POWER_UPDATE, PLAYER_ENTERING_WORLD",
 						["spellIds"] = {
 						},
-						["events"] = "PLAYER_SPECIALIZATION_CHANGED,RUNE_POWER_UPDATE, PLAYER_ENTERING_WORLD",
 						["check"] = "event",
 						["use_unit"] = true,
 						["use_track"] = true,
@@ -11917,9 +11818,9 @@ WeakAurasSaved = {
 						["use_exact_spellName"] = true,
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
+						["events"] = "PLAYER_SPECIALIZATION_CHANGED,RUNE_POWER_UPDATE, PLAYER_ENTERING_WORLD",
 						["spellIds"] = {
 						},
-						["events"] = "PLAYER_SPECIALIZATION_CHANGED,RUNE_POWER_UPDATE, PLAYER_ENTERING_WORLD",
 						["check"] = "event",
 						["use_unit"] = true,
 						["use_track"] = true,
@@ -11947,9 +11848,9 @@ WeakAurasSaved = {
 						["use_exact_spellName"] = true,
 						["realSpellName"] = 0,
 						["use_spellName"] = true,
+						["events"] = "PLAYER_SPECIALIZATION_CHANGED,RUNE_POWER_UPDATE, PLAYER_ENTERING_WORLD",
 						["spellIds"] = {
 						},
-						["events"] = "PLAYER_SPECIALIZATION_CHANGED,RUNE_POWER_UPDATE, PLAYER_ENTERING_WORLD",
 						["check"] = "event",
 						["use_unit"] = true,
 						["use_track"] = true,
@@ -11977,8 +11878,8 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 0,
 					["colorA"] = 1,
-					["rotate"] = 0,
 					["easeStrength"] = 3,
+					["rotate"] = 0,
 					["colorR"] = 1,
 					["scalex"] = 1,
 				},
@@ -11989,17 +11890,17 @@ WeakAurasSaved = {
 					["colorG"] = 1,
 					["colorA"] = 1,
 					["use_translate"] = true,
-					["type"] = "custom",
-					["easeStrength"] = 3,
 					["scaleType"] = "straightScale",
+					["easeStrength"] = 3,
+					["type"] = "custom",
 					["scaley"] = 1,
 					["easeType"] = "none",
 					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n    local e = aura_env\n    local c = e.config\n    local s = e.state\n    local r = e.region\n    if s then\n        if c.PositionShardsManually then\n            local x = c[\"Rune\"..s.index..\"X\"]\n            local y = c[\"Rune\"..s.index..\"Y\"]\n            return x, y\n        else\n            local value = (e.cloneId-1)*(r:GetWidth()+c.Spacing) or 0\n            return value, 0\n        end\n    end\nend",
 					["use_color"] = false,
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 0,
 					["colorType"] = "custom",
+					["y"] = 0,
+					["x"] = 0,
 					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      return startX + (progress * (scaleX - startX)), startY + (progress * (scaleY - startY))\n    end\n  ",
 					["colorR"] = 1,
 					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n    local e = aura_env\n    local c = e.config\n    local s = e.state\n    local r = e.region\n    local bg = r.bar.bg\n    \n    local spec = e.currentSpec \n    local FGColor = c[spec..\"FG\"]\n    local BGColor = c[spec..\"BG\"]\n    local fullColor = c[spec..\"Full\"]\n    local rechargeColor = c[\"Recharge\"]\n    \n    if s and spec then\n        bg:SetVertexColor(BGColor[1], BGColor[2], BGColor[3], BGColor[4])\n        if c.rechargeChangeColor then\n            return rechargeColor[1], rechargeColor[2], rechargeColor[3], rechargeColor[4]\n        else\n            if s.full then\n                return fullColor[1], fullColor[2], fullColor[3], fullColor[4]\n            elseif e.ColorShardsSeparately then\n                local fg = \"Rune\"..s.index\n                return p[fg].r, p[fg].g, p[fg].b, p[fg].a\n            else\n                return FGColor[1], FGColor[2], FGColor[3], FGColor[4]\n            end\n        end\n    end\nend",
@@ -12071,13 +11972,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_anchorYOffset"] = 1,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "INNER_CENTER",
 					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 1,
 					["text_fontSize"] = 12,
 					["anchorXOffset"] = 0,
 					["text_text_format_p_format"] = "timed",
@@ -12608,8 +12509,8 @@ WeakAurasSaved = {
 			["semver"] = "5.3.2",
 			["color"] = {
 			},
-			["id"] = "Runes",
 			["sparkHidden"] = "BOTH",
+			["id"] = "Runes",
 			["frameStrata"] = 3,
 			["width"] = 40.7,
 			["borderBackdrop"] = "Blizzard Dialog Background Dark",
@@ -12867,9 +12768,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -12940,29 +12841,69 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 57330,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
+			["authorOptions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = false,
+					["scalex"] = 1,
+					["type"] = "none",
+					["colorType"] = "custom",
+					["easeType"] = "none",
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["easeStrength"] = 3,
+					["y"] = 0,
+					["x"] = 0,
+					["colorB"] = 1,
+					["use_color"] = false,
+					["colorFunc"] = "",
+					["rotate"] = 0,
+					["translateType"] = "straightTranslate",
+					["duration"] = "",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
 			["url"] = "https://wago.io/Afenar_DK/116",
-			["xOffset"] = 0,
-			["parent"] = "Death Knight [Core]",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["regionType"] = "icon",
 			["displayIcon"] = "Interface\\Icons\\ability_deathknight_pillaroffrost",
+			["parent"] = "Death Knight [Core]",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -12980,20 +12921,18 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["authorOptions"] = {
-			},
 			["config"] = {
 			},
 			["useCooldownModRate"] = true,
-			["auto"] = true,
-			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
+			["cooldownTextDisabled"] = true,
+			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Horn_of_Winter",
-			["cooldownTextDisabled"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "mp9fjrRY1NC",
 			["inverse"] = true,
 			["desaturate"] = false,
@@ -13051,45 +12990,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = false,
-					["scalex"] = 1,
-					["type"] = "none",
-					["x"] = 0,
-					["easeType"] = "none",
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["easeStrength"] = 3,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["colorB"] = 1,
-					["use_color"] = false,
-					["colorFunc"] = "",
-					["rotate"] = 0,
-					["translateType"] = "straightTranslate",
-					["duration"] = "",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Raise_Dead"] = {
 			["iconSource"] = -1,
@@ -13124,7 +13025,7 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["type"] = "spell",
 						["unit"] = "player",
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["custom_hide"] = "timed",
 						["event"] = "Cooldown Progress (Spell)",
@@ -13134,7 +13035,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["use_remaining"] = false,
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_genericShowOn"] = true,
 						["use_track"] = true,
 						["remaining_operator"] = ">=",
@@ -13191,9 +13092,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -13259,25 +13160,26 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_petbattle"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_vehicleUi"] = false,
 				["role"] = {
 					["multi"] = {
 					},
 				},
 			},
 			["source"] = "import",
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
+			["parent"] = "Death Knight [Utility]",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -13294,13 +13196,12 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["parent"] = "Death Knight [Utility]",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["cooldownEdge"] = false,
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -13327,22 +13228,22 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["cooldownTextDisabled"] = true,
+			["frameStrata"] = 2,
+			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Raise_Dead",
 			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "9osFkTegSFx",
 			["inverse"] = true,
 			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["stickyDuration"] = false,
+			["cooldownEdge"] = false,
 		},
 		["Runic_Corruption"] = {
 			["iconSource"] = -1,
@@ -13390,7 +13291,7 @@ WeakAurasSaved = {
 							"51460", -- [1]
 						},
 						["custom_hide"] = "timed",
-						["buffShowOn"] = "showAlways",
+						["debuffType"] = "HELPFUL",
 						["unevent"] = "auto",
 						["useName"] = true,
 						["use_debuffClass"] = false,
@@ -13404,7 +13305,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 							51460, -- [1]
 						},
-						["debuffType"] = "HELPFUL",
+						["buffShowOn"] = "showAlways",
 						["remOperator"] = ">=",
 						["combineMatches"] = "showLowest",
 						["names"] = {
@@ -13483,9 +13384,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -13553,23 +13454,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 93402,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 33,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -13595,9 +13496,9 @@ WeakAurasSaved = {
 					["colorB"] = 1,
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["colorType"] = "custom",
-					["y"] = 0,
 					["x"] = 0,
+					["y"] = 0,
+					["colorType"] = "custom",
 					["easeStrength"] = 3,
 					["use_color"] = true,
 					["colorFunc"] = "",
@@ -13620,16 +13521,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Runic_Corruption",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "ivfgbzLzPhz",
 			["inverse"] = false,
 			["authorOptions"] = {
@@ -13637,9 +13538,9 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
-		["Rune of Fallen Crusader"] = {
+		["Rune of Razor Ice"] = {
 			["iconSource"] = -1,
 			["wagoID"] = "Hkn-hHozG",
 			["xOffset"] = 0,
@@ -13654,12 +13555,12 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "aura2",
 						["auranames"] = {
-							"53365", -- [1]
+							"51714", -- [1]
 						},
 						["matchesShowOn"] = "showOnActive",
 						["event"] = "Health",
-						["unit"] = "player",
-						["unitExists"] = true,
+						["unit"] = "target",
+						["unitExists"] = false,
 						["ownOnly"] = true,
 						["spellIds"] = {
 						},
@@ -13668,7 +13569,7 @@ WeakAurasSaved = {
 						["useName"] = true,
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
-						["debuffType"] = "HELPFUL",
+						["debuffType"] = "HARMFUL",
 					},
 					["untrigger"] = {
 					},
@@ -13740,9 +13641,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -13755,11 +13656,50 @@ WeakAurasSaved = {
 					["text_text_format_p_time_dynamic_threshold"] = 1,
 					["text_text_format_p_format"] = "timed",
 				}, -- [4]
+				{
+					["text_text_format_p_time_format"] = 0,
+					["text_text_format_s_format"] = "none",
+					["text_text"] = "%s",
+					["text_text_format_p_format"] = "timed",
+					["text_selfPoint"] = "TOPRIGHT",
+					["text_automaticWidth"] = "Auto",
+					["text_fixedWidth"] = 64,
+					["anchorYOffset"] = 0,
+					["text_justify"] = "CENTER",
+					["rotateText"] = "NONE",
+					["text_anchorYOffset"] = 3,
+					["type"] = "subtext",
+					["text_anchorXOffset"] = 3,
+					["text_color"] = {
+						1, -- [1]
+						0.88627457618713, -- [2]
+						0.76862752437592, -- [3]
+						1, -- [4]
+					},
+					["text_font"] = "Expressway",
+					["text_text_format_p_time_dynamic_threshold"] = 60,
+					["text_shadowYOffset"] = 0,
+					["text_shadowColor"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						1, -- [4]
+					},
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
+					["text_anchorPoint"] = "TOPRIGHT",
+					["text_fontType"] = "OUTLINE",
+					["text_text_format_p_time_precision"] = 1,
+					["text_fontSize"] = 16,
+					["anchorXOffset"] = 0,
+					["text_shadowXOffset"] = 0,
+				}, -- [5]
 			},
 			["height"] = 33,
 			["load"] = {
 				["use_petbattle"] = false,
 				["class_and_spec"] = {
+					["single"] = 251,
 					["multi"] = {
 						[252] = true,
 						[251] = true,
@@ -13775,30 +13715,66 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_class_and_spec"] = false,
+				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_never"] = true,
-				["use_vehicleUi"] = false,
+				["use_class_and_spec"] = false,
+				["use_spec"] = true,
 				["spec"] = {
-					["single"] = 3,
+					["single"] = 2,
 					["multi"] = {
-						[3] = true,
 					},
 				},
 				["use_spellknown"] = false,
-				["spellknown"] = 374574,
+				["use_vehicleUi"] = false,
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Rune of Razor Ice",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "DIAmjSB2PCi",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -13818,43 +13794,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Rune of Fallen Crusader",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "PEhGxKOUcoV",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Death_and_Decay"] = {
@@ -13940,12 +13879,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 43265,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -13957,9 +13896,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 43265,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -14062,13 +14001,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_anchorYOffset"] = 3,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "TOPRIGHT",
 					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["text_fontSize"] = 18,
 					["text_text_format_p_time_dynamic_threshold"] = 1,
 					["text_text_format_p_format"] = "timed",
@@ -14095,9 +14034,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -14167,23 +14106,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 43265,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -14218,11 +14157,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Death_and_Decay",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -14302,7 +14241,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["leap"] = {
 			["iconSource"] = -1,
@@ -14433,9 +14372,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -14510,9 +14449,9 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 33,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -14544,16 +14483,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "leap",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "D2mfkzP6Qmb",
 			["inverse"] = true,
 			["authorOptions"] = {
@@ -14614,7 +14553,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Death's Caress"] = {
 			["iconSource"] = -1,
@@ -14733,9 +14672,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -14800,16 +14739,16 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
 				["use_spellknown"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -14821,15 +14760,55 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 33,
+			["authorOptions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = false,
+					["scalex"] = 1,
+					["type"] = "none",
+					["colorType"] = "custom",
+					["easeType"] = "none",
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["easeStrength"] = 3,
+					["y"] = 0,
+					["x"] = 0,
+					["colorB"] = 1,
+					["use_color"] = false,
+					["colorFunc"] = "",
+					["rotate"] = 0,
+					["translateType"] = "straightTranslate",
+					["duration"] = "",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
 			["url"] = "https://wago.io/Afenar_DK/116",
-			["xOffset"] = 0,
-			["parent"] = "Death Knight [Dynamic]",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["regionType"] = "icon",
 			["displayIcon"] = "Interface\\Icons\\ability_deathknight_pillaroffrost",
+			["parent"] = "Death Knight [Dynamic]",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -14847,20 +14826,18 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["authorOptions"] = {
-			},
 			["config"] = {
 			},
 			["useCooldownModRate"] = true,
-			["auto"] = true,
-			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
+			["cooldownTextDisabled"] = true,
+			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Death's Caress",
-			["cooldownTextDisabled"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "CPS(1GeKHGJ",
 			["inverse"] = true,
 			["desaturate"] = false,
@@ -14929,45 +14906,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = false,
-					["scalex"] = 1,
-					["type"] = "none",
-					["x"] = 0,
-					["easeType"] = "none",
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["easeStrength"] = 3,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["colorB"] = 1,
-					["use_color"] = false,
-					["colorFunc"] = "",
-					["rotate"] = 0,
-					["translateType"] = "straightTranslate",
-					["duration"] = "",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["DK_PvPT4"] = {
 			["iconSource"] = -1,
@@ -15063,9 +15002,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -15127,16 +15066,16 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
 				["use_spellknown"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["single"] = 14,
 					["multi"] = {
@@ -15152,15 +15091,56 @@ WeakAurasSaved = {
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
-			["zoom"] = 0.3,
-			["desaturate"] = false,
+			["cooldownTextDisabled"] = true,
 			["parent"] = "Death Knight [Utility]",
+			["desaturate"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["anchorFrameFrame"] = "ElvUF_Player",
 			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["icon"] = true,
+			["frameStrata"] = 2,
+			["config"] = {
+			},
+			["anchorFrameParent"] = false,
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "DK_PvPT4",
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["alpha"] = 0.3,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "h9D8Q5w9Tik",
+			["inverse"] = true,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = 1,
+							["property"] = "alpha",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -15182,47 +15162,6 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 					["duration_type"] = "seconds",
 				},
-			},
-			["icon"] = true,
-			["useCooldownModRate"] = true,
-			["config"] = {
-			},
-			["anchorFrameParent"] = false,
-			["width"] = 33,
-			["alpha"] = 0.3,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "DK_PvPT4",
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["frameStrata"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "h9D8Q5w9Tik",
-			["inverse"] = true,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = 1,
-							["property"] = "alpha",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Rune Mastery"] = {
@@ -15326,9 +15265,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -15380,11 +15319,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Rune Mastery",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "ByTk3mApZ3u",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -15404,43 +15380,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Rune Mastery",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "ByTk3mApZ3u",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Death and Decay (Blood)"] = {
@@ -15605,14 +15544,14 @@ WeakAurasSaved = {
 						1, -- [4]
 					},
 					["text_font"] = "Expressway",
-					["text_fontType"] = "OUTLINE",
-					["text_shadowYOffset"] = 0,
 					["text_text_format_3.s_format"] = "none",
+					["text_anchorYOffset"] = 3,
+					["text_fontType"] = "OUTLINE",
 					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
 					["text_anchorPoint"] = "TOPRIGHT",
 					["text_text_format_2.s_format"] = "none",
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_fontSize"] = 18,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
 					["text_text_format_p_format"] = "timed",
@@ -15639,9 +15578,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -15658,13 +15597,13 @@ WeakAurasSaved = {
 					["text_text_format_p_time_precision"] = 1,
 					["text_text"] = "%3.p",
 					["text_text_format_3.p_time_format"] = 0,
-					["text_text_format_p_format"] = "timed",
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
 						0, -- [3]
 						1, -- [4]
 					},
+					["text_text_format_p_format"] = "timed",
 					["anchorXOffset"] = 0,
 					["text_text_format_3.p_time_legacy_floor"] = false,
 					["text_automaticWidth"] = "Auto",
@@ -15717,8 +15656,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -15733,30 +15672,16 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["authorOptions"] = {
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -15775,14 +15700,14 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["width"] = 39,
 			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Death and Decay (Blood)",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["uid"] = "1INabBr1BCU",
 			["inverse"] = true,
 			["parent"] = "Death Knight [Core]",
@@ -15928,11 +15853,25 @@ WeakAurasSaved = {
 				}, -- [7]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 		},
 		["Blooddrinker"] = {
@@ -16087,9 +16026,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -16152,12 +16091,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -16169,9 +16108,9 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 39,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -16200,9 +16139,9 @@ WeakAurasSaved = {
 					["scalex"] = 1,
 					["scaley"] = 1,
 					["alpha"] = 0.69,
-					["x"] = 0,
-					["y"] = 0,
 					["colorType"] = "pulseColor",
+					["y"] = 0,
+					["x"] = 0,
 					["easeStrength"] = 3,
 					["colorA"] = 1,
 					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return r1 + (newProgress * (r2 - r1)),\n           g1 + (newProgress * (g2 - g1)),\n           b1 + (newProgress * (b2 - b1)),\n           a1 + (newProgress * (a2 - a1))\n    end\n  ",
@@ -16220,16 +16159,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Blooddrinker",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "LZ2L5nxJ1)G",
 			["inverse"] = true,
 			["authorOptions"] = {
@@ -16299,7 +16238,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Wraith_Walk"] = {
 			["iconSource"] = -1,
@@ -16433,9 +16372,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -16501,15 +16440,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 212552,
 				["role"] = {
 					["multi"] = {
@@ -16518,7 +16457,8 @@ WeakAurasSaved = {
 			},
 			["width"] = 33,
 			["source"] = "import",
-			["useCooldownModRate"] = true,
+			["alpha"] = 0.3,
+			["internalVersion"] = 61,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -16541,32 +16481,31 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["desaturate"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["anchorFrameFrame"] = "WeakAuras:Dark_Command",
 			["regionType"] = "icon",
-			["internalVersion"] = 61,
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
-			["authorOptions"] = {
-			},
+			["parent"] = "Death Knight [Utility]",
 			["config"] = {
 			},
-			["alpha"] = 0.3,
-			["cooldownTextDisabled"] = true,
+			["useCooldownModRate"] = true,
 			["zoom"] = 0.3,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Wraith_Walk",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["icon"] = true,
+			["authorOptions"] = {
+			},
 			["uid"] = "QQHzLE1(Xzl",
 			["inverse"] = true,
-			["parent"] = "Death Knight [Utility]",
+			["desaturate"] = false,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -16627,7 +16566,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["Trinket_1_DK"] = {
 			["iconSource"] = -1,
@@ -16662,14 +16601,14 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["use_absorbMode"] = true,
-						["event"] = "Cooldown Progress (Equipment Slot)",
+						["use_itemName"] = true,
 						["use_testForCooldown"] = true,
 						["use_itemSlot"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = true,
-						["use_itemName"] = true,
+						["event"] = "Cooldown Progress (Equipment Slot)",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["sourceUnit"] = "player",
 						["use_genericShowOn"] = true,
@@ -16746,9 +16685,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -16833,40 +16772,27 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["zoneIds"] = "",
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_dragonriding"] = false,
 				["spellknown"] = 34433,
 				["use_class_and_spec"] = false,
 			},
 			["source"] = "import",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Afenar_DK/116",
 			["parent"] = "Death Knight [Core]",
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["glow_action"] = "show",
-					["do_sound"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Shotgun.ogg",
-					["glow_frame"] = "WeakAuras:Dog",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_sound"] = false,
-				},
-			},
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -16883,14 +16809,14 @@ WeakAurasSaved = {
 					["use_translate"] = false,
 					["scalex"] = 1,
 					["type"] = "none",
-					["x"] = 1,
+					["colorType"] = "custom",
 					["easeType"] = "none",
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local angle = (progress + 0.25) * 2 * math.pi\n      return startX + (math.cos(angle) * deltaX * math.cos(angle*2)), startY + (math.abs(math.cos(angle)) * deltaY * math.sin(angle*2))\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
 					["easeStrength"] = 3,
 					["y"] = 1,
-					["colorType"] = "custom",
+					["x"] = 1,
 					["colorB"] = 1,
 					["use_color"] = false,
 					["colorFunc"] = "",
@@ -16915,15 +16841,15 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
+			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Trinket_1_DK",
 			["auto"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["uid"] = "3eoTDkjSA1X",
 			["inverse"] = true,
 			["xOffset"] = 0,
@@ -16973,7 +16899,20 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["glow_action"] = "show",
+					["do_sound"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Shotgun.ogg",
+					["glow_frame"] = "WeakAuras:Dog",
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_sound"] = false,
+				},
+			},
 		},
 		["Umbilicus Eternus"] = {
 			["iconSource"] = -1,
@@ -16993,11 +16932,10 @@ WeakAurasSaved = {
 						["auranames"] = {
 							"391519", -- [1]
 						},
-						["matchesShowOn"] = "showOnActive",
 						["ownOnly"] = true,
+						["matchesShowOn"] = "showOnActive",
 						["event"] = "Health",
-						["names"] = {
-						},
+						["unit"] = "player",
 						["unitExists"] = true,
 						["useName"] = false,
 						["spellIds"] = {
@@ -17007,7 +16945,8 @@ WeakAurasSaved = {
 						},
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
+						["names"] = {
+						},
 						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
@@ -17080,9 +17019,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -17115,8 +17054,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -17130,11 +17069,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Umbilicus Eternus",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "t5dOVc07YIk",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -17154,43 +17130,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Umbilicus Eternus",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "t5dOVc07YIk",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Racial_Traits_DK"] = {
@@ -17485,16 +17424,16 @@ WeakAurasSaved = {
 						["type"] = "spell",
 						["use_genericShowOn"] = true,
 						["subeventSuffix"] = "_CAST_START",
-						["genericShowOn"] = "showOnCooldown",
-						["duration"] = "1",
 						["event"] = "Cooldown Progress (Spell)",
-						["use_exact_spellName"] = true,
+						["duration"] = "1",
+						["genericShowOn"] = "showOnCooldown",
+						["use_unit"] = true,
 						["realSpellName"] = 26297,
 						["use_spellName"] = true,
 						["use_absorbMode"] = true,
 						["subeventPrefix"] = "SPELL",
 						["unit"] = "player",
-						["use_unit"] = true,
+						["use_exact_spellName"] = true,
 						["use_track"] = true,
 						["spellName"] = 26297,
 					},
@@ -17637,9 +17576,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -17654,7 +17593,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["height"] = 33,
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -17710,20 +17649,20 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["zoneIds"] = "",
 				["use_dragonriding"] = false,
 			},
-			["stickyDuration"] = false,
 			["xOffset"] = 0,
+			["stickyDuration"] = false,
 			["fontSize"] = 24,
 			["source"] = "import",
 			["information"] = {
@@ -17743,14 +17682,19 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["useTooltip"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["anchorFrameFrame"] = "ElvUF_Player",
 			["regionType"] = "icon",
 			["config"] = {
 			},
 			["selfPoint"] = "CENTER",
 			["width"] = 33,
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
 			["anchorFrameParent"] = false,
 			["cooldownTextDisabled"] = true,
 			["semver"] = "5.3.2",
@@ -17758,22 +17702,17 @@ WeakAurasSaved = {
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Racial_Traits_DK",
-			["cooldownEdge"] = false,
+			["spellName"] = "28730",
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SELECTFRAME",
-			["spellName"] = "28730",
+			["useTooltip"] = false,
 			["uid"] = "YAZXur1kOsQ",
 			["inverse"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Death Knight [Utility]",
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["parent"] = "Death Knight [Utility]",
+			["cooldownEdge"] = false,
 		},
 		["Vile Contagion "] = {
 			["iconSource"] = -1,
@@ -17962,9 +17901,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -18033,23 +17972,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 390279,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -18078,9 +18017,9 @@ WeakAurasSaved = {
 					["scalex"] = 1,
 					["scaley"] = 1,
 					["alpha"] = 0.69,
-					["x"] = 0,
-					["y"] = 0,
 					["colorType"] = "custom",
+					["y"] = 0,
+					["x"] = 0,
 					["easeStrength"] = 3,
 					["colorA"] = 1,
 					["colorFunc"] = "",
@@ -18098,16 +18037,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Vile Contagion ",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "K4tXkVyBnn)",
 			["inverse"] = true,
 			["authorOptions"] = {
@@ -18179,7 +18118,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Rotten Touch"] = {
 			["iconSource"] = -1,
@@ -18282,9 +18221,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -18317,8 +18256,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -18332,11 +18271,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Rotten Touch",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "fbfC2xvDp9c",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -18356,43 +18332,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Rotten Touch",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "fbfC2xvDp9c",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Rune_Tap"] = {
@@ -18476,12 +18415,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 194679,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -18493,9 +18432,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 194679,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -18641,9 +18580,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -18709,23 +18648,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 194679,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -18760,11 +18699,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Rune_Tap",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -18868,7 +18807,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Army_of_the_Dead"] = {
 			["iconSource"] = -1,
@@ -18898,8 +18837,8 @@ WeakAurasSaved = {
 						["use_showgcd"] = true,
 						["use_unit"] = true,
 						["sourceUnit"] = "player",
-						["spellName"] = 42650,
 						["debuffType"] = "HELPFUL",
+						["spellName"] = 42650,
 						["custom_hide"] = "timed",
 						["type"] = "combatlog",
 						["unevent"] = "timed",
@@ -19024,9 +18963,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -19096,29 +19035,52 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 42650,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
+			["authorOptions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
 			["url"] = "https://wago.io/Afenar_DK/116",
-			["xOffset"] = 0,
-			["parent"] = "Death Knight [Core]",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["regionType"] = "icon",
 			["displayIcon"] = "INTERFACE\\ICONS\\ability_deathknight_summongargoyle",
+			["parent"] = "Death Knight [Core]",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -19136,20 +19098,18 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["authorOptions"] = {
-			},
 			["config"] = {
 			},
 			["useCooldownModRate"] = true,
-			["auto"] = true,
-			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
+			["cooldownTextDisabled"] = true,
+			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Army_of_the_Dead",
-			["cooldownTextDisabled"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "fmJsLZdBUA(",
 			["inverse"] = true,
 			["desaturate"] = false,
@@ -19226,28 +19186,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Runic_Power"] = {
 			["sparkWidth"] = 2,
@@ -19451,10 +19390,10 @@ WeakAurasSaved = {
 						["type"] = "unit",
 						["subeventSuffix"] = "_CAST_START",
 						["unevent"] = "auto",
-						["unit"] = "player",
-						["use_power"] = false,
-						["genericShowOn"] = "showOnActive",
 						["use_unit"] = true,
+						["use_power"] = false,
+						["event"] = "Power",
+						["unit"] = "player",
 						["subeventPrefix"] = "SPELL",
 						["powertype"] = 6,
 						["spellIds"] = {
@@ -19462,7 +19401,7 @@ WeakAurasSaved = {
 						["duration"] = "1",
 						["names"] = {
 						},
-						["event"] = "Power",
+						["genericShowOn"] = "showOnActive",
 						["use_powertype"] = true,
 						["custom_hide"] = "timed",
 					},
@@ -19633,13 +19572,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_format"] = "timed",
-					["text_anchorYOffset"] = 0,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "INNER_CENTER",
 					["anchorYOffset"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 0,
 					["text_fontSize"] = 12,
 					["text_text_format_p_time_dynamic_threshold"] = 0,
 					["text_text_format_p_time_format"] = 0,
@@ -19717,16 +19656,16 @@ WeakAurasSaved = {
 						["HUNTER"] = true,
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_petbattle"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["use_vehicleUi"] = false,
 				["role"] = {
 					["multi"] = {
 					},
@@ -19807,10 +19746,10 @@ WeakAurasSaved = {
 						["auranames"] = {
 							"194310", -- [1]
 						},
-						["type"] = "aura2",
-						["spellName"] = 8042,
-						["unevent"] = "auto",
 						["useName"] = true,
+						["debuffType"] = "HARMFUL",
+						["unevent"] = "auto",
+						["type"] = "aura2",
 						["use_debuffClass"] = false,
 						["subeventSuffix"] = "_CAST_START",
 						["custom_hide"] = "timed",
@@ -19822,7 +19761,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 							194310, -- [1]
 						},
-						["debuffType"] = "HARMFUL",
+						["spellName"] = 8042,
 						["remOperator"] = ">=",
 						["combineMatches"] = "showLowest",
 						["names"] = {
@@ -19959,9 +19898,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -20028,23 +19967,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 8921,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -20074,7 +20013,7 @@ WeakAurasSaved = {
 					["scalex"] = 1,
 					["easeType"] = "none",
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["use_color"] = false,
+					["scaley"] = 1,
 					["alpha"] = 0,
 					["easeStrength"] = 3,
 					["y"] = 0,
@@ -20083,7 +20022,7 @@ WeakAurasSaved = {
 					["colorType"] = "custom",
 					["colorFunc"] = "",
 					["rotate"] = 0,
-					["scaley"] = 1,
+					["use_color"] = false,
 					["duration"] = "",
 				},
 				["finish"] = {
@@ -20101,16 +20040,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Festering_Wound",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "lf0OXR7O69q",
 			["inverse"] = false,
 			["authorOptions"] = {
@@ -20212,7 +20151,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Icebound_Fortitude"] = {
 			["iconSource"] = -1,
@@ -20289,13 +20228,13 @@ WeakAurasSaved = {
 						},
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
-						["debuffType"] = "HELPFUL",
-						["charges"] = "3",
 						["custom_hide"] = "timed",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 48792,
+						["charges_operator"] = "~=",
+						["type"] = "spell",
 						["count"] = "2",
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -20307,9 +20246,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "spell",
-						["spellName"] = 48792,
+						["unevent"] = "auto",
+						["charges"] = "3",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -20405,9 +20344,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -20475,15 +20414,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 48792,
 				["role"] = {
 					["multi"] = {
@@ -20493,8 +20432,8 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 33,
+			["icon"] = true,
 			["parent"] = "Death Knight [Utility]",
-			["alpha"] = 0.3,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -20529,11 +20468,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Icebound_Fortitude",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -20609,7 +20548,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 0.3,
 		},
 		["Raise_Ally"] = {
 			["iconSource"] = -1,
@@ -20660,7 +20599,7 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["type"] = "spell",
 						["use_genericShowOn"] = true,
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["unit"] = "player",
 						["event"] = "Cooldown Progress (Spell)",
@@ -20670,7 +20609,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 						},
 						["use_remaining"] = false,
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["remaining_operator"] = "<=",
 						["use_track"] = true,
 						["duration"] = "1",
@@ -20717,7 +20656,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -20728,7 +20667,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -20766,9 +20705,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -20832,15 +20771,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 61999,
 				["role"] = {
 					["multi"] = {
@@ -20849,7 +20788,8 @@ WeakAurasSaved = {
 			},
 			["width"] = 33,
 			["source"] = "import",
-			["useCooldownModRate"] = true,
+			["alpha"] = 1,
+			["internalVersion"] = 61,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -20872,32 +20812,31 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["desaturate"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["anchorFrameFrame"] = "WeakAuras:Dark_Command",
 			["regionType"] = "icon",
-			["internalVersion"] = 61,
+			["xOffset"] = 0,
 			["cooldownEdge"] = false,
-			["authorOptions"] = {
-			},
+			["parent"] = "Death Knight [Utility]",
 			["config"] = {
 			},
-			["alpha"] = 1,
-			["cooldownTextDisabled"] = true,
+			["useCooldownModRate"] = true,
 			["zoom"] = 0.4,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Raise_Ally",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["icon"] = true,
+			["authorOptions"] = {
+			},
 			["uid"] = "oyn771X5Qp1",
 			["inverse"] = true,
-			["parent"] = "Death Knight [Utility]",
+			["desaturate"] = false,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -20943,7 +20882,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["Dark_Command"] = {
 			["iconSource"] = -1,
@@ -20979,12 +20918,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 56222,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -20996,9 +20935,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 56222,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -21075,9 +21014,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -21145,15 +21084,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 56222,
 				["role"] = {
 					["multi"] = {
@@ -21161,28 +21100,17 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Afenar_DK/116",
 			["parent"] = "Death Knight [Utility]",
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-			},
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -21208,22 +21136,33 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
+			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Dark_Command",
 			["auto"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["uid"] = "HgdN1my7YRj",
 			["inverse"] = true,
 			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+			},
 		},
 		["Unleashed Frenzy"] = {
 			["iconSource"] = -1,
@@ -21326,9 +21265,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -21352,7 +21291,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -21363,7 +21302,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -21404,8 +21343,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -21419,11 +21358,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Unleashed Frenzy",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "anTl)40YEMz",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -21443,43 +21419,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Unleashed Frenzy",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "anTl)40YEMz",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["BloodLust_DK"] = {
@@ -21582,15 +21521,15 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["zoneIds"] = "",
 				["use_dragonriding"] = false,
 			},
@@ -21652,23 +21591,12 @@ WeakAurasSaved = {
 						},
 						["duration"] = "15",
 						["debuffType"] = "HELPFUL",
-						["auraspellids"] = {
-							"264667", -- [1]
-							"90355", -- [2]
-							"80353", -- [3]
-							"32182", -- [4]
-							"2825", -- [5]
-							"292686", -- [6]
-							"230935", -- [7]
-							"256740", -- [8]
-							"178207", -- [9]
-							"390386", -- [10]
-						},
-						["custom_hide"] = "timed",
 						["unevent"] = "timed",
+						["custom_hide"] = "timed",
+						["useExactSpellId"] = true,
 						["type"] = "aura2",
 						["use_debuffClass"] = false,
-						["useExactSpellId"] = true,
+						["custom_type"] = "event",
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["unit"] = "player",
 						["event"] = "Health",
@@ -21685,8 +21613,19 @@ WeakAurasSaved = {
 							32182, -- [7]
 							230935, -- [8]
 						},
+						["auraspellids"] = {
+							"264667", -- [1]
+							"90355", -- [2]
+							"80353", -- [3]
+							"32182", -- [4]
+							"2825", -- [5]
+							"292686", -- [6]
+							"230935", -- [7]
+							"256740", -- [8]
+							"178207", -- [9]
+							"390386", -- [10]
+						},
 						["subeventSuffix"] = "_CAST_SUCCESS",
-						["custom_type"] = "event",
 						["combineMatches"] = "showLowest",
 						["auranames"] = {
 						},
@@ -21791,9 +21730,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -21811,10 +21750,15 @@ WeakAurasSaved = {
 			["timerFlags"] = "OUTLINE",
 			["sparkHidden"] = "BOTH",
 			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
-			["semver"] = "5.3.2",
-			["source"] = "import",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			},
 			["displayTextRight"] = "%p",
+			["source"] = "import",
+			["semver"] = "5.3.2",
 			["borderBackdrop"] = "Blizzard Tooltip",
 			["stacksFont"] = "MSBT Morpheus",
 			["border"] = true,
@@ -21843,12 +21787,7 @@ WeakAurasSaved = {
 			["timerSize"] = 10,
 			["textFlags"] = "OUTLINE",
 			["id"] = "BloodLust_DK",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
+			["useAdjustededMax"] = false,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["customTextUpdate"] = "update",
@@ -21940,12 +21879,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 47568,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -21957,9 +21896,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 47568,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -22055,9 +21994,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -22099,13 +22038,13 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_mod_rate"] = true,
-					["text_anchorYOffset"] = 3,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
+					["text_shadowYOffset"] = 0,
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "TOPRIGHT",
 					["text_text_format_p_time_format"] = 0,
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["text_fontSize"] = 18,
 					["text_text_format_p_time_dynamic_threshold"] = 1,
 					["text_text_format_p_format"] = "timed",
@@ -22167,23 +22106,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 47568,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -22218,11 +22157,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Empower_Rune_Weapon",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -22331,7 +22270,7 @@ WeakAurasSaved = {
 				}, -- [5]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Summon_Gargoyle"] = {
 			["iconSource"] = 0,
@@ -22404,12 +22343,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 49206,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -22421,9 +22360,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 49206,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -22519,9 +22458,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -22586,23 +22525,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 49206,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -22637,11 +22576,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 100002,
 			["id"] = "Summon_Gargoyle",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -22735,7 +22674,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Death Rot"] = {
 			["iconSource"] = -1,
@@ -22838,9 +22777,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -22864,7 +22803,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -22875,7 +22814,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -22911,8 +22850,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -22926,11 +22865,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Death Rot",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "1ASRxa8YpLg",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -22950,43 +22926,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Death Rot",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "1ASRxa8YpLg",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Potions_DK"] = {
@@ -23086,15 +23025,15 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["zoneIds"] = "",
 				["use_dragonriding"] = false,
 			},
@@ -23147,13 +23086,13 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["use_unit"] = true,
 						["duration"] = "15",
-						["useName"] = true,
-						["unevent"] = "timed",
-						["debuffType"] = "HELPFUL",
-						["showClones"] = true,
 						["type"] = "aura2",
-						["use_debuffClass"] = false,
 						["custom_type"] = "event",
+						["custom_hide"] = "timed",
+						["showClones"] = true,
+						["useName"] = true,
+						["use_debuffClass"] = false,
+						["subeventSuffix"] = "_CAST_SUCCESS",
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["auranames"] = {
 							"307162", -- [1]
@@ -23176,8 +23115,8 @@ WeakAurasSaved = {
 							279162, -- [3]
 							279163, -- [4]
 						},
-						["subeventSuffix"] = "_CAST_SUCCESS",
-						["custom_hide"] = "timed",
+						["unevent"] = "timed",
+						["debuffType"] = "HELPFUL",
 						["combineMatches"] = "showLowest",
 						["ownOnly"] = true,
 						["names"] = {
@@ -23286,9 +23225,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -23306,10 +23245,15 @@ WeakAurasSaved = {
 			["timerFlags"] = "OUTLINE",
 			["sparkHidden"] = "BOTH",
 			["sparkBlendMode"] = "ADD",
-			["useAdjustededMax"] = false,
-			["semver"] = "5.3.2",
-			["source"] = "import",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			},
 			["displayTextRight"] = "%p",
+			["source"] = "import",
+			["semver"] = "5.3.2",
 			["borderBackdrop"] = "Blizzard Tooltip",
 			["stacksFont"] = "MSBT Morpheus",
 			["border"] = true,
@@ -23338,12 +23282,7 @@ WeakAurasSaved = {
 			["timerSize"] = 10,
 			["textFlags"] = "OUTLINE",
 			["id"] = "Potions_DK",
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0, -- [4]
-			},
+			["useAdjustededMax"] = false,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["customTextUpdate"] = "update",
@@ -23400,7 +23339,7 @@ WeakAurasSaved = {
 							"101568", -- [1]
 						},
 						["custom_hide"] = "timed",
-						["buffShowOn"] = "showOnActive",
+						["debuffType"] = "HELPFUL",
 						["unevent"] = "auto",
 						["useName"] = true,
 						["use_debuffClass"] = false,
@@ -23414,7 +23353,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 							101568, -- [1]
 						},
-						["debuffType"] = "HELPFUL",
+						["buffShowOn"] = "showOnActive",
 						["remOperator"] = ">=",
 						["combineMatches"] = "showLowest",
 						["names"] = {
@@ -23473,9 +23412,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -23545,15 +23484,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 8921,
 				["role"] = {
 					["multi"] = {
@@ -23562,9 +23501,9 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 33,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -23614,16 +23553,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = false,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Death_Strike_Free",
-			["semver"] = "5.3.2",
+			["auto"] = false,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "6E1AppASgk0",
 			["inverse"] = false,
 			["authorOptions"] = {
@@ -23631,7 +23570,7 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Trinket_2_DK"] = {
 			["iconSource"] = -1,
@@ -23666,14 +23605,14 @@ WeakAurasSaved = {
 						["names"] = {
 						},
 						["use_absorbMode"] = true,
-						["event"] = "Cooldown Progress (Equipment Slot)",
+						["use_itemName"] = true,
 						["use_testForCooldown"] = true,
 						["use_itemSlot"] = true,
 						["use_spellId"] = true,
 						["spellIds"] = {
 						},
 						["use_sourceUnit"] = true,
-						["use_itemName"] = true,
+						["event"] = "Cooldown Progress (Equipment Slot)",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["sourceUnit"] = "player",
 						["use_genericShowOn"] = true,
@@ -23750,9 +23689,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -23837,40 +23776,27 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["zoneIds"] = "",
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_dragonriding"] = false,
 				["spellknown"] = 34433,
 				["use_class_and_spec"] = false,
 			},
 			["source"] = "import",
-			["alpha"] = 1,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Afenar_DK/116",
 			["parent"] = "Death Knight [Core]",
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["glow_action"] = "show",
-					["do_sound"] = false,
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Shotgun.ogg",
-					["glow_frame"] = "WeakAuras:Dog",
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_sound"] = false,
-				},
-			},
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -23887,14 +23813,14 @@ WeakAurasSaved = {
 					["use_translate"] = false,
 					["scalex"] = 1,
 					["type"] = "none",
-					["x"] = 1,
+					["colorType"] = "custom",
 					["easeType"] = "none",
 					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      local angle = (progress + 0.25) * 2 * math.pi\n      return startX + (math.cos(angle) * deltaX * math.cos(angle*2)), startY + (math.abs(math.cos(angle)) * deltaY * math.sin(angle*2))\n    end\n  ",
 					["scaley"] = 1,
 					["alpha"] = 0,
 					["easeStrength"] = 3,
 					["y"] = 1,
-					["colorType"] = "custom",
+					["x"] = 1,
 					["colorB"] = 1,
 					["use_color"] = false,
 					["colorFunc"] = "",
@@ -23919,15 +23845,15 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
+			["alpha"] = 1,
+			["cooldownTextDisabled"] = true,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Trinket_2_DK",
 			["auto"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["uid"] = "iGM2RuVSkcp",
 			["inverse"] = true,
 			["xOffset"] = 0,
@@ -23977,7 +23903,20 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["glow_action"] = "show",
+					["do_sound"] = false,
+					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\Shotgun.ogg",
+					["glow_frame"] = "WeakAuras:Dog",
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_sound"] = false,
+				},
+			},
 		},
 		["Death Knight [Utility]"] = {
 			["grow"] = "CUSTOM",
@@ -24050,12 +23989,8 @@ WeakAurasSaved = {
 			["radius"] = 200,
 			["useLimit"] = false,
 			["align"] = "CENTER",
-			["limit"] = 5,
+			["space"] = 2,
 			["gridWidth"] = 5,
-			["rotation"] = 0,
-			["stagger"] = 0,
-			["selfPoint"] = "CENTER",
-			["version"] = 116,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -24076,36 +24011,11 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["sortHybridTable"] = {
-				["DK_PvPT1"] = false,
-				["Icebound_Fortitude"] = false,
-				["Death_Grip"] = false,
-				["Raise_Ally"] = false,
-				["BloodLust_DK"] = false,
-				["Anti-Magic_Shell"] = false,
-				["Saves_DK"] = false,
-				["DK_PvPT2"] = false,
-				["Raise_Dead"] = false,
-				["Sacrificial Pact"] = false,
-				["Potions_DK"] = false,
-				["Dark_Command"] = false,
-				["Racial_Traits_DK"] = false,
-				["Wraith_Walk"] = false,
-				["DK_PvPT3"] = false,
-				["Anti-Magic_Zone"] = false,
-				["Gorefiend's_Grasp"] = false,
-				["Lichborn"] = false,
-				["Blinding_Sleet"] = false,
-				["leap"] = false,
-				["DK_PvPT4"] = false,
-				["Death_Pact"] = false,
-				["Forbearance_DK"] = false,
-				["Brain_Freeze"] = false,
-				["Gnaw"] = false,
-				["Asphyxiate"] = false,
-				["Perdition"] = false,
-				["Death's_Advance"] = false,
-			},
+			["rotation"] = 0,
+			["stagger"] = 0,
+			["version"] = 116,
+			["gridType"] = "RD",
+			["selfPoint"] = "CENTER",
 			["internalVersion"] = 61,
 			["load"] = {
 				["talent"] = {
@@ -24142,21 +24052,21 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
+			["limit"] = 5,
 			["sort"] = "none",
-			["authorOptions"] = {
-			},
-			["space"] = 2,
+			["animate"] = false,
 			["constantFactor"] = "RADIUS",
 			["arcLength"] = 360,
 			["borderOffset"] = 4,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Death Knight [Utility]",
-			["uid"] = "6DIdCwp8ZUP",
+			["authorOptions"] = {
+			},
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["animate"] = false,
 			["borderInset"] = 1,
+			["uid"] = "6DIdCwp8ZUP",
 			["xOffset"] = -0.5,
 			["borderColor"] = {
 				0, -- [1]
@@ -24169,7 +24079,36 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["gridType"] = "RD",
+			["sortHybridTable"] = {
+				["DK_PvPT1"] = false,
+				["Icebound_Fortitude"] = false,
+				["Death_Grip"] = false,
+				["Raise_Ally"] = false,
+				["BloodLust_DK"] = false,
+				["Anti-Magic_Shell"] = false,
+				["Saves_DK"] = false,
+				["DK_PvPT2"] = false,
+				["Raise_Dead"] = false,
+				["Sacrificial Pact"] = false,
+				["Potions_DK"] = false,
+				["Racial_Traits_DK"] = false,
+				["Dark_Command"] = false,
+				["Wraith_Walk"] = false,
+				["DK_PvPT3"] = false,
+				["Anti-Magic_Zone"] = false,
+				["Gorefiend's_Grasp"] = false,
+				["Lichborn"] = false,
+				["Blinding_Sleet"] = false,
+				["leap"] = false,
+				["DK_PvPT4"] = false,
+				["Death_Pact"] = false,
+				["Forbearance_DK"] = false,
+				["Brain_Freeze"] = false,
+				["Asphyxiate"] = false,
+				["Gnaw"] = false,
+				["Perdition"] = false,
+				["Death's_Advance"] = false,
+			},
 		},
 		["Vampiric_Blood"] = {
 			["iconSource"] = -1,
@@ -24252,12 +24191,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 55233,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -24269,9 +24208,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 55233,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -24383,9 +24322,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -24451,23 +24390,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 55233,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -24502,11 +24441,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Vampiric_Blood",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -24599,7 +24538,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Festermight"] = {
 			["iconSource"] = -1,
@@ -24702,9 +24641,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -24728,7 +24667,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -24739,7 +24678,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -24775,8 +24714,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -24790,11 +24729,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Festermight",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "8UCy2)ra7x0",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -24814,43 +24790,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Festermight",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "8UCy2)ra7x0",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Gorefiend's_Grasp"] = {
@@ -24971,9 +24910,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -25039,15 +24978,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 108199,
 				["role"] = {
 					["multi"] = {
@@ -25055,19 +24994,34 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["config"] = {
 			},
+			["parent"] = "Death Knight [Utility]",
 			["authorOptions"] = {
 			},
-			["parent"] = "Death Knight [Utility]",
 			["anchorFrameFrame"] = "WeakAuras:Dark_Command",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["desaturate"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["glow_action"] = "show",
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
+					["do_sound"] = false,
+				},
+			},
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -25090,17 +25044,17 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
-			["alpha"] = 0.3,
+			["useCooldownModRate"] = true,
 			["width"] = 33,
-			["frameStrata"] = 2,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["alpha"] = 0.3,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Gorefiend's_Grasp",
 			["url"] = "https://wago.io/Afenar_DK/116",
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["uid"] = "UUnVUVimXbv",
 			["inverse"] = true,
 			["xOffset"] = 0,
@@ -25149,22 +25103,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["glow_action"] = "show",
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
-					["do_sound"] = false,
-				},
-			},
+			["desaturate"] = false,
 		},
 		["Lichborn"] = {
 			["iconSource"] = -1,
@@ -25241,13 +25180,13 @@ WeakAurasSaved = {
 						},
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
-						["debuffType"] = "HELPFUL",
-						["charges"] = "3",
 						["custom_hide"] = "timed",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 49039,
+						["charges_operator"] = "~=",
+						["type"] = "spell",
 						["count"] = "2",
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -25259,9 +25198,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "spell",
-						["spellName"] = 49039,
+						["unevent"] = "auto",
+						["charges"] = "3",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -25357,9 +25296,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -25426,15 +25365,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 49039,
 				["role"] = {
 					["multi"] = {
@@ -25444,8 +25383,8 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 33,
+			["icon"] = true,
 			["parent"] = "Death Knight [Utility]",
-			["alpha"] = 0.3,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -25480,11 +25419,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Lichborn",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -25560,7 +25499,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 0.3,
 		},
 		["Obliterate"] = {
 			["iconSource"] = -1,
@@ -25669,14 +25608,14 @@ WeakAurasSaved = {
 					["text_shadowXOffset"] = 0,
 					["text_text_format_2.p_time_mod_rate"] = true,
 					["text_text_format_2.p_time_format"] = 0,
-					["anchorYOffset"] = 0,
-					["text_text_format_p_format"] = "timed",
+					["text_text_format_p_time_legacy_floor"] = false,
+					["text_text_format_p_time_mod_rate"] = true,
 					["anchorXOffset"] = 0,
 					["text_selfPoint"] = "AUTO",
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["text_text_format_2.p_time_precision"] = 1,
-					["text_text_format_p_time_legacy_floor"] = false,
+					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["text_text_format_2.p_time_legacy_floor"] = false,
@@ -25706,7 +25645,7 @@ WeakAurasSaved = {
 					["text_text_format_p_time_precision"] = 1,
 					["text_fontSize"] = 14,
 					["text_text_format_p_time_dynamic_threshold"] = 1,
-					["text_text_format_p_time_mod_rate"] = true,
+					["text_text_format_p_format"] = "timed",
 				}, -- [4]
 				{
 					["text_text_format_p_time_format"] = 0,
@@ -25746,12 +25685,12 @@ WeakAurasSaved = {
 					["anchorXOffset"] = 0,
 					["text_font"] = "Expressway",
 					["text_shadowXOffset"] = 0,
-					["text_text_format_1.p_time_dynamic_threshold"] = 1,
 					["text_text_format_2.p_time_dynamic_threshold"] = 1,
+					["text_text_format_1.p_time_dynamic_threshold"] = 1,
 					["text_visible"] = true,
 					["text_text_format_1.p_time_mod_rate"] = true,
-					["text_anchorPoint"] = "CENTER",
 					["text_text_format_1.p_format"] = "timed",
+					["text_anchorPoint"] = "CENTER",
 					["text_text_format_p_time_precision"] = 1,
 					["text_text_format_2.p_time_mod_rate"] = true,
 					["text_text_format_p_format"] = "timed",
@@ -25777,8 +25716,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -25793,14 +25732,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0.3,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
+			["cooldown"] = true,
+			["xOffset"] = 0,
+			["uid"] = "taX31HuXuZE",
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Obliterate",
+			["width"] = 39,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["config"] = {
+			},
+			["inverse"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -25821,23 +25777,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-			["uid"] = "taX31HuXuZE",
-			["useCooldownModRate"] = true,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "5.3.2",
-			["tocversion"] = 100002,
-			["id"] = "Obliterate",
-			["width"] = 39,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = true,
-			["icon"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -25928,7 +25867,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["Hemostasis"] = {
 			["text2Point"] = "CENTER",
@@ -25998,15 +25937,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 8921,
 				["use_dragonriding"] = false,
 			},
@@ -26034,40 +25973,40 @@ WeakAurasSaved = {
 						["auranames"] = {
 							"273947", -- [1]
 						},
-						["ownOnly"] = true,
 						["duration"] = "1",
-						["use_unit"] = true,
+						["ownOnly"] = true,
 						["names"] = {
 							"Гемостаз", -- [1]
 						},
+						["subeventPrefix"] = "SPELL",
 						["use_inverse"] = true,
 						["use_tooltip"] = false,
 						["unit"] = "player",
 						["useGroup_count"] = false,
 						["spellName"] = 8042,
-						["useExactSpellId"] = true,
-						["useName"] = false,
-						["custom_hide"] = "timed",
-						["unevent"] = "auto",
-						["type"] = "aura2",
-						["use_debuffClass"] = false,
-						["subeventSuffix"] = "_CAST_START",
-						["buffShowOn"] = "showOnActive",
-						["matchesShowOn"] = "showOnActive",
-						["event"] = "Cooldown Progress (Spell)",
 						["auraspellids"] = {
 							"273947", -- [1]
 						},
+						["useName"] = false,
+						["debuffType"] = "HELPFUL",
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "aura2",
+						["use_debuffClass"] = false,
+						["unevent"] = "auto",
+						["buffShowOn"] = "showOnActive",
+						["matchesShowOn"] = "showOnActive",
+						["event"] = "Cooldown Progress (Spell)",
+						["useExactSpellId"] = true,
 						["realSpellName"] = "Земной шок",
 						["use_spellName"] = true,
 						["spellIds"] = {
 							273947, -- [1]
 						},
-						["debuffType"] = "HELPFUL",
+						["custom_hide"] = "timed",
 						["remOperator"] = ">=",
 						["combineMatches"] = "showLowest",
+						["use_unit"] = true,
 						["use_specific_unit"] = false,
-						["subeventPrefix"] = "SPELL",
 					},
 					["untrigger"] = {
 						["spellName"] = 8042,
@@ -26147,7 +26086,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -26158,7 +26097,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -26196,9 +26135,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -26213,17 +26152,16 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["height"] = 33,
-			["source"] = "import",
+			["text2Containment"] = "INSIDE",
 			["preferToUpdate"] = false,
 			["fontSize"] = 18,
-			["text2Containment"] = "INSIDE",
+			["source"] = "import",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["text1Font"] = "Homespun",
-			["authorOptions"] = {
-			},
+			["cooldownEdge"] = false,
 			["wordWrap"] = "WordWrap",
 			["text2Color"] = {
 				1, -- [1]
@@ -26275,7 +26213,8 @@ WeakAurasSaved = {
 			["conditions"] = {
 			},
 			["cooldown"] = true,
-			["cooldownEdge"] = false,
+			["authorOptions"] = {
+			},
 		},
 		["Tombstone"] = {
 			["iconSource"] = -1,
@@ -26505,9 +26444,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -26576,23 +26515,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 219809,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -26621,9 +26560,9 @@ WeakAurasSaved = {
 					["scalex"] = 1,
 					["scaley"] = 1,
 					["alpha"] = 0.69,
-					["x"] = 0,
-					["y"] = 0,
 					["colorType"] = "pulseColor",
+					["y"] = 0,
+					["x"] = 0,
 					["easeStrength"] = 3,
 					["colorA"] = 1,
 					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return r1 + (newProgress * (r2 - r1)),\n           g1 + (newProgress * (g2 - g1)),\n           b1 + (newProgress * (b2 - b1)),\n           a1 + (newProgress * (a2 - a1))\n    end\n  ",
@@ -26641,16 +26580,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Tombstone",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "(zSASAKwkSy",
 			["inverse"] = true,
 			["authorOptions"] = {
@@ -26739,7 +26678,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Gnaw"] = {
 			["iconSource"] = -1,
@@ -26786,7 +26725,7 @@ WeakAurasSaved = {
 						["debuffType"] = "HARMFUL",
 						["useName"] = true,
 						["subeventPrefix"] = "SPELL",
-						["match_countOperator"] = ">",
+						["unevent"] = "auto",
 						["type"] = "aura2",
 						["names"] = {
 						},
@@ -26800,7 +26739,7 @@ WeakAurasSaved = {
 						["spellName"] = 47481,
 						["subeventSuffix"] = "_CAST_START",
 						["use_track"] = true,
-						["unevent"] = "auto",
+						["match_countOperator"] = ">",
 					},
 					["untrigger"] = {
 					},
@@ -26943,9 +26882,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -27020,9 +26959,9 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 33,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -27054,16 +26993,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Gnaw",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 0.3,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "vruwDtq7wY9",
 			["inverse"] = true,
 			["authorOptions"] = {
@@ -27147,7 +27086,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Forbearance_DK"] = {
 			["sparkWidth"] = 10,
@@ -27249,15 +27188,15 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["zoneIds"] = "",
 				["use_dragonriding"] = false,
 			},
@@ -27437,9 +27376,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -27558,14 +27497,26 @@ WeakAurasSaved = {
 			["internalVersion"] = 61,
 			["selfPoint"] = "CENTER",
 			["align"] = "CENTER",
-			["space"] = 1,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
 			["gridWidth"] = 5,
 			["stagger"] = 0,
-			["useLimit"] = false,
-			["version"] = 116,
 			["yOffset"] = 25,
-			["radius"] = 200,
-			["gridType"] = "RD",
+			["version"] = 116,
+			["space"] = 1,
+			["sortHybridTable"] = {
+				["Festering_Wound_5"] = false,
+				["Festering_Wound_6"] = false,
+				["Festering_Wound_4"] = false,
+				["Festering_Wound_3"] = false,
+				["Festering_Wound_2"] = false,
+				["Festering_Wound_1"] = false,
+			},
+			["useLimit"] = false,
 			["load"] = {
 				["talent"] = {
 					["multi"] = {
@@ -27583,6 +27534,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+			},
+			["gridType"] = "RD",
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
 			},
 			["animation"] = {
 				["start"] = {
@@ -27604,13 +27562,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["arcLength"] = 360,
 			["source"] = "import",
 			["borderInset"] = 1,
 			["scale"] = 1,
@@ -27619,24 +27570,19 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
-			["limit"] = 5,
-			["animate"] = false,
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["sort"] = "none",
+			["arcLength"] = 360,
+			["uid"] = "fKegVQhHyQi",
 			["constantFactor"] = "RADIUS",
 			["rotation"] = 0,
 			["borderOffset"] = 4,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Festering_Wounds",
-			["sort"] = "none",
+			["animate"] = false,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["uid"] = "fKegVQhHyQi",
+			["limit"] = 5,
 			["config"] = {
 			},
 			["xOffset"] = -0.5,
@@ -27646,14 +27592,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["sortHybridTable"] = {
-				["Festering_Wound_5"] = false,
-				["Festering_Wound_6"] = false,
-				["Festering_Wound_4"] = false,
-				["Festering_Wound_3"] = false,
-				["Festering_Wound_2"] = false,
-				["Festering_Wound_1"] = false,
-			},
+			["radius"] = 200,
 		},
 		["Frostwyrms_Fury"] = {
 			["iconSource"] = -1,
@@ -27771,9 +27710,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -27840,12 +27779,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -27854,15 +27793,55 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 39,
+			["authorOptions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = false,
+					["scalex"] = 1,
+					["type"] = "none",
+					["colorType"] = "custom",
+					["easeType"] = "none",
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["easeStrength"] = 3,
+					["y"] = 0,
+					["x"] = 0,
+					["colorB"] = 1,
+					["use_color"] = false,
+					["colorFunc"] = "",
+					["rotate"] = 0,
+					["translateType"] = "straightTranslate",
+					["duration"] = "",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
 			["url"] = "https://wago.io/Afenar_DK/116",
-			["xOffset"] = 0,
-			["parent"] = "Death Knight [Core]",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["regionType"] = "icon",
 			["displayIcon"] = "Interface\\Icons\\inv_axe_114",
+			["parent"] = "Death Knight [Core]",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -27878,20 +27857,18 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["authorOptions"] = {
-			},
 			["config"] = {
 			},
 			["useCooldownModRate"] = true,
-			["auto"] = true,
-			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
+			["cooldownTextDisabled"] = true,
+			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Frostwyrms_Fury",
-			["cooldownTextDisabled"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "YSHBiyeoi5I",
 			["inverse"] = true,
 			["desaturate"] = false,
@@ -27966,45 +27943,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = false,
-					["scalex"] = 1,
-					["type"] = "none",
-					["x"] = 0,
-					["easeType"] = "none",
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["easeStrength"] = 3,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["colorB"] = 1,
-					["use_color"] = false,
-					["colorFunc"] = "",
-					["rotate"] = 0,
-					["translateType"] = "straightTranslate",
-					["duration"] = "",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Consumtion"] = {
 			["iconSource"] = -1,
@@ -28117,9 +28056,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -28186,29 +28125,69 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 205223,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
+			["authorOptions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["alphaType"] = "straight",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["alphaFunc"] = "    function(progress, start, delta)\n      return start + (progress * delta)\n    end\n  ",
+					["use_alpha"] = false,
+					["type"] = "none",
+					["easeType"] = "none",
+					["scalex"] = 1,
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["colorType"] = "custom",
+					["y"] = 0,
+					["x"] = 0,
+					["easeStrength"] = 3,
+					["colorA"] = 1,
+					["colorFunc"] = "",
+					["rotate"] = 0,
+					["use_color"] = false,
+					["duration"] = "",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
 			["url"] = "https://wago.io/Afenar_DK/116",
-			["xOffset"] = 0,
-			["parent"] = "Death Knight [Core]",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["regionType"] = "icon",
 			["displayIcon"] = "Interface\\Icons\\inv_axe_2h_artifactmaw_d_01",
+			["parent"] = "Death Knight [Core]",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -28226,20 +28205,18 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["authorOptions"] = {
-			},
 			["config"] = {
 			},
 			["useCooldownModRate"] = true,
-			["auto"] = true,
-			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
+			["cooldownTextDisabled"] = true,
+			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Consumtion",
-			["cooldownTextDisabled"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "WtZXnFSE9da",
 			["inverse"] = true,
 			["desaturate"] = false,
@@ -28272,45 +28249,7 @@ WeakAurasSaved = {
 				}, -- [2]
 			},
 			["cooldown"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["alphaType"] = "straight",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["alphaFunc"] = "    function(progress, start, delta)\n      return start + (progress * delta)\n    end\n  ",
-					["use_alpha"] = false,
-					["type"] = "none",
-					["easeType"] = "none",
-					["scalex"] = 1,
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["easeStrength"] = 3,
-					["colorA"] = 1,
-					["colorFunc"] = "",
-					["rotate"] = 0,
-					["use_color"] = false,
-					["duration"] = "",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["xOffset"] = 0,
 		},
 		["Death Knight [Resources]"] = {
 			["controlledChildren"] = {
@@ -28411,7 +28350,8 @@ WeakAurasSaved = {
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "group",
 			["borderSize"] = 2,
-			["uid"] = "4oHyLx5pqnN",
+			["config"] = {
+			},
 			["borderOffset"] = 4,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
@@ -28419,17 +28359,16 @@ WeakAurasSaved = {
 			["yOffset"] = 0,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
+			["uid"] = "4oHyLx5pqnN",
 			["authorOptions"] = {
 			},
-			["config"] = {
-			},
-			["selfPoint"] = "CENTER",
 			["borderInset"] = 1,
 			["conditions"] = {
 			},
 			["information"] = {
 			},
-			["xOffset"] = 0,
+			["selfPoint"] = "CENTER",
 		},
 		["蕨皮F4"] = {
 			["sparkWidth"] = 10,
@@ -28532,19 +28471,19 @@ WeakAurasSaved = {
 						0, -- [3]
 						1, -- [4]
 					},
-					["text_text_format_p_time_legacy_floor"] = false,
+					["anchorYOffset"] = 0,
 					["text_text_format_lastBoss_format"] = "none",
 					["text_automaticWidth"] = "Auto",
 					["text_fixedWidth"] = 64,
 					["anchorXOffset"] = 0,
-					["anchorYOffset"] = 0,
+					["text_text_format_p_time_legacy_floor"] = false,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
 					["text_text_format_p_time_mod_rate"] = true,
 					["text_text_format_p_time_format"] = 2,
-					["text_text_format_nextRare_format"] = "none",
-					["type"] = "subtext",
 					["text_shadowYOffset"] = -1,
+					["type"] = "subtext",
+					["text_text_format_nextRare_format"] = "none",
 					["text_color"] = {
 						1, -- [1]
 						1, -- [2]
@@ -28594,9 +28533,9 @@ WeakAurasSaved = {
 					["text_shadowYOffset"] = -1,
 					["text_text_format_p_time_format"] = 0,
 					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
-					["text_anchorPoint"] = "INNER_RIGHT",
 					["text_fontType"] = "None",
+					["text_anchorPoint"] = "INNER_RIGHT",
+					["text_visible"] = false,
 					["text_shadowXOffset"] = 1,
 					["text_fontSize"] = 14,
 					["anchorXOffset"] = 0,
@@ -28681,11 +28620,11 @@ WeakAurasSaved = {
 			["width"] = 300,
 			["alpha"] = 1,
 			["icon_side"] = "RIGHT",
-			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["sparkHeight"] = 30,
 			["texture"] = "ElvUI Blank",
 			["semver"] = "1.0.1",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0,
 			["spark"] = false,
 			["tocversion"] = 100002,
 			["id"] = "蕨皮F4",
@@ -28883,15 +28822,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 85948,
 				["use_dragonriding"] = false,
 			},
@@ -28953,10 +28892,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_powertype"] = true,
 						["debuffType"] = "HARMFUL",
-						["unevent"] = "auto",
+						["power"] = "2",
 						["useName"] = true,
 						["stacksOperator"] = ">=",
-						["power"] = "2",
+						["subeventSuffix"] = "_CAST_START",
 						["power_operator"] = ">=",
 						["use_power"] = true,
 						["event"] = "Power",
@@ -28967,7 +28906,7 @@ WeakAurasSaved = {
 						},
 						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["matchesShowOn"] = "showOnActive",
 						["stacks"] = "4",
 					},
@@ -29172,12 +29111,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 51271,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -29189,9 +29128,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 51271,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -29287,9 +29226,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -29354,23 +29293,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 51271,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -29405,11 +29344,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Pillar_of_Frost",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 3,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -29500,7 +29439,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["Coagulopathy"] = {
 			["iconSource"] = -1,
@@ -29603,9 +29542,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -29629,7 +29568,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -29640,7 +29579,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -29681,8 +29620,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -29696,11 +29635,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Coagulopathy",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "mxAECKjEgls",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -29720,43 +29696,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Coagulopathy",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "mxAECKjEgls",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Death and Decay (Unholy) 2"] = {
@@ -29912,9 +29851,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_shadowYOffset"] = 0,
 					["text_anchorYOffset"] = 3,
-					["text_visible"] = true,
-					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
+					["text_wordWrap"] = "WordWrap",
+					["text_visible"] = true,
 					["text_anchorPoint"] = "TOPRIGHT",
 					["text_text_format_2.s_format"] = "none",
 					["text_text_format_p_time_format"] = 0,
@@ -29944,9 +29883,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -29982,7 +29921,7 @@ WeakAurasSaved = {
 				["use_class"] = true,
 				["use_dragonriding"] = false,
 				["use_class_and_spec"] = true,
-				["use_vehicleUi"] = false,
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -29990,7 +29929,7 @@ WeakAurasSaved = {
 						[3] = true,
 					},
 				},
-				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spellknown"] = 43265,
 				["size"] = {
 					["multi"] = {
@@ -29998,30 +29937,16 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-				},
+			["authorOptions"] = {
 			},
 			["regionType"] = "icon",
 			["information"] = {
@@ -30040,14 +29965,14 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["width"] = 39,
 			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Death and Decay (Unholy) 2",
 			["frameStrata"] = 1,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["uid"] = "Zj3ffoauyv1",
 			["inverse"] = true,
 			["parent"] = "Death Knight [Core]",
@@ -30161,11 +30086,25 @@ WeakAurasSaved = {
 				}, -- [6]
 			},
 			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["main"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+				},
 			},
 		},
 		["DK_PvPT1"] = {
@@ -30263,9 +30202,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -30323,16 +30262,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
 				["use_spellknown"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["single"] = 14,
 					["multi"] = {
@@ -30351,15 +30290,56 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["zoom"] = 0.3,
-			["desaturate"] = false,
+			["cooldownTextDisabled"] = true,
 			["parent"] = "Death Knight [Utility]",
+			["desaturate"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["anchorFrameFrame"] = "ElvUF_Player",
 			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["icon"] = true,
+			["frameStrata"] = 2,
+			["config"] = {
+			},
+			["anchorFrameParent"] = false,
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "DK_PvPT1",
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["alpha"] = 0.3,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "wFDb28nSxSv",
+			["inverse"] = true,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = 1,
+							["property"] = "alpha",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -30381,47 +30361,6 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 					["duration_type"] = "seconds",
 				},
-			},
-			["icon"] = true,
-			["useCooldownModRate"] = true,
-			["config"] = {
-			},
-			["anchorFrameParent"] = false,
-			["width"] = 33,
-			["alpha"] = 0.3,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "DK_PvPT1",
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["frameStrata"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "wFDb28nSxSv",
-			["inverse"] = true,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = 1,
-							["property"] = "alpha",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Blood_Tap"] = {
@@ -30610,9 +30549,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -30681,23 +30620,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 221699,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -30726,9 +30665,9 @@ WeakAurasSaved = {
 					["scalex"] = 1,
 					["scaley"] = 1,
 					["alpha"] = 0.69,
-					["x"] = 0,
-					["y"] = 0,
 					["colorType"] = "custom",
+					["y"] = 0,
+					["x"] = 0,
 					["easeStrength"] = 3,
 					["colorA"] = 1,
 					["colorFunc"] = "",
@@ -30746,16 +30685,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Blood_Tap",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "6e5Vh(fBwhz",
 			["inverse"] = true,
 			["authorOptions"] = {
@@ -30815,7 +30754,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Soul Reaper (Unholy)"] = {
 			["iconSource"] = -1,
@@ -30970,9 +30909,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -31005,8 +30944,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -31021,14 +30960,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0.3,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
+			["cooldown"] = true,
+			["xOffset"] = 0,
+			["uid"] = "F9FU)Untz8n",
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Soul Reaper (Unholy)",
+			["width"] = 39,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["config"] = {
+			},
+			["inverse"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -31049,23 +31005,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-			["uid"] = "F9FU)Untz8n",
-			["useCooldownModRate"] = true,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "5.3.2",
-			["tocversion"] = 100002,
-			["id"] = "Soul Reaper (Unholy)",
-			["width"] = 39,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = true,
-			["icon"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -31162,7 +31101,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["Bone_Shield"] = {
 			["iconSource"] = -1,
@@ -31222,12 +31161,12 @@ WeakAurasSaved = {
 						},
 						["use_debuffClass"] = false,
 						["subeventPrefix"] = "SPELL",
-						["useName"] = true,
+						["type"] = "aura2",
 						["buffShowOn"] = "showAlways",
 						["spellIds"] = {
 							195181, -- [1]
 						},
-						["type"] = "aura2",
+						["useName"] = true,
 						["duration"] = "1",
 						["unevent"] = "auto",
 						["matchesShowOn"] = "showAlways",
@@ -31379,9 +31318,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -31451,12 +31390,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -31465,9 +31404,9 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 39,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -31496,9 +31435,9 @@ WeakAurasSaved = {
 					["scalex"] = 1,
 					["scaley"] = 1,
 					["alpha"] = 0,
-					["x"] = 0,
-					["y"] = 0,
 					["colorType"] = "custom",
+					["y"] = 0,
+					["x"] = 0,
 					["easeStrength"] = 3,
 					["colorA"] = 1,
 					["colorFunc"] = "",
@@ -31516,16 +31455,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Bone_Shield",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "ZqZiedlHqBB",
 			["inverse"] = false,
 			["authorOptions"] = {
@@ -31609,7 +31548,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Death Knight [Dynamic]"] = {
 			["grow"] = "CUSTOM",
@@ -31678,8 +31617,17 @@ WeakAurasSaved = {
 			["limit"] = 5,
 			["selfPoint"] = "CENTER",
 			["align"] = "CENTER",
-			["animate"] = true,
+			["yOffset"] = 33.5,
+			["xOffset"] = -0.5,
 			["useLimit"] = false,
+			["rotation"] = 0,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["version"] = 116,
 			["sortHybridTable"] = {
 				["Rotten Touch"] = false,
 				["Coagulopathy"] = false,
@@ -31694,20 +31642,16 @@ WeakAurasSaved = {
 				["Rune of Razor Ice"] = false,
 				["Rune of Fallen Crusader"] = false,
 				["Rune of Hysteria"] = false,
-				["Cold_Heart"] = false,
+				["Hemostasis"] = false,
 				["Death's Caress"] = false,
 				["Rune Mastery"] = false,
 				["Festermight"] = false,
-				["Hemostasis"] = false,
+				["Cold_Heart"] = false,
 				["Sudden Doom"] = false,
 				["Unleashed Frenzy"] = false,
 				["Umbilicus Eternus"] = false,
 				["Inexorable Assault"] = false,
 			},
-			["rotation"] = 0,
-			["xOffset"] = -0.5,
-			["version"] = 116,
-			["parent"] = "Death Knight [Afenar]",
 			["gridType"] = "RD",
 			["radius"] = 200,
 			["load"] = {
@@ -31737,16 +31681,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["source"] = "import",
+			["animate"] = true,
 			["customGrow"] = "function(newPositions, activeRegions)\n    local limit = 7 -- limit of icons per row\n    local rows = 3 -- total rows\n    local spacing = 3 -- spacing between icons\n    ----------------------\n    local check = true\n    local xCount = 0\n    local yCount = 0\n    local tCount = 0\n    \n    local xOffset = 0\n    local yOffset = 0\n    local total = #activeRegions\n    \n    for i, regionData in ipairs(activeRegions) do\n        local region = regionData.region\n        \n        local regionsLeft = total - tCount\n        local rowTotal = 1\n        \n        if total <= limit then\n            rowTotal = total\n        elseif (regionsLeft < limit and xCount < 1) or not check then\n            check = false\n            rowTotal = regionsLeft\n        elseif yCount >= rows-1 then\n            rowTotal = regionsLeft\n        elseif total > limit then\n            rowTotal = limit\n        end\n        \n        xOffset = 0 - (region.width + spacing) / 2 * (rowTotal-1) + (xCount * (region.width + spacing))\n        yOffset = 0 + (region.height + spacing) * yCount -- change '-' to '+' after 0 to grow up instead of down\n        \n        xCount = xCount + 1\n        \n        if yCount < rows-1 and check then\n            tCount = tCount + 1\n            if xCount >= limit then\n                xCount = 0\n                yCount = yCount + 1\n            end\n        end\n        \n        newPositions[i] = {xOffset, yOffset}\n    end\nend\n\n",
 			["scale"] = 1,
 			["centerType"] = "LR",
 			["border"] = false,
-			["borderEdge"] = "Square Full White",
+			["anchorFrameFrame"] = "WeakAuras:Runic_Power",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["yOffset"] = 33.5,
+			["borderEdge"] = "Square Full White",
 			["gridWidth"] = 5,
 			["constantFactor"] = "RADIUS",
 			["rowSpace"] = 1,
@@ -31754,7 +31698,7 @@ WeakAurasSaved = {
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Death Knight [Dynamic]",
-			["anchorFrameFrame"] = "WeakAuras:Runic_Power",
+			["source"] = "import",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SELECTFRAME",
 			["animation"] = {
@@ -31785,12 +31729,7 @@ WeakAurasSaved = {
 			["information"] = {
 				["forceEvents"] = true,
 			},
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["parent"] = "Death Knight [Afenar]",
 		},
 		["Festering_Wound_6"] = {
 			["sparkWidth"] = 5,
@@ -31894,15 +31833,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 85948,
 				["use_dragonriding"] = false,
 			},
@@ -31964,10 +31903,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_powertype"] = true,
 						["debuffType"] = "HARMFUL",
-						["unevent"] = "auto",
+						["power"] = "6",
 						["useName"] = true,
 						["stacksOperator"] = ">=",
-						["power"] = "6",
+						["subeventSuffix"] = "_CAST_START",
 						["power_operator"] = ">=",
 						["use_power"] = true,
 						["event"] = "Power",
@@ -31978,7 +31917,7 @@ WeakAurasSaved = {
 						},
 						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["matchesShowOn"] = "showOnActive",
 						["stacks"] = "6",
 					},
@@ -32146,20 +32085,20 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["class_and_spec"] = {
-					["single"] = 252,
+				["affixes"] = {
 					["multi"] = {
-						[252] = true,
-						[251] = true,
-						[250] = true,
 					},
 				},
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["affixes"] = {
+				["class_and_spec"] = {
+					["single"] = 252,
 					["multi"] = {
+						[252] = true,
+						[251] = true,
+						[250] = true,
 					},
 				},
 				["talent"] = {
@@ -32192,11 +32131,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_vehicleUi"] = false,
 				["use_dragonriding"] = false,
 				["ingroup"] = {
 					["multi"] = {
@@ -32324,7 +32263,7 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["stickyDuration"] = false,
 			["useCooldownModRate"] = true,
-			["timer"] = true,
+			["height"] = 33,
 			["version"] = 116,
 			["subRegions"] = {
 				{
@@ -32365,9 +32304,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -32381,7 +32320,7 @@ WeakAurasSaved = {
 					["text_text_format_p_format"] = "timed",
 				}, -- [3]
 			},
-			["height"] = 33,
+			["timer"] = true,
 			["timerFlags"] = "OUTLINE",
 			["sparkHidden"] = "NEVER",
 			["sparkBlendMode"] = "ADD",
@@ -32399,7 +32338,7 @@ WeakAurasSaved = {
 			["border"] = true,
 			["borderEdge"] = "1 Pixel",
 			["rotateText"] = "NONE",
-			["borderInFront"] = true,
+			["borderSize"] = 1,
 			["sparkRotationMode"] = "AUTO",
 			["icon_side"] = "RIGHT",
 			["config"] = {
@@ -32419,7 +32358,7 @@ WeakAurasSaved = {
 				},
 			},
 			["sparkHeight"] = 39,
-			["borderSize"] = 1,
+			["borderInFront"] = true,
 			["spark"] = false,
 			["stacksColor"] = {
 				1, -- [1]
@@ -32552,9 +32491,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -32616,16 +32555,16 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
 				["use_spellknown"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["single"] = 14,
 					["multi"] = {
@@ -32641,15 +32580,56 @@ WeakAurasSaved = {
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
-			["zoom"] = 0.3,
-			["desaturate"] = false,
+			["cooldownTextDisabled"] = true,
 			["parent"] = "Death Knight [Utility]",
+			["desaturate"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["anchorFrameFrame"] = "ElvUF_Player",
 			["regionType"] = "icon",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["icon"] = true,
+			["frameStrata"] = 2,
+			["config"] = {
+			},
+			["anchorFrameParent"] = false,
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "DK_PvPT2",
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["alpha"] = 0.3,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "dXfPrtE(JTw",
+			["inverse"] = true,
+			["authorOptions"] = {
+			},
+			["conditions"] = {
+				{
+					["check"] = {
+						["trigger"] = 1,
+						["variable"] = "onCooldown",
+						["value"] = 1,
+					},
+					["changes"] = {
+						{
+							["value"] = 1,
+							["property"] = "alpha",
+						}, -- [1]
+					},
+				}, -- [1]
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -32671,47 +32651,6 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 					["duration_type"] = "seconds",
 				},
-			},
-			["icon"] = true,
-			["useCooldownModRate"] = true,
-			["config"] = {
-			},
-			["anchorFrameParent"] = false,
-			["width"] = 33,
-			["alpha"] = 0.3,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "DK_PvPT2",
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["frameStrata"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "dXfPrtE(JTw",
-			["inverse"] = true,
-			["authorOptions"] = {
-			},
-			["conditions"] = {
-				{
-					["check"] = {
-						["trigger"] = 1,
-						["variable"] = "onCooldown",
-						["value"] = 1,
-					},
-					["changes"] = {
-						{
-							["value"] = 1,
-							["property"] = "alpha",
-						}, -- [1]
-					},
-				}, -- [1]
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Festering_Wound_3"] = {
@@ -32814,15 +32753,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 85948,
 				["use_dragonriding"] = false,
 			},
@@ -32884,10 +32823,10 @@ WeakAurasSaved = {
 						["use_unit"] = true,
 						["use_powertype"] = true,
 						["debuffType"] = "HARMFUL",
-						["unevent"] = "auto",
+						["power"] = "4",
 						["useName"] = true,
 						["stacksOperator"] = ">=",
-						["power"] = "4",
+						["subeventSuffix"] = "_CAST_START",
 						["power_operator"] = ">=",
 						["use_power"] = true,
 						["event"] = "Power",
@@ -32898,7 +32837,7 @@ WeakAurasSaved = {
 						},
 						["duration"] = "1",
 						["subeventPrefix"] = "SPELL",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["matchesShowOn"] = "showOnActive",
 						["stacks"] = "3",
 					},
@@ -33125,9 +33064,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -33151,7 +33090,7 @@ WeakAurasSaved = {
 					["anchorYOffset"] = 0,
 					["text_justify"] = "CENTER",
 					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
+					["text_anchorYOffset"] = 3,
 					["type"] = "subtext",
 					["text_anchorXOffset"] = 3,
 					["text_color"] = {
@@ -33162,7 +33101,7 @@ WeakAurasSaved = {
 					},
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
+					["text_shadowYOffset"] = 0,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -33202,8 +33141,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -33217,11 +33156,48 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Inexorable Assault",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "xUGKF5ykQ7A",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -33241,43 +33217,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Inexorable Assault",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "xUGKF5ykQ7A",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Unholy_Frenzy"] = {
@@ -33361,12 +33300,12 @@ WeakAurasSaved = {
 						},
 						["use_genericShowOn"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 207289,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -33378,9 +33317,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 207289,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["use_unit"] = true,
 					},
@@ -33492,9 +33431,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -33559,23 +33498,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 207289,
 				["use_dragonriding"] = false,
 			},
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 39,
+			["icon"] = true,
 			["parent"] = "Death Knight [Core]",
-			["alpha"] = 1,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -33610,11 +33549,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Unholy_Frenzy",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -33717,7 +33656,7 @@ WeakAurasSaved = {
 				}, -- [4]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 1,
 		},
 		["社区盛宴"] = {
 			["sparkWidth"] = 10,
@@ -33783,12 +33722,12 @@ WeakAurasSaved = {
 						["custom_type"] = "event",
 						["names"] = {
 						},
-						["custom"] = "function()\n    if aura_env.config.disableOnCompletion and aura_env.hasWeeklyCompleted() then\n        aura_env.disabled = true\n    end\n    \n    if aura_env.disabled then\n        return false\n    end   \n    \n    local now = GetTime()    \n    \n    if now - aura_env.lastCheck < 15 then\n        return false\n    end\n    \n    local currentDate = C_DateAndTime.GetCurrentCalendarTime()\n    local hours = currentDate.hour\n    local minutes = currentDate.minute\n    local weekday = aura_env.transformIndexToWeekday(currentDate.weekday)\n    local times = aura_env.findTimesForDay(weekday)    \n    local eventStartHours, eventStartMinutes = aura_env.findNextEventForTime(times, hours, minutes)       \n    \n    if eventStartHours == nil or eventStartMinutes == nil then\n        local nextDay =  aura_env.getNextDay(weekday)\n        local nextTimes = aura_env.findTimesForDay(nextDay)\n        \n        eventStartHours, eventStartMinutes = aura_env.findNextEventForTime(nextTimes, 0, 0)        \n    end       \n    \n    aura_env.nextFeastIn = aura_env.calcSecondsUntil(hours, minutes, eventStartHours, eventStartMinutes)\n    aura_env.lastCheck = now\n    \n    return true    \nend",
+						["spellIds"] = {
+						},
 						["event"] = "Conditions",
 						["customStacks"] = "function()\n    if aura_env.nextFeastIn > aura_env.eventEndAt then\n        return aura_env.nextFeastIn - aura_env.eventEndAt\n    end\n    \n    return aura_env.nextFeastIn\nend",
 						["customDuration"] = "function ()\n    if aura_env.nextFeastIn > aura_env.eventEndAt then\n        return aura_env.nextFeastIn - aura_env.eventEndAt, 900, true\n    end\n    \n    return aura_env.nextFeastIn, 12600, true\nend",
-						["spellIds"] = {
-						},
+						["custom"] = "function()\n    if aura_env.config.disableOnCompletion and aura_env.hasWeeklyCompleted() then\n        aura_env.disabled = true\n    end\n    \n    if aura_env.disabled then\n        return false\n    end   \n    \n    local now = GetTime()    \n    \n    if now - aura_env.lastCheck < 15 then\n        return false\n    end\n    \n    local currentDate = C_DateAndTime.GetCurrentCalendarTime()\n    local hours = currentDate.hour\n    local minutes = currentDate.minute\n    local weekday = aura_env.transformIndexToWeekday(currentDate.weekday)\n    local times = aura_env.findTimesForDay(weekday)    \n    local eventStartHours, eventStartMinutes = aura_env.findNextEventForTime(times, hours, minutes)       \n    \n    if eventStartHours == nil or eventStartMinutes == nil then\n        local nextDay =  aura_env.getNextDay(weekday)\n        local nextTimes = aura_env.findTimesForDay(nextDay)\n        \n        eventStartHours, eventStartMinutes = aura_env.findNextEventForTime(nextTimes, 0, 0)        \n    end       \n    \n    aura_env.nextFeastIn = aura_env.calcSecondsUntil(hours, minutes, eventStartHours, eventStartMinutes)\n    aura_env.lastCheck = now\n    \n    return true    \nend",
 						["events"] = "UNIT_AURA:player",
 						["custom_hide"] = "timed",
 						["check"] = "event",
@@ -33851,9 +33790,9 @@ WeakAurasSaved = {
 					["text_text_format_p_time_format"] = 2,
 					["text_text_format_s_format"] = "timed",
 					["text_text"] = "%s",
-					["anchorXOffset"] = 0,
 					["text_text_format_s_time_dynamic_threshold"] = 60,
-					["text_text_format_p_format"] = "timed",
+					["anchorXOffset"] = 0,
+					["text_text_format_p_time_mod_rate"] = true,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -33889,7 +33828,7 @@ WeakAurasSaved = {
 					["text_text_format_s_time_format"] = 2,
 					["text_fontSize"] = 14,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_text_format_p_time_mod_rate"] = true,
+					["text_text_format_p_format"] = "timed",
 				}, -- [3]
 				{
 					["text_text_format_n_format"] = "none",
@@ -33970,11 +33909,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_never"] = false,
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -34009,11 +33948,11 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "ElvUI Blank",
 			["semver"] = "1.0.0",
-			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["spark"] = false,
 			["tocversion"] = 100002,
 			["id"] = "社区盛宴",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["sparkColor"] = {
@@ -34176,25 +34115,21 @@ WeakAurasSaved = {
 				}, -- [1]
 				{
 					["trigger"] = {
-						["names"] = {
-							"Божественное перышко", -- [1]
-							"Божественное перышко", -- [2]
-							"Божественное перышко", -- [3]
-						},
+						["use_unit"] = true,
 						["use_matchedRune"] = true,
 						["use_genericShowOn"] = true,
 						["genericShowOn"] = "showAlways",
-						["use_unit"] = true,
+						["subeventPrefix"] = "SPELL",
 						["use_showgcd"] = false,
 						["useCount"] = true,
 						["unit"] = "player",
 						["use_charges"] = false,
-						["debuffType"] = "HELPFUL",
-						["type"] = "spell",
-						["count"] = "2",
 						["custom_hide"] = "timed",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["count"] = "2",
+						["spellName"] = 207167,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["subeventSuffix"] = "_CAST_START",
 						["unevent"] = "auto",
 						["use_showOn"] = true,
@@ -34208,11 +34143,15 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["charges"] = "3",
-						["spellName"] = 207167,
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["duration"] = "1",
 						["use_track"] = true,
-						["subeventPrefix"] = "SPELL",
+						["names"] = {
+							"Божественное перышко", -- [1]
+							"Божественное перышко", -- [2]
+							"Божественное перышко", -- [3]
+						},
 					},
 					["untrigger"] = {
 						["showOn"] = "showOnCooldown",
@@ -34307,9 +34246,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -34378,15 +34317,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 207167,
 				["role"] = {
 					["multi"] = {
@@ -34394,30 +34333,17 @@ WeakAurasSaved = {
 				},
 			},
 			["source"] = "import",
-			["alpha"] = 0.3,
+			["useCooldownModRate"] = true,
 			["config"] = {
 			},
-			["url"] = "https://wago.io/Afenar_DK/116",
 			["parent"] = "Death Knight [Utility]",
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["regionType"] = "icon",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-					["custom"] = "",
-					["do_custom"] = false,
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-			},
+			["stickyDuration"] = false,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -34443,15 +34369,15 @@ WeakAurasSaved = {
 			["authorOptions"] = {
 			},
 			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
+			["alpha"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Blinding_Sleet",
 			["auto"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["uid"] = "26cLRDZx8fP",
 			["inverse"] = true,
 			["xOffset"] = 0,
@@ -34565,7 +34491,20 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+					["custom"] = "",
+					["do_custom"] = false,
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+			},
 		},
 		["Howling Blast"] = {
 			["iconSource"] = -1,
@@ -34700,9 +34639,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -34735,8 +34674,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -34751,14 +34690,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0.3,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
+			["cooldown"] = true,
+			["xOffset"] = 0,
+			["uid"] = "U((zNJ)Wnbd",
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Howling Blast",
+			["width"] = 39,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["config"] = {
+			},
+			["inverse"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -34779,23 +34735,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-			["uid"] = "U((zNJ)Wnbd",
-			["useCooldownModRate"] = true,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "5.3.2",
-			["tocversion"] = 100002,
-			["id"] = "Howling Blast",
-			["width"] = 39,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = true,
-			["icon"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -34908,7 +34847,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["围攻灭龙要塞"] = {
 			["sparkWidth"] = 10,
@@ -34956,12 +34895,12 @@ WeakAurasSaved = {
 						["custom_type"] = "event",
 						["names"] = {
 						},
-						["custom"] = "function()\n    if aura_env.config.disableOnCompletion and aura_env.hasWeeklyCompleted() then\n        aura_env.disabled = true\n    end\n    \n    if aura_env.disabled then\n        return false\n    end   \n    \n    local now = GetTime()    \n    \n    if now - aura_env.lastCheck < 15 then\n        return false\n    end\n    \n    local currentDate = C_DateAndTime.GetCurrentCalendarTime()\n    local hours = currentDate.hour\n    local minutes = currentDate.minute\n    local weekday = aura_env.transformIndexToWeekday(currentDate.weekday)\n    local times = aura_env.findTimesForDay(weekday)    \n    local eventStartHours, eventStartMinutes = aura_env.findNextEventForTime(times, hours, minutes)       \n    \n    if eventStartHours == nil or eventStartMinutes == nil then\n        local nextDay =  aura_env.getNextDay(weekday)\n        local nextTimes = aura_env.findTimesForDay(nextDay)\n        \n        eventStartHours, eventStartMinutes = aura_env.findNextEventForTime(nextTimes, 0, 0)        \n    end       \n    \n    aura_env.nextFeastIn = aura_env.calcSecondsUntil(hours, minutes, eventStartHours, eventStartMinutes)\n    aura_env.lastCheck = now\n    \n    return true    \nend",
+						["spellIds"] = {
+						},
 						["event"] = "Conditions",
 						["customStacks"] = "function()\n    if aura_env.nextFeastIn > aura_env.eventEndAt then\n        return aura_env.nextFeastIn - aura_env.eventEndAt\n    end\n    \n    return aura_env.nextFeastIn\nend",
 						["customDuration"] = "function ()\n    if aura_env.nextFeastIn > aura_env.eventEndAt then\n        return aura_env.nextFeastIn - aura_env.eventEndAt, 3600, true\n    end\n    \n    return aura_env.nextFeastIn, 7200, true\nend",
-						["spellIds"] = {
-						},
+						["custom"] = "function()\n    if aura_env.config.disableOnCompletion and aura_env.hasWeeklyCompleted() then\n        aura_env.disabled = true\n    end\n    \n    if aura_env.disabled then\n        return false\n    end   \n    \n    local now = GetTime()    \n    \n    if now - aura_env.lastCheck < 15 then\n        return false\n    end\n    \n    local currentDate = C_DateAndTime.GetCurrentCalendarTime()\n    local hours = currentDate.hour\n    local minutes = currentDate.minute\n    local weekday = aura_env.transformIndexToWeekday(currentDate.weekday)\n    local times = aura_env.findTimesForDay(weekday)    \n    local eventStartHours, eventStartMinutes = aura_env.findNextEventForTime(times, hours, minutes)       \n    \n    if eventStartHours == nil or eventStartMinutes == nil then\n        local nextDay =  aura_env.getNextDay(weekday)\n        local nextTimes = aura_env.findTimesForDay(nextDay)\n        \n        eventStartHours, eventStartMinutes = aura_env.findNextEventForTime(nextTimes, 0, 0)        \n    end       \n    \n    aura_env.nextFeastIn = aura_env.calcSecondsUntil(hours, minutes, eventStartHours, eventStartMinutes)\n    aura_env.lastCheck = now\n    \n    return true    \nend",
 						["events"] = "UNIT_AURA:player",
 						["custom_hide"] = "timed",
 						["check"] = "event",
@@ -35009,7 +34948,7 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["desaturate"] = false,
-			["gradientOrientation"] = "HORIZONTAL",
+			["height"] = 25,
 			["information"] = {
 			},
 			["sparkOffsetY"] = 0,
@@ -35024,9 +34963,9 @@ WeakAurasSaved = {
 					["text_text_format_p_time_format"] = 2,
 					["text_text_format_s_format"] = "timed",
 					["text_text"] = "%s",
-					["anchorXOffset"] = 0,
 					["text_text_format_s_time_dynamic_threshold"] = 60,
-					["text_text_format_p_format"] = "timed",
+					["anchorXOffset"] = 0,
+					["text_text_format_p_time_mod_rate"] = true,
 					["text_shadowColor"] = {
 						0, -- [1]
 						0, -- [2]
@@ -35062,7 +35001,7 @@ WeakAurasSaved = {
 					["text_text_format_s_time_format"] = 2,
 					["text_fontSize"] = 14,
 					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_text_format_p_time_mod_rate"] = true,
+					["text_text_format_p_format"] = "timed",
 				}, -- [3]
 				{
 					["text_text_format_n_format"] = "none",
@@ -35133,7 +35072,7 @@ WeakAurasSaved = {
 					["border_size"] = 1,
 				}, -- [6]
 			},
-			["height"] = 25,
+			["gradientOrientation"] = "HORIZONTAL",
 			["internalVersion"] = 61,
 			["load"] = {
 				["zoneIds"] = "2022,2023,2024,2025,2112",
@@ -35143,11 +35082,11 @@ WeakAurasSaved = {
 					},
 				},
 				["use_never"] = false,
-				["spec"] = {
+				["class"] = {
 					["multi"] = {
 					},
 				},
-				["class"] = {
+				["spec"] = {
 					["multi"] = {
 					},
 				},
@@ -35187,11 +35126,11 @@ WeakAurasSaved = {
 			["sparkHeight"] = 30,
 			["texture"] = "ElvUI Blank",
 			["spark"] = false,
-			["zoom"] = 0,
+			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["semver"] = "1.0.0",
 			["tocversion"] = 100002,
 			["id"] = "围攻灭龙要塞",
-			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
+			["zoom"] = 0,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["config"] = {
@@ -35379,12 +35318,8 @@ WeakAurasSaved = {
 			["radius"] = 200,
 			["useLimit"] = false,
 			["align"] = "CENTER",
-			["limit"] = 5,
+			["space"] = 3,
 			["gridWidth"] = 5,
-			["rotation"] = 0,
-			["stagger"] = 0,
-			["selfPoint"] = "CENTER",
-			["version"] = 116,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -35404,6 +35339,74 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
+			},
+			["rotation"] = 0,
+			["stagger"] = 0,
+			["version"] = 116,
+			["gridType"] = "RD",
+			["selfPoint"] = "CENTER",
+			["internalVersion"] = 61,
+			["load"] = {
+				["talent"] = {
+					["multi"] = {
+					},
+				},
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["class"] = {
+					["multi"] = {
+					},
+				},
+				["size"] = {
+					["multi"] = {
+					},
+				},
+			},
+			["yOffset"] = 0.5,
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0.5, -- [4]
+			},
+			["config"] = {
+			},
+			["source"] = "import",
+			["customGrow"] = "function(newPositions, activeRegions)\n    local limits = { --icons per row\n        6, --row 1\n        9, --row 2\n        \n    }\n    local rows = #limits -- total rows (matches limits size)\n    local iconSizes = { --have to match #limits size (if limits is {x,y} iconSizes have to be {a, b}, i.e. 2 and 2)\n        39, --row 1\n        33, --row 2\n        \n    }\n    local spacings = {\n        1, --row 1\n        2, --row 2\n        \n    }\n    \n    -- spacing between icons\n    local checkFit = true --resize only if total clones > totalWidth. Otherwise 1-2 icons will be giga huge\n    ----------------------\n    local check = true\n    \n    local xCount = 0\n    local yCount = 0\n    local tCount = 0\n    local lastRowCount = 0\n    \n    local limit = limits[yCount+1]\n    local firstRowLimit = limits[yCount+1]\n    \n    local xSpacing = 3\n    local ySpacing = spacings[yCount+1]\n    local offset = spacings[yCount+1]\n    \n    local xOffset = 0\n    local yOffset = 0\n    \n    local total = #activeRegions\n    \n    for i, regionData in ipairs(activeRegions) do\n        \n        local region = regionData.region\n        if iconSizes[yCount+1] then\n            regionData.region:SetRegionWidth(iconSizes[yCount+1])\n            regionData.region:SetRegionHeight(iconSizes[yCount+1])\n        end\n        \n        local why = 0\n        for i=1, yCount+1 do\n            local wtf = (i==1 or i==yCount+1) and iconSizes[i]/2 or iconSizes[i]\n            why = why + wtf\n        end\n        local shift = yCount == 0 and 0 or why + offset\n        \n        local width = width or region.width\n        local totalWidth = totalWidth or (width + xSpacing) * limit\n        \n        local regionsLeft = total - tCount\n        local rowTotal = 1\n        \n        if total <= firstRowLimit then\n            rowTotal = total\n        elseif (regionsLeft < limit and xCount < 1) or not check then\n            check = false\n            rowTotal = regionsLeft\n        elseif yCount >= rows - 1 then\n            rowTotal = regionsLeft\n        elseif total > limit then\n            rowTotal = limit\n        end\n        \n        if yCount == rows - 1 then\n            local fit = checkFit and (width + xSpacing) * rowTotal < totalWidth\n            local lastRowWidth = fit and width or ((totalWidth - (rowTotal * xSpacing)) / rowTotal)\n            \n            xOffset = 0 - (lastRowWidth + xSpacing) / 2 * (rowTotal - 1) + (lastRowCount * (lastRowWidth + xSpacing))\n            yOffset = 0 - (shift - (width - lastRowWidth) / 2)-- change '-' to '+' after 0 to grow up instead of down\n            \n            lastRowCount = lastRowCount + 1\n            \n            regionData.region:SetRegionWidth(lastRowWidth)\n            regionData.region:SetRegionHeight(lastRowWidth)\n        else\n            xOffset = 0 - (width + xSpacing) / 2 * (rowTotal - 1) + (xCount * (width + xSpacing))\n            yOffset = 0 - shift\n        end\n        \n        xCount = xCount + 1\n        \n        if yCount < rows - 1 and check then\n            tCount = tCount + 1\n            if xCount >= limit then\n                xCount = 0\n                yCount = yCount + 1\n                limit = limits[yCount+1]\n                ySpacing = spacings[yCount+1]\n                offset = offset + ySpacing\n            end\n        end\n        \n        newPositions[i] = {xOffset, yOffset}\n    end\nend",
+			["scale"] = 1,
+			["centerType"] = "LR",
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["limit"] = 5,
+			["sort"] = "none",
+			["animate"] = false,
+			["constantFactor"] = "RADIUS",
+			["arcLength"] = 360,
+			["borderOffset"] = 4,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Death Knight [Core]",
+			["authorOptions"] = {
+			},
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["borderInset"] = 1,
+			["uid"] = "n5lejltEa4x",
+			["xOffset"] = -0.5,
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["forceEvents"] = true,
 			},
 			["sortHybridTable"] = {
 				["Breath_of_Syndragosa"] = false,
@@ -35447,70 +35450,6 @@ WeakAurasSaved = {
 				["Death and Decay (Blood)"] = false,
 				["Chill_Streak"] = false,
 			},
-			["internalVersion"] = 61,
-			["load"] = {
-				["talent"] = {
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["yOffset"] = 0.5,
-			["backdropColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				0.5, -- [4]
-			},
-			["config"] = {
-			},
-			["source"] = "import",
-			["customGrow"] = "function(newPositions, activeRegions)\n    local limits = { --icons per row\n        6, --row 1\n        9, --row 2\n        \n    }\n    local rows = #limits -- total rows (matches limits size)\n    local iconSizes = { --have to match #limits size (if limits is {x,y} iconSizes have to be {a, b}, i.e. 2 and 2)\n        39, --row 1\n        33, --row 2\n        \n    }\n    local spacings = {\n        1, --row 1\n        2, --row 2\n        \n    }\n    \n    -- spacing between icons\n    local checkFit = true --resize only if total clones > totalWidth. Otherwise 1-2 icons will be giga huge\n    ----------------------\n    local check = true\n    \n    local xCount = 0\n    local yCount = 0\n    local tCount = 0\n    local lastRowCount = 0\n    \n    local limit = limits[yCount+1]\n    local firstRowLimit = limits[yCount+1]\n    \n    local xSpacing = 3\n    local ySpacing = spacings[yCount+1]\n    local offset = spacings[yCount+1]\n    \n    local xOffset = 0\n    local yOffset = 0\n    \n    local total = #activeRegions\n    \n    for i, regionData in ipairs(activeRegions) do\n        \n        local region = regionData.region\n        if iconSizes[yCount+1] then\n            regionData.region:SetRegionWidth(iconSizes[yCount+1])\n            regionData.region:SetRegionHeight(iconSizes[yCount+1])\n        end\n        \n        local why = 0\n        for i=1, yCount+1 do\n            local wtf = (i==1 or i==yCount+1) and iconSizes[i]/2 or iconSizes[i]\n            why = why + wtf\n        end\n        local shift = yCount == 0 and 0 or why + offset\n        \n        local width = width or region.width\n        local totalWidth = totalWidth or (width + xSpacing) * limit\n        \n        local regionsLeft = total - tCount\n        local rowTotal = 1\n        \n        if total <= firstRowLimit then\n            rowTotal = total\n        elseif (regionsLeft < limit and xCount < 1) or not check then\n            check = false\n            rowTotal = regionsLeft\n        elseif yCount >= rows - 1 then\n            rowTotal = regionsLeft\n        elseif total > limit then\n            rowTotal = limit\n        end\n        \n        if yCount == rows - 1 then\n            local fit = checkFit and (width + xSpacing) * rowTotal < totalWidth\n            local lastRowWidth = fit and width or ((totalWidth - (rowTotal * xSpacing)) / rowTotal)\n            \n            xOffset = 0 - (lastRowWidth + xSpacing) / 2 * (rowTotal - 1) + (lastRowCount * (lastRowWidth + xSpacing))\n            yOffset = 0 - (shift - (width - lastRowWidth) / 2)-- change '-' to '+' after 0 to grow up instead of down\n            \n            lastRowCount = lastRowCount + 1\n            \n            regionData.region:SetRegionWidth(lastRowWidth)\n            regionData.region:SetRegionHeight(lastRowWidth)\n        else\n            xOffset = 0 - (width + xSpacing) / 2 * (rowTotal - 1) + (xCount * (width + xSpacing))\n            yOffset = 0 - shift\n        end\n        \n        xCount = xCount + 1\n        \n        if yCount < rows - 1 and check then\n            tCount = tCount + 1\n            if xCount >= limit then\n                xCount = 0\n                yCount = yCount + 1\n                limit = limits[yCount+1]\n                ySpacing = spacings[yCount+1]\n                offset = offset + ySpacing\n            end\n        end\n        \n        newPositions[i] = {xOffset, yOffset}\n    end\nend",
-			["scale"] = 1,
-			["centerType"] = "LR",
-			["border"] = false,
-			["borderEdge"] = "Square Full White",
-			["regionType"] = "dynamicgroup",
-			["borderSize"] = 2,
-			["sort"] = "none",
-			["authorOptions"] = {
-			},
-			["space"] = 3,
-			["constantFactor"] = "RADIUS",
-			["arcLength"] = 360,
-			["borderOffset"] = 4,
-			["semver"] = "5.3.2",
-			["tocversion"] = 100002,
-			["id"] = "Death Knight [Core]",
-			["uid"] = "n5lejltEa4x",
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["animate"] = false,
-			["borderInset"] = 1,
-			["xOffset"] = -0.5,
-			["borderColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["forceEvents"] = true,
-			},
-			["gridType"] = "RD",
 		},
 		["Soul Reaper (Blood)"] = {
 			["iconSource"] = -1,
@@ -35665,9 +35604,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -35700,8 +35639,8 @@ WeakAurasSaved = {
 				["use_never"] = true,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_vehicleUi"] = false,
 				["use_spec"] = true,
+				["use_vehicleUi"] = false,
 				["spec"] = {
 					["single"] = 1,
 					["multi"] = {
@@ -35716,14 +35655,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0.3,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
+			["cooldown"] = true,
+			["xOffset"] = 0,
+			["uid"] = ")vfja2sSTyK",
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Soul Reaper (Blood)",
+			["width"] = 39,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["config"] = {
+			},
+			["inverse"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -35744,23 +35700,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-			["uid"] = ")vfja2sSTyK",
-			["useCooldownModRate"] = true,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "5.3.2",
-			["tocversion"] = 100002,
-			["id"] = "Soul Reaper (Blood)",
-			["width"] = 39,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = true,
-			["icon"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -35857,7 +35796,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["Anti-Magic_Zone"] = {
 			["iconSource"] = 0,
@@ -35940,13 +35879,13 @@ WeakAurasSaved = {
 						},
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
-						["debuffType"] = "HELPFUL",
-						["charges"] = "3",
 						["custom_hide"] = "timed",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 51052,
+						["charges_operator"] = "~=",
+						["type"] = "spell",
 						["count"] = "2",
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -35958,9 +35897,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "spell",
-						["spellName"] = 51052,
+						["unevent"] = "auto",
+						["charges"] = "3",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -36056,9 +35995,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -36125,15 +36064,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 51052,
 				["role"] = {
 					["multi"] = {
@@ -36143,8 +36082,8 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 33,
+			["icon"] = true,
 			["parent"] = "Death Knight [Utility]",
-			["alpha"] = 0.3,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -36179,11 +36118,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = false,
 			["tocversion"] = 100002,
 			["id"] = "Anti-Magic_Zone",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -36259,7 +36198,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 0.3,
 		},
 		["Blood_Boil"] = {
 			["iconSource"] = -1,
@@ -36447,9 +36386,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -36518,23 +36457,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 50842,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -36563,9 +36502,9 @@ WeakAurasSaved = {
 					["scalex"] = 1,
 					["scaley"] = 1,
 					["alpha"] = 0.69,
-					["x"] = 0,
-					["y"] = 0,
 					["colorType"] = "custom",
+					["y"] = 0,
+					["x"] = 0,
 					["easeStrength"] = 3,
 					["colorA"] = 1,
 					["colorFunc"] = "",
@@ -36583,16 +36522,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Blood_Boil",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "bkspd(sGLdV",
 			["inverse"] = true,
 			["authorOptions"] = {
@@ -36652,7 +36591,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
 		["Cold_Heart"] = {
 			["iconSource"] = -1,
@@ -36700,7 +36639,7 @@ WeakAurasSaved = {
 							"281209", -- [1]
 						},
 						["custom_hide"] = "timed",
-						["buffShowOn"] = "showAlways",
+						["debuffType"] = "HELPFUL",
 						["unevent"] = "auto",
 						["useName"] = true,
 						["use_debuffClass"] = false,
@@ -36716,7 +36655,7 @@ WeakAurasSaved = {
 							253595, -- [2]
 							281209, -- [3]
 						},
-						["debuffType"] = "HELPFUL",
+						["buffShowOn"] = "showAlways",
 						["remOperator"] = ">=",
 						["combineMatches"] = "showLowest",
 						["names"] = {
@@ -36833,9 +36772,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -36902,23 +36841,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 8921,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 33,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -36968,16 +36907,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Cold_Heart",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "bNuMFxeXI15",
 			["inverse"] = false,
 			["authorOptions"] = {
@@ -37010,9 +36949,9 @@ WeakAurasSaved = {
 				}, -- [1]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
-		["Rune of Razor Ice"] = {
+		["Rune of Fallen Crusader"] = {
 			["iconSource"] = -1,
 			["wagoID"] = "Hkn-hHozG",
 			["xOffset"] = 0,
@@ -37027,12 +36966,12 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["type"] = "aura2",
 						["auranames"] = {
-							"51714", -- [1]
+							"53365", -- [1]
 						},
 						["matchesShowOn"] = "showOnActive",
 						["event"] = "Health",
-						["unit"] = "target",
-						["unitExists"] = false,
+						["unit"] = "player",
+						["unitExists"] = true,
 						["ownOnly"] = true,
 						["spellIds"] = {
 						},
@@ -37041,7 +36980,7 @@ WeakAurasSaved = {
 						["useName"] = true,
 						["subeventPrefix"] = "SPELL",
 						["subeventSuffix"] = "_CAST_START",
-						["debuffType"] = "HARMFUL",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 					},
@@ -37113,9 +37052,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -37128,50 +37067,11 @@ WeakAurasSaved = {
 					["text_text_format_p_time_dynamic_threshold"] = 1,
 					["text_text_format_p_format"] = "timed",
 				}, -- [4]
-				{
-					["text_text_format_p_time_format"] = 0,
-					["text_text_format_s_format"] = "none",
-					["text_text"] = "%s",
-					["text_text_format_p_format"] = "timed",
-					["text_selfPoint"] = "TOPRIGHT",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["text_shadowYOffset"] = 0,
-					["type"] = "subtext",
-					["text_anchorXOffset"] = 3,
-					["text_color"] = {
-						1, -- [1]
-						0.88627457618713, -- [2]
-						0.76862752437592, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Expressway",
-					["text_text_format_p_time_dynamic_threshold"] = 60,
-					["text_anchorYOffset"] = 3,
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = true,
-					["text_anchorPoint"] = "TOPRIGHT",
-					["text_fontType"] = "OUTLINE",
-					["text_text_format_p_time_precision"] = 1,
-					["text_fontSize"] = 16,
-					["anchorXOffset"] = 0,
-					["text_shadowXOffset"] = 0,
-				}, -- [5]
 			},
 			["height"] = 33,
 			["load"] = {
 				["use_petbattle"] = false,
 				["class_and_spec"] = {
-					["single"] = 251,
 					["multi"] = {
 						[252] = true,
 						[251] = true,
@@ -37187,29 +37087,67 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_never"] = true,
+				["use_class_and_spec"] = false,
 				["use_class"] = true,
 				["use_dragonriding"] = false,
-				["use_class_and_spec"] = false,
+				["use_never"] = true,
 				["use_vehicleUi"] = false,
 				["spec"] = {
-					["single"] = 2,
+					["single"] = 3,
 					["multi"] = {
+						[3] = true,
 					},
 				},
 				["use_spellknown"] = false,
-				["use_spec"] = true,
+				["spellknown"] = 374574,
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
 			["source"] = "import",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["config"] = {
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 			["authorOptions"] = {
 			},
+			["regionType"] = "icon",
+			["information"] = {
+				["forceEvents"] = true,
+				["ignoreOptionsEventErrors"] = true,
+			},
+			["displayIcon"] = "",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["width"] = 33,
+			["useCooldownModRate"] = true,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Rune of Fallen Crusader",
+			["frameStrata"] = 1,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["auto"] = true,
+			["uid"] = "PEhGxKOUcoV",
+			["inverse"] = false,
+			["parent"] = "Death Knight [Dynamic]",
+			["conditions"] = {
+			},
+			["cooldown"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -37229,43 +37167,6 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
 				},
-			},
-			["regionType"] = "icon",
-			["information"] = {
-				["forceEvents"] = true,
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["displayIcon"] = "",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["auto"] = true,
-			["tocversion"] = 100002,
-			["id"] = "Rune of Razor Ice",
-			["frameStrata"] = 1,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["semver"] = "5.3.2",
-			["uid"] = "DIAmjSB2PCi",
-			["inverse"] = false,
-			["parent"] = "Death Knight [Dynamic]",
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
 			},
 		},
 		["Death_Pact"] = {
@@ -37343,13 +37244,13 @@ WeakAurasSaved = {
 						},
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
-						["debuffType"] = "HELPFUL",
-						["charges"] = "3",
 						["custom_hide"] = "timed",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 48743,
+						["charges_operator"] = "~=",
+						["type"] = "spell",
 						["count"] = "2",
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -37361,9 +37262,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "spell",
-						["spellName"] = 48743,
+						["unevent"] = "auto",
+						["charges"] = "3",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -37459,9 +37360,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -37529,15 +37430,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 48743,
 				["role"] = {
 					["multi"] = {
@@ -37547,8 +37448,8 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 33,
+			["icon"] = true,
 			["parent"] = "Death Knight [Utility]",
-			["alpha"] = 0.3,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -37583,11 +37484,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.4,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Death_Pact",
-			["zoom"] = 0.4,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -37663,7 +37564,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 0.3,
 		},
 		["Death Knight [Afenar]"] = {
 			["controlledChildren"] = {
@@ -37757,7 +37658,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -37765,7 +37666,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -37773,12 +37674,12 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_class"] = "true",
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -37804,14 +37705,14 @@ WeakAurasSaved = {
 			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Death Knight [Afenar]",
-			["config"] = {
-			},
+			["xOffset"] = 3.8887939453125,
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["groupIcon"] = "135771",
-			["uid"] = "IdPoMB3UkWY",
-			["xOffset"] = 3.8887939453125,
 			["borderInset"] = 11,
+			["config"] = {
+			},
+			["uid"] = "IdPoMB3UkWY",
 			["conditions"] = {
 			},
 			["information"] = {
@@ -37896,13 +37797,13 @@ WeakAurasSaved = {
 						},
 						["use_unit"] = true,
 						["use_genericShowOn"] = true,
-						["debuffType"] = "HELPFUL",
-						["charges"] = "3",
 						["custom_hide"] = "timed",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 48707,
+						["charges_operator"] = "~=",
+						["type"] = "spell",
 						["count"] = "2",
-						["unevent"] = "auto",
+						["subeventSuffix"] = "_CAST_START",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
@@ -37914,9 +37815,9 @@ WeakAurasSaved = {
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["type"] = "spell",
-						["spellName"] = 48707,
+						["unevent"] = "auto",
+						["charges"] = "3",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
 						["subeventPrefix"] = "SPELL",
 					},
@@ -38012,9 +37913,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -38081,15 +37982,15 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 48707,
 				["role"] = {
 					["multi"] = {
@@ -38099,8 +38000,8 @@ WeakAurasSaved = {
 			["useCooldownModRate"] = true,
 			["source"] = "import",
 			["width"] = 33,
+			["icon"] = true,
 			["parent"] = "Death Knight [Utility]",
-			["alpha"] = 0.3,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -38135,11 +38036,11 @@ WeakAurasSaved = {
 			["url"] = "https://wago.io/Afenar_DK/116",
 			["useTooltip"] = false,
 			["semver"] = "5.3.2",
-			["cooldownTextDisabled"] = true,
+			["zoom"] = 0.3,
 			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Anti-Magic_Shell",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["frameStrata"] = 2,
 			["anchorFrameType"] = "SCREEN",
 			["xOffset"] = 0,
@@ -38215,7 +38116,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["icon"] = true,
+			["alpha"] = 0.3,
 		},
 		["Virulent_Plague"] = {
 			["iconSource"] = -1,
@@ -38262,10 +38163,10 @@ WeakAurasSaved = {
 						["auranames"] = {
 							"191587", -- [1]
 						},
-						["type"] = "aura2",
-						["spellName"] = 8042,
-						["unevent"] = "auto",
 						["useName"] = true,
+						["debuffType"] = "HARMFUL",
+						["unevent"] = "auto",
+						["type"] = "aura2",
 						["use_debuffClass"] = false,
 						["subeventSuffix"] = "_CAST_START",
 						["custom_hide"] = "timed",
@@ -38277,7 +38178,7 @@ WeakAurasSaved = {
 						["spellIds"] = {
 							191587, -- [1]
 						},
-						["debuffType"] = "HARMFUL",
+						["spellName"] = 8042,
 						["remOperator"] = ">=",
 						["combineMatches"] = "showLowest",
 						["names"] = {
@@ -38395,9 +38296,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -38466,23 +38367,23 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = false,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["spellknown"] = 8921,
 				["use_dragonriding"] = false,
 			},
 			["source"] = "import",
 			["width"] = 39,
-			["frameStrata"] = 2,
+			["useCooldownModRate"] = true,
+			["url"] = "https://wago.io/Afenar_DK/116",
 			["icon"] = true,
-			["stickyDuration"] = false,
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
@@ -38532,16 +38433,16 @@ WeakAurasSaved = {
 			},
 			["config"] = {
 			},
-			["useCooldownModRate"] = true,
+			["frameStrata"] = 2,
 			["xOffset"] = 0,
-			["cooldownTextDisabled"] = true,
-			["auto"] = true,
+			["zoom"] = 0.3,
+			["semver"] = "5.3.2",
 			["tocversion"] = 100002,
 			["id"] = "Virulent_Plague",
-			["semver"] = "5.3.2",
+			["auto"] = true,
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["zoom"] = 0.3,
+			["cooldownTextDisabled"] = true,
 			["uid"] = "PmVIBf0G9n9",
 			["inverse"] = false,
 			["authorOptions"] = {
@@ -38621,9 +38522,9 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["url"] = "https://wago.io/Afenar_DK/116",
+			["stickyDuration"] = false,
 		},
-		["Brain_Freeze"] = {
+		["Remorseless_Winter"] = {
 			["iconSource"] = -1,
 			["wagoID"] = "Hkn-hHozG",
 			["color"] = {
@@ -38633,65 +38534,110 @@ WeakAurasSaved = {
 				1, -- [4]
 			},
 			["preferToUpdate"] = false,
+			["customText"] = "",
 			["yOffset"] = 0,
 			["anchorPoint"] = "CENTER",
 			["cooldownSwipe"] = true,
 			["customTextUpdate"] = "update",
 			["cooldownEdge"] = false,
-			["icon"] = true,
+			["actions"] = {
+				["start"] = {
+					["do_glow"] = false,
+					["do_sound"] = false,
+				},
+				["init"] = {
+				},
+				["finish"] = {
+					["do_glow"] = false,
+					["sound"] = "Interface\\Addons\\MikScrollingBattleText\\Sounds\\Cooldown.ogg",
+					["do_sound"] = false,
+				},
+			},
 			["triggers"] = {
 				{
 					["trigger"] = {
+						["auranames"] = {
+							"196770", -- [1]
+						},
+						["duration"] = "1",
+						["use_specific_unit"] = false,
+						["use_tooltip"] = false,
+						["debuffType"] = "HELPFUL",
+						["type"] = "aura2",
+						["use_debuffClass"] = false,
+						["unevent"] = "timed",
+						["buffShowOn"] = "showOnActive",
+						["subeventPrefix"] = "SPELL",
+						["event"] = "Health",
+						["unit"] = "player",
+						["names"] = {
+							"Беспощадность зимы", -- [1]
+						},
+						["useGroup_count"] = false,
+						["spellIds"] = {
+							196770, -- [1]
+						},
+						["useName"] = true,
+						["ownOnly"] = true,
+						["combineMatches"] = "showLowest",
+						["matchesShowOn"] = "showOnActive",
+						["subeventSuffix"] = "_CAST_START",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				{
+					["trigger"] = {
+						["track"] = "auto",
 						["use_matchedRune"] = true,
 						["use_charges"] = false,
 						["genericShowOn"] = "showAlways",
-						["unit"] = "player",
-						["use_showgcd"] = false,
+						["subeventPrefix"] = "SPELL",
+						["use_showgcd"] = true,
 						["useCount"] = true,
+						["unit"] = "player",
 						["names"] = {
 							"Божественное перышко", -- [1]
 							"Божественное перышко", -- [2]
 							"Божественное перышко", -- [3]
 						},
 						["use_genericShowOn"] = true,
-						["use_unit"] = true,
 						["duration"] = "1",
-						["type"] = "spell",
-						["debuffType"] = "HELPFUL",
-						["charges_operator"] = "~=",
 						["use_remaining"] = false,
+						["spellName"] = 196770,
+						["charges_operator"] = "~=",
+						["charges"] = "3",
 						["count"] = "2",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["use_showOn"] = true,
 						["event"] = "Cooldown Progress (Spell)",
 						["countOperator"] = "<=",
 						["custom_hide"] = "timed",
-						["realSpellName"] = "心灵冰冻",
+						["realSpellName"] = "冷酷严冬",
 						["use_spellName"] = true,
 						["spellIds"] = {
 							121536, -- [1]
 							158624, -- [2]
 							121557, -- [3]
 						},
-						["unevent"] = "auto",
-						["charges"] = "3",
-						["spellName"] = 47528,
+						["subeventSuffix"] = "_CAST_START",
+						["type"] = "spell",
+						["debuffType"] = "HELPFUL",
 						["use_track"] = true,
-						["subeventPrefix"] = "SPELL",
+						["use_unit"] = true,
 					},
 					["untrigger"] = {
-						["showOn"] = "showOnCooldown",
-						["genericShowOn"] = "showAlways",
-						["spellName"] = 47528,
+						["showOn"] = "showAlways",
+						["spellName"] = 196770,
 					},
-				}, -- [1]
+				}, -- [2]
 				["disjunctive"] = "any",
-				["activeTriggerMode"] = 1,
+				["activeTriggerMode"] = -10,
 			},
 			["internalVersion"] = 61,
 			["keepAspectRatio"] = true,
 			["selfPoint"] = "CENTER",
-			["desaturate"] = false,
+			["stickyDuration"] = false,
 			["version"] = 116,
 			["subRegions"] = {
 				{
@@ -38711,25 +38657,45 @@ WeakAurasSaved = {
 					["type"] = "subborder",
 				}, -- [2]
 				{
-					["glowFrequency"] = 0.25,
+					["glowFrequency"] = 0,
 					["type"] = "subglow",
-					["glowXOffset"] = 0,
+					["glowXOffset"] = 1,
 					["glowType"] = "buttonOverlay",
-					["glowLength"] = 10,
-					["glowYOffset"] = 0,
+					["glowLength"] = 20,
+					["glowYOffset"] = 1,
 					["glowColor"] = {
 						1, -- [1]
-						1, -- [2]
-						1, -- [3]
+						0.64705882352941, -- [2]
+						0.31764705882353, -- [3]
 						1, -- [4]
 					},
 					["useGlowColor"] = false,
 					["glowScale"] = 1,
 					["glow"] = false,
-					["glowThickness"] = 4,
-					["glowLines"] = 8,
+					["glowThickness"] = 1,
+					["glowLines"] = 30,
 					["glowBorder"] = false,
 				}, -- [3]
+				{
+					["glowFrequency"] = 0.1,
+					["type"] = "subglow",
+					["glowXOffset"] = 0,
+					["glowType"] = "Pixel",
+					["glowLength"] = 10,
+					["glowYOffset"] = 0,
+					["glowColor"] = {
+						1, -- [1]
+						0.88627457618713, -- [2]
+						0.76862752437592, -- [3]
+						1, -- [4]
+					},
+					["useGlowColor"] = true,
+					["glowScale"] = 1,
+					["glow"] = false,
+					["glowThickness"] = 1,
+					["glowLines"] = 8,
+					["glowBorder"] = true,
+				}, -- [4]
 				{
 					["text_shadowXOffset"] = 0,
 					["text_text"] = "%p",
@@ -38752,9 +38718,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -38766,9 +38732,9 @@ WeakAurasSaved = {
 					["text_fontSize"] = 14,
 					["text_text_format_p_time_dynamic_threshold"] = 1,
 					["text_text_format_p_format"] = "timed",
-				}, -- [4]
+				}, -- [5]
 			},
-			["height"] = 33,
+			["height"] = 39,
 			["load"] = {
 				["ingroup"] = {
 					["multi"] = {
@@ -38778,27 +38744,23 @@ WeakAurasSaved = {
 				["class"] = {
 					["single"] = "DEATHKNIGHT",
 					["multi"] = {
+						["DEATHKNIGHT"] = true,
 					},
 				},
-				["use_class"] = true,
-				["use_dragonriding"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["zoneIds"] = "",
 				["talent2"] = {
 					["multi"] = {
 					},
 				},
 				["class_and_spec"] = {
-					["single"] = 252,
-					["multi"] = {
-						[252] = true,
-						[251] = true,
-						[250] = true,
-					},
+					["single"] = 251,
 				},
 				["talent"] = {
-					["single"] = 13,
 					["multi"] = {
-						[13] = true,
 					},
 				},
 				["size"] = {
@@ -38806,12 +38768,13 @@ WeakAurasSaved = {
 					},
 				},
 				["spec"] = {
+					["single"] = 2,
 					["multi"] = {
 						[2] = true,
 						[3] = true,
 					},
 				},
-				["use_class_and_spec"] = false,
+				["use_class_and_spec"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -38822,44 +38785,29 @@ WeakAurasSaved = {
 				},
 				["use_spellknown"] = true,
 				["use_petbattle"] = false,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_vehicleUi"] = false,
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["spellknown"] = 47528,
-				["role"] = {
-					["multi"] = {
-					},
-				},
+				["spellknown"] = 196770,
+				["use_dragonriding"] = false,
 			},
+			["useCooldownModRate"] = true,
 			["source"] = "import",
-			["alpha"] = 0.3,
-			["config"] = {
-			},
-			["url"] = "https://wago.io/Afenar_DK/116",
-			["parent"] = "Death Knight [Utility]",
-			["regionType"] = "icon",
+			["width"] = 39,
+			["icon"] = true,
+			["parent"] = "Death Knight [Core]",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-					["do_glow"] = false,
-					["do_sound"] = false,
-				},
-			},
+			["displayIcon"] = 135994,
+			["regionType"] = "icon",
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -38882,37 +38830,74 @@ WeakAurasSaved = {
 					["duration_type"] = "seconds",
 				},
 			},
+			["desaturate"] = false,
+			["config"] = {
+			},
+			["url"] = "https://wago.io/Afenar_DK/116",
+			["useTooltip"] = false,
+			["semver"] = "5.3.2",
+			["zoom"] = 0.3,
+			["auto"] = true,
+			["tocversion"] = 100002,
+			["id"] = "Remorseless_Winter",
+			["cooldownTextDisabled"] = true,
+			["frameStrata"] = 3,
+			["anchorFrameType"] = "SCREEN",
+			["xOffset"] = 0,
+			["uid"] = "l6b1GuI0OFf",
+			["inverse"] = true,
 			["authorOptions"] = {
 			},
-			["width"] = 33,
-			["useCooldownModRate"] = true,
-			["zoom"] = 0.3,
-			["semver"] = "5.3.2",
-			["tocversion"] = 100002,
-			["id"] = "Brain_Freeze",
-			["auto"] = true,
-			["frameStrata"] = 2,
-			["anchorFrameType"] = "SCREEN",
-			["cooldownTextDisabled"] = true,
-			["uid"] = "E2MPsvktVj1",
-			["inverse"] = true,
-			["xOffset"] = 0,
 			["conditions"] = {
 				{
 					["check"] = {
 						["trigger"] = -2,
-						["variable"] = "AND",
+						["variable"] = "OR",
 						["checks"] = {
 							{
-								["trigger"] = 1,
-								["variable"] = "onCooldown",
+								["trigger"] = 2,
+								["variable"] = "insufficientResources",
 								["value"] = 1,
 							}, -- [1]
 							{
-								["trigger"] = 1,
-								["op"] = "<",
-								["variable"] = "expirationTime",
-								["value"] = "1",
+								["trigger"] = 2,
+								["variable"] = "onCooldown",
+								["value"] = 1,
+							}, -- [2]
+						},
+					},
+					["changes"] = {
+						{
+							["value"] = true,
+							["property"] = "desaturate",
+						}, -- [1]
+					},
+				}, -- [1]
+				{
+					["check"] = {
+						["trigger"] = -2,
+						["variable"] = "OR",
+						["checks"] = {
+							{
+								["value"] = 1,
+								["variable"] = "show",
+							}, -- [1]
+							{
+								["trigger"] = -2,
+								["variable"] = "AND",
+								["checks"] = {
+									{
+										["trigger"] = 2,
+										["op"] = "<",
+										["variable"] = "expirationTime",
+										["value"] = "1",
+									}, -- [1]
+									{
+										["trigger"] = 2,
+										["variable"] = "onCooldown",
+										["value"] = 1,
+									}, -- [2]
+								},
 							}, -- [2]
 						},
 					},
@@ -38922,27 +38907,42 @@ WeakAurasSaved = {
 							["property"] = "sub.3.glow",
 						}, -- [1]
 					},
-				}, -- [1]
+				}, -- [2]
+				{
+					["check"] = {
+						["trigger"] = 2,
+						["op"] = "<",
+						["variable"] = "duration",
+						["value"] = "2",
+					},
+					["changes"] = {
+						{
+							["property"] = "sub.5.text_visible",
+						}, -- [1]
+					},
+				}, -- [3]
 				{
 					["check"] = {
 						["trigger"] = 1,
-						["variable"] = "onCooldown",
+						["variable"] = "show",
 						["value"] = 1,
 					},
 					["changes"] = {
 						{
-							["value"] = 1,
-							["property"] = "alpha",
+							["property"] = "inverse",
 						}, -- [1]
 						{
-							["value"] = true,
 							["property"] = "desaturate",
 						}, -- [2]
+						{
+							["value"] = true,
+							["property"] = "sub.4.glow",
+						}, -- [3]
 					},
-				}, -- [2]
+				}, -- [4]
 			},
 			["cooldown"] = true,
-			["stickyDuration"] = false,
+			["alpha"] = 1,
 		},
 		["Perdition"] = {
 			["iconSource"] = -1,
@@ -39052,9 +39052,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -39101,14 +39101,31 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["zoom"] = 0.3,
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["cooldownEdge"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["cooldownEdge"] = false,
+			["cooldown"] = true,
+			["xOffset"] = 0,
+			["uid"] = "OLpruBMPzII",
+			["frameStrata"] = 1,
+			["cooldownTextDisabled"] = true,
+			["semver"] = "5.3.2",
+			["tocversion"] = 100002,
+			["id"] = "Perdition",
+			["width"] = 33,
+			["alpha"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["useCooldownModRate"] = true,
+			["config"] = {
+			},
+			["inverse"] = true,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -39129,23 +39146,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["cooldown"] = true,
-			["authorOptions"] = {
-			},
-			["uid"] = "OLpruBMPzII",
-			["useCooldownModRate"] = true,
-			["cooldownTextDisabled"] = true,
-			["semver"] = "5.3.2",
-			["tocversion"] = 100002,
-			["id"] = "Perdition",
-			["width"] = 33,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["alpha"] = 1,
-			["config"] = {
-			},
-			["inverse"] = true,
-			["icon"] = true,
 			["conditions"] = {
 				{
 					["check"] = {
@@ -39165,7 +39165,7 @@ WeakAurasSaved = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["icon"] = true,
 		},
 		["Chill_Streak"] = {
 			["iconSource"] = -1,
@@ -39283,9 +39283,9 @@ WeakAurasSaved = {
 					["text_font"] = "Expressway",
 					["text_text_format_p_time_precision"] = 1,
 					["text_shadowYOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-					["text_wordWrap"] = "WordWrap",
 					["text_visible"] = true,
+					["text_wordWrap"] = "WordWrap",
+					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "CENTER",
 					["anchorYOffset"] = 0,
 					["text_shadowColor"] = {
@@ -39350,16 +39350,16 @@ WeakAurasSaved = {
 					},
 				},
 				["use_petbattle"] = false,
-				["use_vehicleUi"] = false,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
 				["use_spellknown"] = true,
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_vehicleUi"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -39371,15 +39371,55 @@ WeakAurasSaved = {
 			},
 			["source"] = "import",
 			["width"] = 39,
+			["authorOptions"] = {
+			},
+			["animation"] = {
+				["start"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+				["main"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorA"] = 1,
+					["colorG"] = 1,
+					["use_translate"] = false,
+					["scalex"] = 1,
+					["type"] = "none",
+					["colorType"] = "custom",
+					["easeType"] = "none",
+					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
+					["scaley"] = 1,
+					["alpha"] = 0,
+					["easeStrength"] = 3,
+					["y"] = 0,
+					["x"] = 0,
+					["colorB"] = 1,
+					["use_color"] = false,
+					["colorFunc"] = "",
+					["rotate"] = 0,
+					["translateType"] = "straightTranslate",
+					["duration"] = "",
+				},
+				["finish"] = {
+					["type"] = "none",
+					["easeType"] = "none",
+					["easeStrength"] = 3,
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+				},
+			},
 			["url"] = "https://wago.io/Afenar_DK/116",
-			["xOffset"] = 0,
-			["parent"] = "Death Knight [Core]",
 			["information"] = {
 				["forceEvents"] = true,
 				["ignoreOptionsEventErrors"] = true,
 			},
 			["regionType"] = "icon",
 			["displayIcon"] = "Interface\\Icons\\ability_deathknight_pillaroffrost",
+			["parent"] = "Death Knight [Core]",
 			["actions"] = {
 				["start"] = {
 					["do_glow"] = false,
@@ -39397,20 +39437,18 @@ WeakAurasSaved = {
 					["do_sound"] = false,
 				},
 			},
-			["authorOptions"] = {
-			},
 			["config"] = {
 			},
 			["useCooldownModRate"] = true,
-			["auto"] = true,
-			["zoom"] = 0.3,
 			["semver"] = "5.3.2",
+			["cooldownTextDisabled"] = true,
+			["auto"] = true,
 			["tocversion"] = 100002,
 			["id"] = "Chill_Streak",
-			["cooldownTextDisabled"] = true,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
+			["zoom"] = 0.3,
 			["frameStrata"] = 2,
+			["anchorFrameType"] = "SCREEN",
+			["alpha"] = 1,
 			["uid"] = "JtVcl)zVVKS",
 			["inverse"] = true,
 			["desaturate"] = false,
@@ -39479,45 +39517,7 @@ WeakAurasSaved = {
 				}, -- [3]
 			},
 			["cooldown"] = true,
-			["animation"] = {
-				["start"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-				["main"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorA"] = 1,
-					["colorG"] = 1,
-					["use_translate"] = false,
-					["scalex"] = 1,
-					["type"] = "none",
-					["x"] = 0,
-					["easeType"] = "none",
-					["translateFunc"] = "    function(progress, startX, startY, deltaX, deltaY)\n      return startX + (progress * deltaX), startY + (progress * deltaY)\n    end\n  ",
-					["scaley"] = 1,
-					["alpha"] = 0,
-					["easeStrength"] = 3,
-					["y"] = 0,
-					["colorType"] = "custom",
-					["colorB"] = 1,
-					["use_color"] = false,
-					["colorFunc"] = "",
-					["rotate"] = 0,
-					["translateType"] = "straightTranslate",
-					["duration"] = "",
-				},
-				["finish"] = {
-					["type"] = "none",
-					["easeType"] = "none",
-					["easeStrength"] = 3,
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-				},
-			},
+			["xOffset"] = 0,
 		},
 	},
 	["lastArchiveClear"] = 1669823317,

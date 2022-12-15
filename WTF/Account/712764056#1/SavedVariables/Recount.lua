@@ -25,7 +25,7 @@ RecountDB = {
 				},
 			},
 			["LastInstanceName"] = "艾杰斯亚学院",
-			["CurDataSet"] = "CurrentFightData",
+			["CurDataSet"] = "LastFightData",
 			["MainWindowWidth"] = 330.5556945800781,
 		},
 	},
