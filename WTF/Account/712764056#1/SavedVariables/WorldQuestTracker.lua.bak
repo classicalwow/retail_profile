@@ -2,8 +2,8 @@
 WQTrackerDB = {
 	["profileKeys"] = {
 		["查理三世 - 暗影之月"] = "Default",
-		["特變電工 - 寒冰皇冠"] = "Default",
 		["查理三世 - 寒冰皇冠"] = "Default",
+		["特變電工 - 寒冰皇冠"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -46,19 +46,19 @@ WQTrackerDB = {
 				[97374] = true,
 				[108709] = true,
 				[108717] = true,
-				[107008] = true,
+				[104219] = true,
 				[107009] = true,
 				[105963] = true,
-				[205851] = true,
-				[205833] = true,
+				[205768] = true,
+				[203457] = true,
 				[104209] = true,
 				[205505] = true,
-				[106435] = true,
+				[106429] = true,
 				[97375] = true,
-				[205831] = true,
+				[205502] = true,
 				[204738] = true,
 				[205839] = true,
-				[205770] = true,
+				[203483] = true,
 				[108718] = true,
 				[205506] = true,
 				[106436] = true,
@@ -67,128 +67,68 @@ WQTrackerDB = {
 				[105964] = true,
 				[205840] = true,
 				[205856] = true,
-				[97376] = true,
+				[203126] = true,
 				[204736] = true,
 				[208063] = true,
-				[203126] = true,
+				[97376] = true,
 				[205555] = true,
-				[203483] = true,
+				[205770] = true,
 				[205841] = true,
-				[205502] = true,
-				[106429] = true,
-				[203457] = true,
-				[205768] = true,
+				[205831] = true,
+				[106435] = true,
+				[205833] = true,
+				[205851] = true,
 				[203127] = true,
-				[104219] = true,
+				[107008] = true,
 			},
-			["history"] = {
-				["quest"] = {
-					["global"] = {
-						[71212] = 1,
-						[70625] = 1,
-						[70720] = 1,
-						[72030] = 1,
-						[70424] = 1,
-						[70984] = 1,
-						[66805] = 1,
-						[69938] = 1,
-						["total"] = 23,
-						[70439] = 1,
-						[70410] = 1,
-						[70160] = 1,
-						[70419] = 1,
-						[70549] = 1,
-						[70634] = 1,
-						[70016] = 1,
-						[70638] = 1,
-						[66419] = 1,
-						[70425] = 1,
-						[70146] = 2,
-						[70429] = 1,
-						[70152] = 1,
-						[70067] = 1,
-					},
-					["character"] = {
-						["Player-963-06DF687A"] = {
-							[71212] = 1,
-							[70625] = 1,
-							[70720] = 1,
-							[72030] = 1,
-							[70424] = 1,
-							[70984] = 1,
-							[66805] = 1,
-							[69938] = 1,
-							["total"] = 23,
-							[70439] = 1,
-							[70410] = 1,
-							[70160] = 1,
-							[70419] = 1,
-							[70549] = 1,
-							[70634] = 1,
-							[70016] = 1,
-							[70638] = 1,
-							[66419] = 1,
-							[70425] = 1,
-							[70146] = 2,
-							[70429] = 1,
-							[70152] = 1,
-							[70067] = 1,
-						},
+			["rarescan"] = {
+				["recently_killed"] = {
+					["Player-963-06DF687A"] = {
 					},
 				},
-				["period"] = {
-					["global"] = {
-						["221212"] = {
-							["quest"] = 4,
-							["resource"] = 375,
-						},
-						["221210"] = {
-							["quest"] = 6,
-						},
-						["221211"] = {
-							["quest"] = 13,
-							["resource"] = 160,
-							["gold"] = 4172900,
-						},
-					},
-					["character"] = {
-						["Player-963-06DF687A"] = {
-							["221212"] = {
-								["quest"] = 4,
-								["resource"] = 375,
-							},
-							["221210"] = {
-								["quest"] = 6,
-							},
-							["221211"] = {
-								["quest"] = 13,
-								["resource"] = 160,
-								["gold"] = 4172900,
-							},
-						},
-					},
-				},
-				["reward"] = {
-					["global"] = {
-						["resource"] = 535,
-						["gold"] = 4172900,
-					},
-					["character"] = {
-						["Player-963-06DF687A"] = {
-							["resource"] = 535,
-							["gold"] = 4172900,
-						},
-					},
+				["name_cache"] = {
+					["潮涌巨怪"] = 141618,
+					["戈拉坎"] = 124185,
+					[""] = 122999,
 				},
 			},
 			["TutorialTracker"] = 2,
 			["low_level_tutorial"] = true,
 			["is_BFA_version"] = true,
-			["quest_summary_minimized"] = true,
 			["quests_tracked"] = {
 				["Player-963-06DF4B09"] = {
 				},
 				["Player-963-06DF687A"] = {
+					{
+						["mapID"] = 2024,
+						["index"] = 0,
+						["timeFraction"] = 50860.217,
+						["questID"] = 70439,
+						["mapIDSynthetic"] = 0,
+						["LastDistance"] = 0.8444765878521165,
+						["expireAt"] = 1671058840,
+						["timeAdded"] = 1671032500,
+						["rewardTexture"] = "Interface\\ICONS\\INV_Misc_Cape_19",
+						["numObjectives"] = 1,
+						["rewardAmount"] = "|cff2292FF369",
+						["timeLeft"] = 439,
+						["questType"] = 4,
+					}, -- [1]
+					{
+						["mapID"] = 2022,
+						["index"] = 1,
+						["timeFraction"] = 50866.967,
+						["questID"] = 67006,
+						["mapIDSynthetic"] = 0,
+						["LastDistance"] = 0,
+						["expireAt"] = 1671058847,
+						["timeAdded"] = 1671032507,
+						["rewardTexture"] = "Interface\\ICONS\\INV_Belt_15",
+						["numObjectives"] = 4,
+						["rewardAmount"] = "|cff2292FF363",
+						["timeLeft"] = 439,
+						["questType"] = 4,
+					}, -- [2]
 				},
 				["Player-963-06D524DA"] = {
 				},
@@ -198,24 +138,34 @@ WQTrackerDB = {
 			["quests_all_characters"] = {
 				["Player-963-06DF687A"] = {
 					[70434] = {
-						["expireAt"] = 1671058870,
+						["expireAt"] = 1671058898,
 						["rewardAmount"] = "",
 						["rewardTexture"] = 1519429,
 					},
-					[69931] = {
-						["expireAt"] = 1671058810,
-						["rewardAmount"] = "|cff2292FF356",
-						["rewardTexture"] = "Interface\\ICONS\\INV_Pants_08",
+					[71205] = {
+						["expireAt"] = 1671058838,
+						["rewardAmount"] = "|cff2292FF363",
+						["rewardTexture"] = "Interface\\ICONS\\INV_Jewelry_Talisman_07",
+					},
+					[71202] = {
+						["expireAt"] = 1671058898,
+						["rewardAmount"] = "5",
+						["rewardTexture"] = 1045109,
 					},
 					[67006] = {
-						["expireAt"] = 1671058870,
+						["expireAt"] = 1671058847,
 						["rewardAmount"] = "|cff2292FF363",
 						["rewardTexture"] = "Interface\\ICONS\\INV_Belt_15",
 					},
-					[71205] = {
-						["expireAt"] = 1671058870,
-						["rewardAmount"] = "|cff2292FF363",
-						["rewardTexture"] = "Interface\\ICONS\\INV_Jewelry_Talisman_07",
+					[70439] = {
+						["expireAt"] = 1671058900,
+						["rewardAmount"] = "|cff2292FF369",
+						["rewardTexture"] = "Interface\\ICONS\\INV_Misc_Cape_19",
+					},
+					[69931] = {
+						["expireAt"] = 1671058838,
+						["rewardAmount"] = "|cff2292FF356",
+						["rewardTexture"] = "Interface\\ICONS\\INV_Pants_08",
 					},
 				},
 			},
@@ -241,15 +191,104 @@ WQTrackerDB = {
 					["realm"] = "寒冰皇冠",
 				},
 			},
-			["rarescan"] = {
-				["recently_killed"] = {
-					["Player-963-06DF687A"] = {
+			["history"] = {
+				["period"] = {
+					["global"] = {
+						["221212"] = {
+							["quest"] = 4,
+							["resource"] = 375,
+						},
+						["221210"] = {
+							["quest"] = 6,
+						},
+						["221211"] = {
+							["resource"] = 160,
+							["quest"] = 13,
+							["gold"] = 4172900,
+						},
+					},
+					["character"] = {
+						["Player-963-06DF687A"] = {
+							["221212"] = {
+								["quest"] = 4,
+								["resource"] = 375,
+							},
+							["221210"] = {
+								["quest"] = 6,
+							},
+							["221211"] = {
+								["resource"] = 160,
+								["quest"] = 13,
+								["gold"] = 4172900,
+							},
+						},
 					},
 				},
-				["name_cache"] = {
-					["潮涌巨怪"] = 141618,
-					["戈拉坎"] = 124185,
-					[""] = 122999,
+				["quest"] = {
+					["global"] = {
+						[71212] = 1,
+						[70625] = 1,
+						[70720] = 1,
+						[72030] = 1,
+						[70424] = 1,
+						[70984] = 1,
+						[66805] = 1,
+						[69938] = 1,
+						["total"] = 23,
+						[70067] = 1,
+						[70410] = 1,
+						[70160] = 1,
+						[70146] = 2,
+						[70425] = 1,
+						[70634] = 1,
+						[70419] = 1,
+						[70638] = 1,
+						[66419] = 1,
+						[70549] = 1,
+						[70016] = 1,
+						[70429] = 1,
+						[70152] = 1,
+						[70439] = 1,
+					},
+					["character"] = {
+						["Player-963-06DF687A"] = {
+							[71212] = 1,
+							[70625] = 1,
+							[70720] = 1,
+							[72030] = 1,
+							[70424] = 1,
+							[70984] = 1,
+							[66805] = 1,
+							[69938] = 1,
+							["total"] = 23,
+							[70067] = 1,
+							[70410] = 1,
+							[70160] = 1,
+							[70146] = 2,
+							[70425] = 1,
+							[70634] = 1,
+							[70419] = 1,
+							[70638] = 1,
+							[66419] = 1,
+							[70549] = 1,
+							[70016] = 1,
+							[70429] = 1,
+							[70152] = 1,
+							[70439] = 1,
+						},
+					},
+				},
+				["reward"] = {
+					["global"] = {
+						["resource"] = 535,
+						["gold"] = 4172900,
+					},
+					["character"] = {
+						["Player-963-06DF687A"] = {
+							["resource"] = 535,
+							["gold"] = 4172900,
+						},
+					},
 				},
 			},
 		},
