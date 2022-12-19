@@ -1810,3 +1810,10 @@ Change Log:
 * Added Dragonflight spells for Vault of the Incarnates
 * Added Dragonflight spells for Uldaman: Legacy of Tyr
 * Added Dragonflight spells for The Azure Vault
+
+4.70.3
+* Fixed Dragonflight spells for Algeth'ar Academy
+* Added Dragonflight spells (world)
+* Added Dragonflight spells for Vault of the Incarnates
+* Added Dragonflight spells for The Nokhud Offensive
+* Added Mists of Pandaria spells for Temple of the Jade Serpent
