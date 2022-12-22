@@ -5,6 +5,52 @@ MythicDungeonToolsDB = {
 	},
 	["global"] = {
 		["anchorTo"] = "CENTER",
+		["scale"] = 1.3,
+		["anchorFrom"] = "CENTER",
+		["MDI"] = {
+		},
+		["maximized"] = false,
+		["presets"] = {
+			[42] = {
+				{
+					["mdiEnabled"] = false,
+					["week"] = 1,
+					["value"] = {
+						["currentPull"] = 2,
+						["currentSublevel"] = 1,
+						["pulls"] = {
+							{
+								["color"] = "ff3eff",
+								[7] = {
+									1, -- [1]
+								},
+							}, -- [1]
+							{
+								["color"] = "3eff9e",
+							}, -- [2]
+						},
+						["currentDungeonIdx"] = 42,
+						["teeming"] = false,
+						["selection"] = {
+							2, -- [1]
+						},
+						["riftOffsets"] = {
+							{
+							}, -- [1]
+						},
+					},
+					["difficulty"] = 17,
+					["mdi"] = {
+						["freeholdJoined"] = false,
+						["freehold"] = 1,
+						["beguiling"] = 1,
+					},
+				}, -- [1]
+			},
+		},
+		["version"] = 40120,
+		["xoffset"] = -205.5556488037109,
+		["currentDifficulty"] = 17,
 		["colorPaletteInfo"] = {
 			["customPaletteValues"] = {
 				{
@@ -69,52 +115,6 @@ MythicDungeonToolsDB = {
 				}, -- [12]
 			},
 		},
-		["MDI"] = {
-		},
-		["maximized"] = false,
-		["presets"] = {
-			[42] = {
-				{
-					["mdiEnabled"] = false,
-					["mdi"] = {
-						["freeholdJoined"] = false,
-						["beguiling"] = 1,
-						["freehold"] = 1,
-					},
-					["week"] = 1,
-					["value"] = {
-						["currentPull"] = 2,
-						["currentSublevel"] = 1,
-						["selection"] = {
-							2, -- [1]
-						},
-						["currentDungeonIdx"] = 42,
-						["teeming"] = false,
-						["riftOffsets"] = {
-							{
-							}, -- [1]
-						},
-						["pulls"] = {
-							{
-								["color"] = "ff3eff",
-								[7] = {
-									1, -- [1]
-								},
-							}, -- [1]
-							{
-								["color"] = "3eff9e",
-							}, -- [2]
-						},
-					},
-					["difficulty"] = 17,
-				}, -- [1]
-			},
-		},
-		["anchorFrom"] = "CENTER",
-		["xoffset"] = -205.5556488037109,
-		["version"] = 40120,
-		["scale"] = 1.3,
-		["currentDifficulty"] = 17,
 		["yoffset"] = 41.47217559814453,
 	},
 }
