@@ -13,6 +13,7 @@ RecountDB = {
 					["h"] = 206,
 				},
 			},
+			["MainWindowHeight"] = 205.5555267333984,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -26,7 +27,6 @@ RecountDB = {
 			["LastInstanceName"] = "黑暗神殿",
 			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 330.5556945800781,
-			["MainWindowHeight"] = 205.5555267333984,
 		},
 	},
 }
